@@ -9,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class PlanificateurComponent {
 
+  message :string = "Bienvenu sur la page du Planificateur"
 }
