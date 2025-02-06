@@ -1,9 +1,24 @@
-<div class="p-3">
-    <div class="card">
-        <div class="card-body">
-            <p>{{message}}</p>
-        </div>
-    </div>
+<mat-toolbar color="primary">
+      <button mat-button>Home</button>
+      <button mat-button>Profile</button>
+      <button mat-raised-button color="accent">Login</button>
+</mat-toolbar>
+<h1>LISTE DES EMPLOYES</h1>
+<pre>
+     {{ employes() | json}}<br>
+      </pre>
+<h1>LISTE DES CLIENTS</h1>
+<pre>
+            {{ clients() | json}}
+      </pre>
 
-</div>
+<h1>LISTE DES COMMANDES</h1>
 
+<pre>
+      {{ commandes() | json}}
+</pre>
+
+<h1>LISTE DES PRODUITS</h1>
+<pre>
+      {{produits() | json }}
+</pre>

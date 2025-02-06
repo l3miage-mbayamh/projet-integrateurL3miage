@@ -1,4 +1,4 @@
-jdds;référence;entrepôt;produit en stock;quantité
+export default `jdds;rï¿½fï¿½rence;entrepï¿½t;produit en stock;quantitï¿½
 jdd0;Bronis-p06;Bronis;p06;10
 jdd0;Albis-p06;Albis;p06;35
 jdd0;Valis-p06;Valis;p06;6
@@ -13,4 +13,4 @@ jdd0;Valis-p04;Valis;p04;8
 jdd0;Albis-p04;Albis;p04;1
 jdd0;Albis-p07;Albis;p07;8
 jdd0;Valis-p07;Valis;p07;12
-jdd0;Grenis-p09;Grenis;p09;2
+jdd0;Grenis-p09;Grenis;p09;2`
