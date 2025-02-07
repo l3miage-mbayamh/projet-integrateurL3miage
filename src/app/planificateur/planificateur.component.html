@@ -1,0 +1,71 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button (click)="drawer.toggle()">
+        <mat-icon >menu</mat-icon>
+    </button>
+<span class="space"></span>
+
+<button mat-button>Home</button>
+<button mat-button>Profile</button>
+<button mat-button [matMenuTriggerFor]="importMenu">
+    <mat-icon iconPositionEnd>arrow_drop_down</mat-icon>
+    Import</button>
+<button mat-raised-button color="accent">Login</button>
+
+
+<mat-menu #importMenu>
+    <button mat-menu-item>
+      <mat-icon>dialpad</mat-icon>
+      <span>Redial</span>
+    </button>
+    <button mat-menu-item disabled>
+      <mat-icon>voicemail</mat-icon>
+      <span>Check voice</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>notifications_off</mat-icon>
+      <span>Disable alerts</span>
+    </button>
+  </mat-menu>
+</mat-toolbar>
+
+<mat-drawer-container>
+<mat-drawer #drawer mode="side" position="start" opened="true">
+    <div class="user-info">
+        <img src="../../assets/images/planif.png" alt="User Photo" class="user-photo">
+        <div class="user-role">Planificateur</div>
+    </div>
+    <mat-nav-list>
+        <mat-list-item>
+<button mat-button>
+    <mat-icon>home</mat-icon>
+    Dashbord</button>
+        </mat-list-item>
+
+        <mat-list-item>
+            <button mat-button>
+                <mat-icon>home</mat-icon>
+                Consulter Commande</button>
+        </mat-list-item>
+
+        <mat-list-item>
+        
+            <button mat-button>
+                <mat-icon>home</mat-icon>Liste Livreur</button>
+        </mat-list-item>
+
+        <mat-list-item>
+         
+            <button mat-button>
+                <mat-icon>home</mat-icon>
+                Construire Journée</button>
+        </mat-list-item>
+    </mat-nav-list>
+</mat-drawer>
+<mat-drawer-content>
+    <div style="min-height: 600px">
+        <router-outlet></router-outlet>
+    </div>
+   
+</mat-drawer-content>
+
+</mat-drawer-container>
