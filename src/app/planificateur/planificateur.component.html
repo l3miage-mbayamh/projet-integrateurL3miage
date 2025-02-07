@@ -4,26 +4,29 @@
     </button>
 <span class="space"></span>
 
-<button mat-button>Home</button>
-<button mat-button>Profile</button>
-<button mat-button [matMenuTriggerFor]="importMenu">
+<button mat-button>
+    <mat-icon>message</mat-icon>
+
+    messages</button>
+<button mat-button>
+    <mat-icon>notifications</mat-icon>
+    notifications</button>
+    <button mat-button >Planificateur</button>
+
+<button mat-button [matMenuTriggerFor]="importMenu" >
     <mat-icon iconPositionEnd>arrow_drop_down</mat-icon>
-    Import</button>
-<button mat-raised-button color="accent">Login</button>
+    Profil</button>
+<!--button mat-raised-button color="accent">Login</button-->
 
 
 <mat-menu #importMenu>
-    <button mat-menu-item>
-      <mat-icon>dialpad</mat-icon>
-      <span>Redial</span>
-    </button>
     <button mat-menu-item disabled>
-      <mat-icon>voicemail</mat-icon>
-      <span>Check voice</span>
+        <mat-icon>login</mat-icon>
+      Login
     </button>
-    <button mat-menu-item>
-      <mat-icon>notifications_off</mat-icon>
-      <span>Disable alerts</span>
+    <button mat-menu-item color="accent">
+        <mat-icon>logout</mat-icon>
+      Logout
     </button>
   </mat-menu>
 </mat-toolbar>
@@ -43,21 +46,28 @@
 
         <mat-list-item>
             <button mat-button>
-                <mat-icon>home</mat-icon>
-                Consulter Commande</button>
+                <mat-icon>calendar_today</mat-icon>
+                Planifier Journée</button>
         </mat-list-item>
 
         <mat-list-item>
         
             <button mat-button>
-                <mat-icon>home</mat-icon>Liste Livreur</button>
+                <mat-icon>visibility</mat-icon>Visualiser Journée</button>
         </mat-list-item>
 
         <mat-list-item>
          
             <button mat-button>
-                <mat-icon>home</mat-icon>
-                Construire Journée</button>
+                <mat-icon>person</mat-icon>
+                Ajuster Journee</button>
+        </mat-list-item>
+
+        <mat-list-item>
+         
+            <button mat-button>
+                <mat-icon>map</mat-icon>
+                Carte de Suivi</button>
         </mat-list-item>
     </mat-nav-list>
 </mat-drawer>
