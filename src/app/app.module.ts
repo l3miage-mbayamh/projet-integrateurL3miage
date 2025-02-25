@@ -30,6 +30,7 @@ import { AjusterdayComponent } from './planificateur/ajusterday/ajusterday.compo
 import { SuivicarteComponent } from './planificateur/suivicarte/suivicarte.component';
 import { ListCommandeComponent } from './planificateur/planningday/list-commande/list-commande.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,6 +44,7 @@ import { ListCommandeComponent } from './planificateur/planningday/list-commande
    
   ],
   imports: [
+  
     BrowserModule,
     AppRoutingModule,
     MatButtonModule,
@@ -60,7 +62,9 @@ import { ListCommandeComponent } from './planificateur/planningday/list-commande
      MatInputModule, 
      MatSortModule, 
      MatPaginatorModule,
-     MatSort
+     MatSort,
+     
+     
   ],
   providers: [
     provideAnimationsAsync(),

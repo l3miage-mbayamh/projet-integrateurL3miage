@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, model, output } from '@angular/core';
 
 @Component({
   selector: 'app-suivicarte',
@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './suivicarte.component.css'
 })
 export class SuivicarteComponent {
+
+  
 
 }
