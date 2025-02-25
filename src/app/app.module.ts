@@ -28,7 +28,9 @@ import { PlanningdayComponent } from './planificateur/planningday/planningday.co
 import { VisualiserdayComponent } from './planificateur/visualiserday/visualiserday.component';
 import { AjusterdayComponent } from './planificateur/ajusterday/ajusterday.component';
 import { SuivicarteComponent } from './planificateur/suivicarte/suivicarte.component';
+
 import { ListCommandeComponent } from './planificateur/planningday/list-commande/list-commande.component';
+import { LeafletModule } from "@bluehalo/ngx-leaflet";
 
 
 @NgModule({
@@ -63,8 +65,7 @@ import { ListCommandeComponent } from './planificateur/planningday/list-commande
      MatSortModule, 
      MatPaginatorModule,
      MatSort,
-     
-     
+     LeafletModule
   ],
   providers: [
     provideAnimationsAsync(),

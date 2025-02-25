@@ -1,5 +1,6 @@
 import { Component, model, output } from '@angular/core';
 
+
 @Component({
   selector: 'app-suivicarte',
   templateUrl: './suivicarte.component.html',
