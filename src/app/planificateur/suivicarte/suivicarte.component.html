@@ -5,16 +5,14 @@
 <mat-card>
     <mat-card-header>
         <mat-card-title>Suivre Carte</mat-card-title>
-        <mat-divider></mat-divider>
-   
-        <mat-card-subtitle></mat-card-subtitle>
     </mat-card-header>
    
     <mat-card-content>
-        <div class="imgMap">
-            
-        </div>
-     
+       
+        <app-carte [marquer]="markers()">
+
+        </app-carte>
+       
     </mat-card-content>
 
 </mat-card>

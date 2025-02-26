@@ -1,4 +1,5 @@
-import { Component, model, output } from '@angular/core';
+import { Component, computed, input, model, output, signal } from '@angular/core';
+import { Icon, icon, latLng, LatLng, Layer, MapOptions, marker, Marker, tileLayer } from 'leaflet';
 
 
 @Component({
@@ -8,6 +9,8 @@ import { Component, model, output } from '@angular/core';
 })
 export class SuivicarteComponent {
 
+  //declaration de signal
+  public readonly markers = signal<readonly LatLng[]>([latLng(45.166672, 5.71667), latLng(45.166672, 5.71667)])
   
 
 }

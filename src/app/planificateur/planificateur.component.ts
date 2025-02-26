@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
+import { LatLng, latLng } from 'leaflet';
 
 @Component({
   selector: 'app-planificateur',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./planificateur.component.css']
 })
 export class PlanificateurComponent {
+
+  
 
 }

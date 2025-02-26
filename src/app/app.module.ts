@@ -31,6 +31,7 @@ import { SuivicarteComponent } from './planificateur/suivicarte/suivicarte.compo
 
 import { ListCommandeComponent } from './planificateur/planningday/list-commande/list-commande.component';
 import { LeafletModule } from "@bluehalo/ngx-leaflet";
+import { CarteComponent } from './planificateur/suivicarte/carte/carte.component';
 
 
 @NgModule({
@@ -43,6 +44,7 @@ import { LeafletModule } from "@bluehalo/ngx-leaflet";
     AjusterdayComponent,
     SuivicarteComponent,
     ListCommandeComponent,
+    CarteComponent,
    
   ],
   imports: [
