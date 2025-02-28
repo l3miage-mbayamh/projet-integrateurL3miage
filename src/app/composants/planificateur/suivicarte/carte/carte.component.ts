@@ -11,7 +11,7 @@ export class CarteComponent {
 //attribut pour les coordonnées de la carte
 public readonly latitude = signal<number>(45.766612)
 public readonly longitude = signal<number>(5.76612)
-public readonly zoom = signal<number>(10)
+public readonly zoom = signal<number>(5)
 //centre
 public readonly center =  computed<LatLng>(()=>latLng(this.latitude(), this.longitude()))
 
