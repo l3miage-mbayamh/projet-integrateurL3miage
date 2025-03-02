@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PlanningdayComponent } from './planificateur/planningday/planningday.component';
-import { DashboardComponent } from './planificateur/dashboard/dashboard.component';
-import { AjusterdayComponent } from './planificateur/ajusterday/ajusterday.component';
-import { SuivicarteComponent } from './planificateur/suivicarte/suivicarte.component';
-import { VisualiserdayComponent } from './planificateur/visualiserday/visualiserday.component';
-import { CarteComponent } from './planificateur/suivicarte/carte/carte.component';
+import { PlanningdayComponent } from './composants/planificateur/planningday/planningday.component';
+import { DashboardComponent } from './composants/planificateur/dashboard/dashboard.component';
+import { AjusterdayComponent } from './composants/planificateur/ajusterday/ajusterday.component';
+import { SuivicarteComponent } from './composants/planificateur/suivicarte/suivicarte.component';
+import { VisualiserdayComponent } from './composants/planificateur/visualiserday/visualiserday.component';
+import { CarteComponent } from './composants/planificateur/suivicarte/carte/carte.component';
 
 
 

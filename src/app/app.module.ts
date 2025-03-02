@@ -13,7 +13,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { PlanificateurComponent } from './planificateur/planificateur.component';
+import { PlanificateurComponent } from './composants/planificateur/planificateur.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
@@ -23,16 +23,18 @@ import { MatCardModule } from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
 import { CommandeService } from './services/commande.service';
 import { MatTableModule } from '@angular/material/table';
-import { DashboardComponent } from './planificateur/dashboard/dashboard.component';
-import { PlanningdayComponent } from './planificateur/planningday/planningday.component';
-import { VisualiserdayComponent } from './planificateur/visualiserday/visualiserday.component';
-import { AjusterdayComponent } from './planificateur/ajusterday/ajusterday.component';
-import { SuivicarteComponent } from './planificateur/suivicarte/suivicarte.component';
+import { DashboardComponent } from './composants/planificateur/dashboard/dashboard.component';
+import { PlanningdayComponent } from './composants/planificateur/planningday/planningday.component';
+import { VisualiserdayComponent } from './composants/planificateur/visualiserday/visualiserday.component';
+import { AjusterdayComponent } from './composants/planificateur/ajusterday/ajusterday.component';
+import { SuivicarteComponent } from './composants/planificateur/suivicarte/suivicarte.component';
 
-import { ListCommandeComponent } from './planificateur/planningday/list-commande/list-commande.component';
+import { ListCommandeComponent } from './composants/planificateur/planningday/list-commande/list-commande.component';
 import { LeafletModule } from "@bluehalo/ngx-leaflet";
-import { CarteComponent } from './planificateur/suivicarte/carte/carte.component';
-
+import { CarteComponent } from './composants/planificateur/suivicarte/carte/carte.component';
+import { LivreurComponent } from './composants/livreur/livreur.component';
+import {
+  MatBottomSheet,MatBottomSheetModule, MatBottomSheetRef} from '@angular/material/bottom-sheet';
 
 @NgModule({
   declarations: [
@@ -45,6 +47,7 @@ import { CarteComponent } from './planificateur/suivicarte/carte/carte.component
     SuivicarteComponent,
     ListCommandeComponent,
     CarteComponent,
+    LivreurComponent,
    
   ],
   imports: [
@@ -67,7 +70,9 @@ import { CarteComponent } from './planificateur/suivicarte/carte/carte.component
      MatSortModule, 
      MatPaginatorModule,
      MatSort,
-     LeafletModule
+     LeafletModule,
+     MatBottomSheetModule,
+  
   ],
   providers: [
     provideAnimationsAsync(),

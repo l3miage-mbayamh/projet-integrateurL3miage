@@ -1,0 +1,10 @@
+#addDay{
+    float: right;
+    margin-left: 800px;
+}
+#addDay button{
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: blue;
+}
