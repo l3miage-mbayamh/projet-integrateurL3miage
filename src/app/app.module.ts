@@ -32,6 +32,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { ListCommandeComponent } from './composants/planificateur/planningday/list-commande/list-commande.component';
 import { LeafletModule } from "@bluehalo/ngx-leaflet";
 import { CarteComponent } from './composants/planificateur/suivicarte/carte/carte.component';
+import { MatCardImage } from '@angular/material/card';
 
 
 
@@ -68,7 +69,8 @@ import { CarteComponent } from './composants/planificateur/suivicarte/carte/cart
      MatSortModule, 
      MatPaginatorModule,
      MatSort,
-     LeafletModule
+     LeafletModule,
+     MatCardImage
   ],
   providers: [
     provideAnimationsAsync(),
