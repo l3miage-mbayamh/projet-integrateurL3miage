@@ -1,0 +1,22 @@
+#ajoutDay{
+    display: flex;
+    align-self: center;
+    color: blue;
+}
+#contenu{
+    margin-top: 30px;
+    display: flex;
+    align-self: center;
+}
+.buttonCancel{
+    display: flex;
+    float:left;
+    margin-left: 100px;
+    background-color: blue;
+}
+.buttonAdd{
+    display: flex;
+    float: right;
+    margin-right: 100px;
+    background-color: blue;
+}

@@ -35,6 +35,10 @@ import { CarteComponent } from './composants/planificateur/suivicarte/carte/cart
 import { LivreurComponent } from './composants/livreur/livreur.component';
 import {
   MatBottomSheet,MatBottomSheetModule, MatBottomSheetRef} from '@angular/material/bottom-sheet';
+import { JourneeComponent } from './composants/planificateur/planningday/journee/journee.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatSelectModule} from '@angular/material/select';
+import { ReactiveFormsModule} from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -48,6 +52,7 @@ import {
     ListCommandeComponent,
     CarteComponent,
     LivreurComponent,
+    JourneeComponent,
    
   ],
   imports: [
@@ -72,7 +77,9 @@ import {
      MatSort,
      LeafletModule,
      MatBottomSheetModule,
-  
+     MatDatepickerModule,
+     MatSelectModule,
+     ReactiveFormsModule
   ],
   providers: [
     provideAnimationsAsync(),
