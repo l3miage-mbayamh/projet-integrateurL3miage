@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { EntrepotData } from '../interfaces/entrepotData';
 import { Commande } from '../interfaces/Commande';
+import { livreurs } from '../interfaces/Livreur';
 
 
 @Injectable({
@@ -20,5 +21,12 @@ export class CommandeService {
     const commandeData = await fetch('http://localhost:3000/commandes')
     return await commandeData.json()?? []
   }
+  //recuperation de la liste des livreurs
+  async getLivreurs(): Promise<readonly livreurs[]>{
+    const livreurs = await fetch('http://localhost:3001/livreurs')
+    return await livreurs.json()?? []
+  }
+  
+  
 }
 

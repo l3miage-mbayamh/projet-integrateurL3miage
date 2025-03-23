@@ -58,10 +58,10 @@ public readonly journee = model<Journee>()
     localStorage.setItem('journeeList', JSON.stringify(this.journeeList()));
   }
 
-  //planifier journee
+  //planifier journee ouvre dialog du composant plannifier
   planifier(){
    this.journeeService.open(PlanifierComponent, {height: '500px',
-    width: '1000px'})
+    width: '800px'})
   }
 
 }
