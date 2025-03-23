@@ -22,21 +22,37 @@ public readonly journee = model<Journee>()
  //liste des journees ajouter
  public readonly journeeList = model<Journee[]>([])
 
+ //constructor pour recuperer la liste sauver au demarrage
+ constructor(){
+  const savedData = localStorage.getItem('journeeList');
+ if (savedData) {
+   this.journeeList.set(JSON.parse(savedData));
+ }
+}
+
 //lancement du dialog qui ouvre le composant journee pour la definir
   addDay(): void{
-
-
-  const dialogRef =  this.journeeService.open(JourneeComponent, {
+    const dialogRef =  this.journeeService.open(JourneeComponent, {
     data: {jour: this.dayName(),entrepot: this.entrepot(),date: this.date()}, height: '250px',
       width: '500px'
    })
    //mise a jour par abonnement a la fermeture du dialog
    dialogRef.afterClosed().subscribe(result => {
     if (result !== undefined) {
-      //this.journee.set(result);
-      this.journeeList().push(result);
+     //mise a jour de la liste apres ajout
+      this.journeeList.set([...this.journeeList(), result])
+      //savegarde de la liste pour un rechargement apres changement d'onglet
+      localStorage.setItem('journeeList', JSON.stringify(this.journeeList()));
     }
   });
+  }
+
+  //suprimer une journee de la liste
+  protected suprimerJournee(index: number){
+    if(this.journeeList().at(index)!== undefined){
+      this.journeeList().pop()
+    }
+    this.journeeList.set([...this.journeeList()])
   }
 
 }

@@ -24,7 +24,8 @@
   @for (j of journeeList(); track $index) {
     <div>
       {{j.nomJournee + $index}} {{j.nomEntrepot}} {{j.date}}
-      
+      <button mat-button type="button" (click)="suprimerJournee($index)">Suprimer</button>
+      <button mat-button type="button">Plannifier</button>
     </div>
   }
 </div>
