@@ -19,8 +19,14 @@
     </mat-card-content>
 
 </mat-card>
-<div>
-  {{journee()?.nomJournee}}  {{journee()?.nomEntrepot}} {{journee()?.date}}
+<!--lister les journees sdepuis le tableau journeeList avec l'option button planifier qui ouvre un dialog-->
+<div id="tableauJournee">
+  @for (j of journeeList(); track $index) {
+    <div>
+      {{j.nomJournee + $index}} {{j.nomEntrepot}} {{j.date}}
+      
+    </div>
+  }
 </div>
    
   

@@ -15,22 +15,26 @@ export class PlanningdayComponent {
 //element pour ajouter une journee qui fera appel au composant journee
 public readonly journeeService = inject(MatDialog)
 public readonly entrepot = model<string>()
-public readonly date = model<string>() 
-public readonly dayName = model<string>("j001")
+public readonly date = model<Date>() 
+public readonly dayName = model<string>()
 
 public readonly journee = model<Journee>()
+ //liste des journees ajouter
+ public readonly journeeList = model<Journee[]>([])
 
-
-
+//lancement du dialog qui ouvre le composant journee pour la definir
   addDay(): void{
+
+
   const dialogRef =  this.journeeService.open(JourneeComponent, {
     data: {jour: this.dayName(),entrepot: this.entrepot(),date: this.date()}, height: '250px',
       width: '500px'
    })
+   //mise a jour par abonnement a la fermeture du dialog
    dialogRef.afterClosed().subscribe(result => {
     if (result !== undefined) {
-      this.journee.set(result);
-      
+      //this.journee.set(result);
+      this.journeeList().push(result);
     }
   });
   }
