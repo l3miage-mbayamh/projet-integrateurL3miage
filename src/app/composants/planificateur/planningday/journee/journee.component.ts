@@ -20,10 +20,12 @@ public  entrepotData: EntrepotData[] = []
 public readonly dialogRef = inject(MatDialogRef<JourneeComponent>)
 public readonly data = inject(MAT_DIALOG_DATA)
 //choix entrepot pour la journee
-public readonly entrepotSelect = model(this.data.entrepot)
-public readonly date: Date = new Date()
+//public readonly entrepotSelect = model(this.data.entrepot)
+public readonly date = model<Date>(new Date())
 //liste des journee creer par le planificateur
-public readonly journee = model<Journee>({nomJournee: "J001", nomEntrepot:"Brenis", date: this.date})
+public readonly journee = model<Journee>({nomJournee: "J001", nomEntrepot:"Brenis", date: this.date()})
+
+
 
 
 //contucteur

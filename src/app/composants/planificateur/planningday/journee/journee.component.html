@@ -5,7 +5,7 @@
        
         <mat-form-field>
             <mat-label>Entrepot: </mat-label>
-            <mat-select [(ngModel)]="entrepotSelect" name="entrepot">
+            <mat-select [(ngModel)]="journee().nomEntrepot" name="entrepot">
                 @for (entr of entrepotData; track $index) {
                     <mat-option [value]="entr.nom">{{entr.nom}}</mat-option>
                 }
@@ -21,7 +21,7 @@
 </div>
  <!--gestion de traitement add et cancel-->
     <mat-dialog-actions class="buttons">
-        <button mat-button class="buttonAdd" [mat-dialog-close]="entrepotSelect()">Add</button>
+        <button mat-button class="buttonAdd" [mat-dialog-close]="journee()">Add</button>
     </mat-dialog-actions>
  
     
