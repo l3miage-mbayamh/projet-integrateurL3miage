@@ -50,9 +50,11 @@ public readonly journee = model<Journee>()
   //suprimer une journee de la liste
   protected suprimerJournee(index: number){
     if(this.journeeList().at(index)!== undefined){
-      this.journeeList().pop()
+      const listUpdate = this.journeeList().filter((_,i)=>i!==index)
+      this.journeeList.set(listUpdate)
     }
-    this.journeeList.set([...this.journeeList()])
+   //save modif
+    localStorage.setItem('journeeList', JSON.stringify(this.journeeList()));
   }
 
 }

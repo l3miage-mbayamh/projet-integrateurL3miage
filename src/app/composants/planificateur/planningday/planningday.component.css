@@ -14,10 +14,15 @@
     border-radius: 15px;
     background-color: rgb(242, 255, 0);
    float: right;
+   margin-top: 5px;
 }
 
+#tableauJournee div p{
+    padding-top: 10px;
+    float: left;
+}
  #tableauJournee div{
-    margin-top: 50px;
+    margin-top: 20px;
     background-color: aqua;
     height: 40px;
 }
