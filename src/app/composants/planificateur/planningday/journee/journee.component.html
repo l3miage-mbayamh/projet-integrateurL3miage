@@ -2,24 +2,30 @@
 <!--contenu de choix de date et d'entrepot charger depuis la base de donnee-->
 <div id="contenu">
     <form>
+       
         <mat-form-field>
             <mat-label>Entrepot: </mat-label>
-            <mat-select>
-                <mat-option>Posisi</mat-option>
+            <mat-select [(ngModel)]="entrepotSelect" name="entrepot">
+                @for (entr of entrepotData; track $index) {
+                    <mat-option [value]="entr.nom">{{entr.nom}}</mat-option>
+                }
             </mat-select>
         </mat-form-field>
+
         <mat-form-field>
             <mat-label>Date: </mat-label>
-        <input matInput type="date" #date/>
+        <input matInput type="date" [(ngModel)]="date"/>
         </mat-form-field>
+
     </form>
 </div>
-<div class="buttons">
-    <button mat-button class="buttonCancel">Cancel</button>
+ <!--gestion de traitement add et cancel-->
+    <mat-dialog-actions class="buttons">
+        <button mat-button class="buttonAdd" [mat-dialog-close]="entrepotSelect()">Add</button>
+    </mat-dialog-actions>
+ 
     
-    <button mat-button class="buttonAdd">Add</button>
-    
-</div>
+
 
 
   

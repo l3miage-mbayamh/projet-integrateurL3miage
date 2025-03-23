@@ -1,0 +1,8 @@
+{
+    "entrepots": [
+      { "id": 1, "nom": "Grenis", "lettre": "G", "photo": "", "adresse":"31 rue Pierre Mendes France", "codePostale": 38320 , "ville":"Eybens", "latitude":"45.1485200", "longitude":"5.7369725"},
+      { "id": 2, "nom": "Bronis" ,  "lettre": "B", "photo": "", "adresse":"5 Rue Maryse Bastié", "codePostale": 69500, "ville":"Bron",  "latitude":"45.1485200", "longitude":"5.7369725"},
+      { "id": 3, "nom": "Valis",  "lettre": "V", "photo": "", "adresse":"131 Avenue des Auréats", "codePostale": 26000, "ville":"Valence" , "latitude":"45.1485200", "longitude":"5.7369725"},
+      { "id": 3, "nom": "Albis",  "lettre": "A", "photo": "", "adresse":"141 rue Louis Armand", "codePostale": 73270, "ville":"Albertville" , "latitude":"45.1485200", "longitude":"5.7369725"}
+    ]
+  }

@@ -38,7 +38,8 @@ import {
 import { JourneeComponent } from './composants/planificateur/planningday/journee/journee.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatSelectModule} from '@angular/material/select';
-import { ReactiveFormsModule} from '@angular/forms'
+import { ReactiveFormsModule, FormsModule} from '@angular/forms';
+import { MatDialogModule, MatDialogActions , MatDialog,} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,6 @@ import { ReactiveFormsModule} from '@angular/forms'
     CarteComponent,
     LivreurComponent,
     JourneeComponent,
-   
   ],
   imports: [
   
@@ -79,7 +79,11 @@ import { ReactiveFormsModule} from '@angular/forms'
      MatBottomSheetModule,
      MatDatepickerModule,
      MatSelectModule,
-     ReactiveFormsModule
+     ReactiveFormsModule,
+     FormsModule,
+     MatDialogModule,
+     MatDialogActions,
+     
   ],
   providers: [
     provideAnimationsAsync(),
