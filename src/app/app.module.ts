@@ -40,6 +40,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatSelectModule} from '@angular/material/select';
 import { ReactiveFormsModule, FormsModule} from '@angular/forms';
 import { MatDialogModule, MatDialogActions , MatDialog,} from '@angular/material/dialog';
+import { PlanifierComponent } from './composants/planificateur/planningday/planifier/planifier.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { MatDialogModule, MatDialogActions , MatDialog,} from '@angular/material
     CarteComponent,
     LivreurComponent,
     JourneeComponent,
+    PlanifierComponent,
   ],
   imports: [
   

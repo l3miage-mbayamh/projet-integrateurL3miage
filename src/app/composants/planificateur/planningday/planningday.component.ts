@@ -4,6 +4,7 @@ import {MatBottomSheet,MatBottomSheetModule, MatBottomSheetRef} from '@angular/m
 import { JourneeComponent } from './journee/journee.component';
 import {MatDialog, MatDialogModule} from '@angular/material/dialog'
 import { Journee } from '../../../interfaces/journee';
+import { PlanifierComponent } from './planifier/planifier.component';
 
 
 @Component({
@@ -55,6 +56,12 @@ public readonly journee = model<Journee>()
     }
    //save modif
     localStorage.setItem('journeeList', JSON.stringify(this.journeeList()));
+  }
+
+  //planifier journee
+  planifier(){
+   this.journeeService.open(PlanifierComponent, {height: '500px',
+    width: '1000px'})
   }
 
 }

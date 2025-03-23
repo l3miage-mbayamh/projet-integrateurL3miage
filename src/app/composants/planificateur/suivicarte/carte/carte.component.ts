@@ -10,7 +10,7 @@ export class CarteComponent {
   //creation des entrees et sorties
   public readonly latitude = model<number>(45.166672)
   public readonly longitude = model<number>(5.71667)
-  public readonly zoom = model<number>(5)
+  public readonly zoom = model<number>(10)
   public readonly clickOnMap  = output<LatLng>()
 
 //gestion pour afficher la carte
