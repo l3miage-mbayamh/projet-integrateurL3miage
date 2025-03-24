@@ -22,6 +22,8 @@ public readonly dayName = model<string>()
 public readonly journee = model<Journee>()
  //liste des journees ajouter
  public readonly journeeList = model<Journee[]>([])
+ //jeu de changement d'etat
+  estPlanifier = false
 
  //constructor pour recuperer la liste sauver au demarrage
  constructor(){

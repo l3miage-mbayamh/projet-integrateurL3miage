@@ -1,0 +1,107 @@
+[
+  {
+    "jdds": "jdd0",
+    "référence": "Bronis-p06",
+    "entrepôt": "Bronis",
+    "produit en stock": "p06",
+    "quantité": 10
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "Albis-p06",
+    "entrepôt": "Albis",
+    "produit en stock": "p06",
+    "quantité": 35
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "Valis-p06",
+    "entrepôt": "Valis",
+    "produit en stock": "p06",
+    "quantité": 6
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "Grenis-p01",
+    "entrepôt": "Grenis",
+    "produit en stock": "p01",
+    "quantité": 23
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "Bronis-p01",
+    "entrepôt": "Bronis",
+    "produit en stock": "p01",
+    "quantité": 5
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "Albis-p01",
+    "entrepôt": "Albis",
+    "produit en stock": "p01",
+    "quantité": 7
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "Valis-p01",
+    "entrepôt": "Valis",
+    "produit en stock": "p01",
+    "quantité": 40
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "Grenis-p02",
+    "entrepôt": "Grenis",
+    "produit en stock": "p02",
+    "quantité": 5
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "Valis-p02",
+    "entrepôt": "Valis",
+    "produit en stock": "p02",
+    "quantité": 15
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "Grenis-p04",
+    "entrepôt": "Grenis",
+    "produit en stock": "p04",
+    "quantité": 3
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "Valis-p04",
+    "entrepôt": "Valis",
+    "produit en stock": "p04",
+    "quantité": 8
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "Albis-p04",
+    "entrepôt": "Albis",
+    "produit en stock": "p04",
+    "quantité": 1
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "Albis-p07",
+    "entrepôt": "Albis",
+    "produit en stock": "p07",
+    "quantité": 8
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "Valis-p07",
+    "entrepôt": "Valis",
+    "produit en stock": "p07",
+    "quantité": 12
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "Grenis-p09",
+    "entrepôt": "Grenis",
+    "produit en stock": "p09",
+    "quantité": 2
+  }
+]

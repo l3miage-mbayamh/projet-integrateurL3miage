@@ -1,0 +1,190 @@
+{ "employes": [
+  {
+    "jdds": "jdd0",
+    "trigramme": "CTR",
+    "prénom": "claudia",
+    "nom": "TESSIER",
+    "photo": "NaN",
+    "téléphone": 678125666,
+    "email": "ctr@mobilis.fr",
+    "emploi": "planificateur",
+    "entrepôt": "Grenis"
+  },
+  {
+    "jdds": "jdd0",
+    "trigramme": "EBD",
+    "prénom": "élisa",
+    "nom": "BERAND",
+    "photo": "NaN",
+    "téléphone": 678541296,
+    "email": "ebd@mobilis.fr",
+    "emploi": "livreur",
+    "entrepôt": "Grenis"
+  },
+  {
+    "jdds": "jdd0",
+    "trigramme": "SWL",
+    "prénom": "sophie",
+    "nom": "WHEEL",
+    "photo": "NaN",
+    "téléphone": 685698568,
+    "email": "swl@mobilis.fr",
+    "emploi": "livreur",
+    "entrepôt": "Grenis"
+  },
+  {
+    "jdds": "jdd0",
+    "trigramme": "MPK",
+    "prénom": "marja",
+    "nom": "POLIK",
+    "photo": "NaN",
+    "téléphone": 612885685,
+    "email": "mpk@mobilis.fr",
+    "emploi": "livreur",
+    "entrepôt": "Grenis"
+  },
+  {
+    "jdds": "jdd0",
+    "trigramme": "CMJ",
+    "prénom": "citeb",
+    "nom": "MARUJ",
+    "photo": "NaN",
+    "téléphone": 657477854,
+    "email": "cmj@mobilis.fr",
+    "emploi": "livreur",
+    "entrepôt": "Grenis"
+  },
+  {
+    "jdds": "jdd0",
+    "trigramme": "MKR",
+    "prénom": "malik",
+    "nom": "KEPLER",
+    "photo": "NaN",
+    "téléphone": 685584112,
+    "email": "mkr@mobilis.fr",
+    "emploi": "livreur",
+    "entrepôt": "Grenis"
+  },
+  {
+    "jdds": "jdd0",
+    "trigramme": "OET",
+    "prénom": "olga",
+    "nom": "EKKART",
+    "photo": "NaN",
+    "téléphone": 652145821,
+    "email": "oet@mobilis.fr",
+    "emploi": "livreur",
+    "entrepôt": "Grenis"
+  },
+  {
+    "jdds": "jdd0",
+    "trigramme": "MJO",
+    "prénom": "mylène",
+    "nom": "JODO",
+    "photo": "NaN",
+    "téléphone": 658952241,
+    "email": "mjo@mobilis.fr",
+    "emploi": "planificateur",
+    "entrepôt": "Bronis"
+  },
+  {
+    "jdds": "jdd0",
+    "trigramme": "AAA",
+    "prénom": "anais",
+    "nom": "ANNA",
+    "photo": "NaN",
+    "téléphone": 657813525,
+    "email": "aaa@mobilis.fr",
+    "emploi": "livreur",
+    "entrepôt": "Bronis"
+  },
+  {
+    "jdds": "jdd0",
+    "trigramme": "WKT",
+    "prénom": "wong",
+    "nom": "KENT",
+    "photo": "NaN",
+    "téléphone": 658548526,
+    "email": "wkt@mobilis.fr",
+    "emploi": "livreur",
+    "entrepôt": "Bronis"
+  },
+  {
+    "jdds": "jdd0",
+    "trigramme": "CJE",
+    "prénom": "carolyn",
+    "nom": "JUNE",
+    "photo": "NaN",
+    "téléphone": 658400001,
+    "email": "cje@mobilis.fr",
+    "emploi": "livreur",
+    "entrepôt": "Bronis"
+  },
+  {
+    "jdds": "jdd0",
+    "trigramme": "MPT",
+    "prénom": "michel",
+    "nom": "PARROT",
+    "photo": "NaN",
+    "téléphone": 689752214,
+    "email": "mpt@mobilis.fr",
+    "emploi": "livreur",
+    "entrepôt": "Bronis"
+  },
+  {
+    "jdds": "jdd0",
+    "trigramme": "PMT",
+    "prénom": "paul",
+    "nom": "MERLOT",
+    "photo": "NaN",
+    "téléphone": 644732212,
+    "email": "pmt@mobilis.fr",
+    "emploi": "livreur",
+    "entrepôt": "Bronis"
+  },
+  {
+    "jdds": "jdd0",
+    "trigramme": "MNL",
+    "prénom": "maurice",
+    "nom": "NEEL",
+    "photo": "NaN",
+    "téléphone": 652251251,
+    "email": "mnl@mobilis.fr",
+    "emploi": "livreur",
+    "entrepôt": "Bronis"
+  },
+  {
+    "jdds": "jdd0",
+    "trigramme": "KMR",
+    "prénom": "koi",
+    "nom": "MERCIER",
+    "photo": "NaN",
+    "téléphone": 652146524,
+    "email": "kmr@mobilis.fr",
+    "emploi": "planificateur",
+    "entrepôt": "Albis"
+  },
+  {
+    "jdds": "jdd0",
+    "trigramme": "RNI",
+    "prénom": "robert",
+    "nom": "NULI",
+    "photo": "NaN",
+    "téléphone": 609856325,
+    "email": "rni@mobilis.fr",
+    "emploi": "livreur",
+    "entrepôt": "Albis"
+  },
+  {
+    "jdds": "jdd0",
+    "trigramme": "ABM",
+    "prénom": "ahmed",
+    "nom": "BOTOM",
+    "photo": "NaN",
+    "téléphone": 6212118525,
+    "email": "abm@mobilis.fr",
+    "emploi": "planificateur",
+    "entrepôt": "Valis"
+  }
+]
+}

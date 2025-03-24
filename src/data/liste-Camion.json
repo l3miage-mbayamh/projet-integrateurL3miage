@@ -1,0 +1,142 @@
+{"camions":[
+  {
+    "jdds": "jdd0",
+    "code": "cg123",
+    "immatriculation": "AB-123-CD",
+    "latitude": 0,
+    "longitude": 0,
+    "kilométrage": "55,202",
+    "entrepôt": "Grenis",
+    "type": "Kangoo Van"
+  },
+  {
+    "jdds": "jdd0",
+    "code": "cg456",
+    "immatriculation": "XY-456-ZT",
+    "latitude": 0,
+    "longitude": 0,
+    "kilométrage": "75,023",
+    "entrepôt": "Grenis",
+    "type": "Transporter"
+  },
+  {
+    "jdds": "jdd0",
+    "code": "cg789",
+    "immatriculation": "FG-789-LM",
+    "latitude": 0,
+    "longitude": 0,
+    "kilométrage": "2,562",
+    "entrepôt": "Grenis",
+    "type": "Master fourgon"
+  },
+  {
+    "jdds": "jdd0",
+    "code": "cg852",
+    "immatriculation": "MN-852-QR",
+    "latitude": 0,
+    "longitude": 0,
+    "kilométrage": "121,01",
+    "entrepôt": "Grenis",
+    "type": "Master fourgon"
+  },
+  {
+    "jdds": "jdd0",
+    "code": "cg987",
+    "immatriculation": "BC-987-PQ",
+    "latitude": 0,
+    "longitude": 0,
+    "kilométrage": "6,621",
+    "entrepôt": "Grenis",
+    "type": "Prueba Scania 280"
+  },
+  {
+    "jdds": "jdd0",
+    "code": "cg452",
+    "immatriculation": "UV-452-MN",
+    "latitude": 0,
+    "longitude": 0,
+    "kilométrage": "87,525",
+    "entrepôt": "Bronis",
+    "type": "Master fourgon"
+  },
+  {
+    "jdds": "jdd0",
+    "code": "cb645",
+    "immatriculation": "JK-654-NV",
+    "latitude": 0,
+    "longitude": 0,
+    "kilométrage": "120,16",
+    "entrepôt": "Bronis",
+    "type": "Iveco daily 6125"
+  },
+  {
+    "jdds": "jdd0",
+    "code": "cb321",
+    "immatriculation": "DE-321-RS",
+    "latitude": 0,
+    "longitude": 0,
+    "kilométrage": "142,01",
+    "entrepôt": "Bronis",
+    "type": "Daf LF 250"
+  },
+  {
+    "jdds": "jdd0",
+    "code": "ca963",
+    "immatriculation": "LM-963-YZ",
+    "latitude": 0,
+    "longitude": 0,
+    "kilométrage": "8,569",
+    "entrepôt": "Albis",
+    "type": "Kangoo Van"
+  },
+  {
+    "jdds": "jdd0",
+    "code": "ca741",
+    "immatriculation": "OP-741-TU",
+    "latitude": 0,
+    "longitude": 0,
+    "kilométrage": "5,202",
+    "entrepôt": "Albis",
+    "type": "Kangoo Van"
+  },
+  {
+    "jdds": "jdd0",
+    "code": "ca261",
+    "immatriculation": "BR-261-ER",
+    "latitude": 0,
+    "longitude": 0,
+    "kilométrage": "8,652",
+    "entrepôt": "Albis",
+    "type": "Master L3H2"
+  },
+  {
+    "jdds": "jdd0",
+    "code": "cv852",
+    "immatriculation": "UV-852-WX",
+    "latitude": 0,
+    "longitude": 0,
+    "kilométrage": "87,858",
+    "entrepôt": "Valis",
+    "type": "Transit custom"
+  },
+  {
+    "jdds": "jdd0",
+    "code": "cv656",
+    "immatriculation": "ZZ-656-UV",
+    "latitude": 0,
+    "longitude": 0,
+    "kilométrage": "45,243",
+    "entrepôt": "Valis",
+    "type": "Mercedes Actros"
+  },
+  {
+    "jdds": "jdd0",
+    "code": "cv220",
+    "immatriculation": "UC-220-EF",
+    "latitude": 0,
+    "longitude": 0,
+    "kilométrage": "123,021",
+    "entrepôt": "Valis",
+    "type": "Prueba Scania 280"
+  }
+]}

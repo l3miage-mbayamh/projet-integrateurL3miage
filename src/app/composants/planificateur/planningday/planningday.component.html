@@ -20,12 +20,13 @@
 
 </mat-card>
 <!--lister les journees sdepuis le tableau journeeList avec l'option button planifier qui ouvre un dialog-->
+
 <div id="tableauJournee">
   @for (j of journeeList(); track $index) {
     <div>
       <p>{{j.nomJournee + $index}} {{j.nomEntrepot}} {{j.date}}</p>
       <button mat-button type="button" (click)="suprimerJournee($index)">Suprimer</button>
-      <button mat-button type="button" (click)="planifier()">Plannifier</button>
+      <button mat-button  type="button" (click)="planifier()" >Planifier</button>
     </div>
   }
 </div>

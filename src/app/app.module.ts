@@ -41,6 +41,7 @@ import {MatSelectModule} from '@angular/material/select';
 import { ReactiveFormsModule, FormsModule} from '@angular/forms';
 import { MatDialogModule, MatDialogActions , MatDialog,} from '@angular/material/dialog';
 import { PlanifierComponent } from './composants/planificateur/planningday/planifier/planifier.component';
+import {MatStepperModule} from '@angular/material/stepper';
 
 @NgModule({
   declarations: [
@@ -85,7 +86,7 @@ import { PlanifierComponent } from './composants/planificateur/planningday/plani
      FormsModule,
      MatDialogModule,
      MatDialogActions,
-     
+     MatStepperModule
   ],
   providers: [
     provideAnimationsAsync(),

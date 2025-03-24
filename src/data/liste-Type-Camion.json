@@ -1,0 +1,65 @@
+[
+  {
+    "nom": "Kangoo Van",
+    "volume": 3.6,
+    "prix au km": "0.11",
+    "image": NaN,
+    "camions": "cg123,ca963,ca741"
+  },
+  {
+    "nom": "Transporter",
+    "volume": 6.1,
+    "prix au km": "0.17",
+    "image": NaN,
+    "camions": "cg456"
+  },
+  {
+    "nom": "Transit custom",
+    "volume": 8.0,
+    "prix au km": "0.16",
+    "image": NaN,
+    "camions": "cv852"
+  },
+  {
+    "nom": "Master fourgon",
+    "volume": 18.0,
+    "prix au km": "0.23",
+    "image": NaN,
+    "camions": "cg789,cg852,cg452"
+  },
+  {
+    "nom": "Iveco daily 6125",
+    "volume": 22.0,
+    "prix au km": "0.26",
+    "image": NaN,
+    "camions": "cb645"
+  },
+  {
+    "nom": "Master L3H2",
+    "volume": 22.0,
+    "prix au km": "0.24",
+    "image": NaN,
+    "camions": "ca261"
+  },
+  {
+    "nom": "Mercedes Actros",
+    "volume": 35.0,
+    "prix au km": "0.45",
+    "image": NaN,
+    "camions": "cv656"
+  },
+  {
+    "nom": "Daf LF 250",
+    "volume": 30.0,
+    "prix au km": "0.42",
+    "image": NaN,
+    "camions": "cb321"
+  },
+  {
+    "nom": "Prueba Scania 280",
+    "volume": 35.0,
+    "prix au km": "0.47",
+    "image": NaN,
+    "camions": "cg987,cv220"
+  }
+]

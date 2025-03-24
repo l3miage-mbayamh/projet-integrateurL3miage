@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { EntrepotData } from '../interfaces/entrepotData';
 import { Commande } from '../interfaces/Commande';
 import { livreurs } from '../interfaces/Livreur';
+import { Camion } from '../interfaces/Camion';
 
 
 @Injectable({
@@ -23,10 +24,14 @@ export class CommandeService {
   }
   //recuperation de la liste des livreurs
   async getLivreurs(): Promise<readonly livreurs[]>{
-    const livreurs = await fetch('http://localhost:3001/livreurs')
+    const livreurs = await fetch('http://localhost:3003/employes')
     return await livreurs.json()?? []
   }
-  
+  //recuperation des camions
+  async getCamion(): Promise<Camion[]>{
+    const camions = await fetch('http://localhost:3002/camions')
+    return await camions.json()?? []
+  }
   
 }
 

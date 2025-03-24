@@ -1,1 +1,71 @@
-<p>planifier works!</p>
+<mat-stepper #stepper>
+    <!--choix employer pour les equipes-->
+    <mat-step [stepControl]="firstFormGroup" errorMessage="equipe obligatoire">
+        
+      <form [formGroup]="firstFormGroup">
+        <ng-template matStepLabel>Former les equipes</ng-template>
+         <!--les champs-->
+        <mat-form-field>
+          <mat-label>Equipe</mat-label>
+          <mat-select [formControl]="equipierForm" multiple>
+            <mat-select-trigger>
+                {{equipierForm.value?.[0] || ''}}
+                @if ((equipierForm.value?.length || 0) > 1) {
+                  <span class="selection">
+                    (+{{(equipierForm.value?.length || 0) - 1}} {{equipierForm.value?.length === 2 ? 'other' : 'others'}})
+                  </span>
+                }
+              </mat-select-trigger>
+                 @for (employer of livreursListe(); track $index) {
+                <mat-option [value]="employer.nom">{{employer.nom}}</mat-option>
+              }
+          </mat-select>
+        </mat-form-field>
+            
+        <mat-form-field>
+            <mat-label>Camion</mat-label>
+            <mat-select>
+            
+                    @for (c of camionList(); track $index) {
+                        <mat-option [value]="c.immatriculation">{{c.immatriculation}}</mat-option>
+                    }
+                
+            </mat-select>
+          
+        </mat-form-field>
+
+        <div>
+          <!--navigation  vers la page suivante-->
+          <button mat-button matStepperNext class="navigationButton">Suivant</button>
+        </div>
+
+      </form>
+    </mat-step>
+     <!--choix commande pour la livraison-->
+    <mat-step [stepControl]="secondFormGroup" errorMessage="Address is required">
+
+      <form [formGroup]="secondFormGroup">
+        <ng-template matStepLabel>choix des commandes a livrees</ng-template>
+
+        <mat-form-field>
+          <mat-label>Address</mat-label>
+          <input matInput placeholder="Ex. 1 Main St, New York, NY" formControlName="secondCtrl" required>
+        </mat-form-field>
+
+        <div>
+          <!--choix poursuivre ou retour-->
+          <button mat-button matStepperNext class="navigationButton">Suivant</button>
+          <button mat-button matStepperPrevious class="navigationButton">Retour</button>
+        </div>
+      </form>
+    </mat-step>
+     <!--confirmation des choix
+    <mat-step>
+      <ng-template matStepLabel>Confirmer</ng-template>
+      <div>
+        <button mat-button (click)="stepper.reset()" class="navigationButton">Valider</button>
+        <button mat-button matStepperPrevious class="navigationButton">Back</button>
+      </div>
+    </mat-step>-->
+  </mat-stepper>
+  

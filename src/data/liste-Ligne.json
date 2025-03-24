@@ -1,0 +1,4112 @@
+[
+  {
+    "jdds": "jdd0",
+    "référence": "c001",
+    "état": "ouverte",
+    "date de création": "04/01/2024, 16:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "amartin@wan.fr",
+    "lignes": "l001-01,l001-02,l001-04,l001-05"
+  },
+  {
+    "jdds": "jdd0,jdd1",
+    "référence": "c002",
+    "état": "livrée",
+    "date de création": "05/01/2024, 00:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "azainab@m6.com",
+    "lignes": "l002-07"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c003",
+    "état": "notée",
+    "date de création": "09/01/2024, 00:00",
+    "note": 5.0,
+    "commentaire": NaN,
+    "client": "lsaleh@brt.fr",
+    "lignes": "l003-06,l003-01,l003-09,l003-07"
+  },
+  {
+    "jdds": "jdd0,jdd1",
+    "référence": "c004",
+    "état": "livrée",
+    "date de création": "09/01/2024, 00:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lsaleh@brt.fr",
+    "lignes": "l004-06,l004-07"
+  },
+  {
+    "jdds": "jdd0,jdd1",
+    "référence": "c005",
+    "état": "livrée",
+    "date de création": "11/01/2024, 00:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "apascal@or.fr",
+    "lignes": "l005-04,l005-01,l005-08,l005-02"
+  },
+  {
+    "jdds": "jdd0,jdd1",
+    "référence": "c006",
+    "état": "livrée",
+    "date de création": "02/02/2024, 00:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "ssharma@but.org",
+    "lignes": "l006-14,l006-02,l006-07"
+  },
+  {
+    "jdds": "jdd0,jdd1",
+    "référence": "c007",
+    "état": "livrée",
+    "date de création": "02/02/2024, 00:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "ssharma@but.org",
+    "lignes": "l007-04"
+  },
+  {
+    "jdds": "jdd0,jdd1",
+    "référence": "c008",
+    "état": "livrée",
+    "date de création": "02/02/2024, 00:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "ykim@but.org",
+    "lignes": "l008-20,l008-15,l008-12"
+  },
+  {
+    "jdds": "jdd0,jdd1",
+    "référence": "c009",
+    "état": "livrée",
+    "date de création": "02/02/2024, 00:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "agilles@sfr.fr",
+    "lignes": "l009-12,l009-07,l009-06"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c010",
+    "état": "notée",
+    "date de création": "02/02/2024, 00:00",
+    "note": 4.0,
+    "commentaire": NaN,
+    "client": "rlambert@lp.net",
+    "lignes": "l010-11,l010-12"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c011",
+    "état": "notée",
+    "date de création": "02/02/2024, 00:00",
+    "note": 3.0,
+    "commentaire": NaN,
+    "client": "cmercier@hot.fr",
+    "lignes": "l011-02"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c012",
+    "état": "notée",
+    "date de création": "02/02/2024, 00:00",
+    "note": 3.0,
+    "commentaire": NaN,
+    "client": "lblanc@gm.fr",
+    "lignes": "l012-13,l012-02,l012-07,l012-17"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c013",
+    "état": "notée",
+    "date de création": "02/02/2024, 00:00",
+    "note": 5.0,
+    "commentaire": NaN,
+    "client": "lsaleh@brt.fr",
+    "lignes": "l013-15"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c014",
+    "état": "notée",
+    "date de création": "03/02/2024, 11:30",
+    "note": 3.0,
+    "commentaire": NaN,
+    "client": "vmartino@lp.net",
+    "lignes": "l014-22"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c015",
+    "état": "notée",
+    "date de création": "03/02/2024, 11:30",
+    "note": 2.0,
+    "commentaire": NaN,
+    "client": "ldubois@wel.fr",
+    "lignes": "l015-02"
+  },
+  {
+    "jdds": "jdd0,jdd1",
+    "référence": "c016",
+    "état": "livrée",
+    "date de création": "03/02/2024, 11:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "egiraud@lp.net",
+    "lignes": "l016-04"
+  },
+  {
+    "jdds": "jdd0,jdd1",
+    "référence": "c017",
+    "état": "livrée",
+    "date de création": "03/02/2024, 11:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "ebernard@lp.net",
+    "lignes": "l017-20"
+  },
+  {
+    "jdds": "jdd0,jdd1",
+    "référence": "c018",
+    "état": "livrée",
+    "date de création": "03/02/2024, 11:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lblanc@gm.fr",
+    "lignes": "l018-07,l018-06"
+  },
+  {
+    "jdds": "jdd0,jdd1",
+    "référence": "c019",
+    "état": "livrée",
+    "date de création": "03/02/2024, 11:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "sshin@but.org",
+    "lignes": "l019-17,l019-21,l019-02,l019-16,l019-03,l019-01,l019-20"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c020",
+    "état": "ouverte",
+    "date de création": "05/02/2024, 03:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lguyot@lp.net",
+    "lignes": "l020-16,l020-12,l020-08"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c021",
+    "état": "ouverte",
+    "date de création": "05/02/2024, 03:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "emarchand@ok.fr",
+    "lignes": "l021-19,l021-04"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c022",
+    "état": "ouverte",
+    "date de création": "05/02/2024, 03:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "amohed@brt.fr",
+    "lignes": "l022-20,l022-07"
+  },
+  {
+    "jdds": "jdd0,jdd1",
+    "référence": "c023",
+    "état": "livrée",
+    "date de création": "05/02/2024, 03:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "ssharma@but.org",
+    "lignes": "l023-06,l023-19,l023-09"
+  },
+  {
+    "jdds": "jdd0,jdd1",
+    "référence": "c024",
+    "état": "livrée",
+    "date de création": "05/02/2024, 03:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lgarnier@lp.net",
+    "lignes": "l024-06,l024-15"
+  },
+  {
+    "jdds": "jdd0,jdd1",
+    "référence": "c025",
+    "état": "livrée",
+    "date de création": "05/02/2024, 03:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "mmoh@m6.com",
+    "lignes": "l025-11"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c026",
+    "état": "notée",
+    "date de création": "05/02/2024, 03:30",
+    "note": 4.0,
+    "commentaire": NaN,
+    "client": "rbonnet@gm.fr",
+    "lignes": "l026-10"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c027",
+    "état": "notée",
+    "date de création": "05/02/2024, 03:30",
+    "note": 5.0,
+    "commentaire": NaN,
+    "client": "lmartin@or.fr",
+    "lignes": "l027-14,l027-15,l027-18"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c028",
+    "état": "notée",
+    "date de création": "05/02/2024, 03:30",
+    "note": 3.0,
+    "commentaire": NaN,
+    "client": "vmartin@lp.net",
+    "lignes": "l028-09"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c029",
+    "état": "notée",
+    "date de création": "05/02/2024, 03:30",
+    "note": 4.0,
+    "commentaire": NaN,
+    "client": "tdufour@sfr.fr",
+    "lignes": "l029-14"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c030",
+    "état": "notée",
+    "date de création": "05/02/2024, 03:30",
+    "note": 3.0,
+    "commentaire": NaN,
+    "client": "aduval@wan.fr",
+    "lignes": "l030-02,l030-06,l030-19"
+  },
+  {
+    "jdds": "jdd0,jdd1",
+    "référence": "c031",
+    "état": "livrée",
+    "date de création": "06/02/2024, 03:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "sabbasi@m6.com",
+    "lignes": "l031-10,l031-04,l031-01,l031-15"
+  },
+  {
+    "jdds": "jdd0,jdd1",
+    "référence": "c032",
+    "état": "livrée",
+    "date de création": "06/02/2024, 03:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "ykim@but.org",
+    "lignes": "l032-05,l032-01"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c033",
+    "état": "notée",
+    "date de création": "06/02/2024, 03:30",
+    "note": 1.0,
+    "commentaire": NaN,
+    "client": "tguerin@or.fr",
+    "lignes": "l033-07"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c034",
+    "état": "notée",
+    "date de création": "06/02/2024, 03:30",
+    "note": 2.0,
+    "commentaire": NaN,
+    "client": "aandre@sfr.fr",
+    "lignes": "l034-11"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c035",
+    "état": "notée",
+    "date de création": "06/02/2024, 03:30",
+    "note": 2.0,
+    "commentaire": NaN,
+    "client": "tlouis@gm.fr",
+    "lignes": "l035-15,l035-05,l035-11"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c036",
+    "état": "notée",
+    "date de création": "06/02/2024, 03:30",
+    "note": 4.0,
+    "commentaire": NaN,
+    "client": "tguerin@or.fr",
+    "lignes": "l036-21"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c037",
+    "état": "notée",
+    "date de création": "08/02/2024, 03:30",
+    "note": 2.0,
+    "commentaire": NaN,
+    "client": "emeyer@or.fr",
+    "lignes": "l037-02"
+  },
+  {
+    "jdds": "jdd0,jdd1",
+    "référence": "c038",
+    "état": "livrée",
+    "date de création": "08/02/2024, 03:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "mlucas@sfr.fr",
+    "lignes": "l038-18"
+  },
+  {
+    "jdds": "jdd0,jdd1",
+    "référence": "c039",
+    "état": "livrée",
+    "date de création": "08/02/2024, 03:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "ldupuis2@hot.fr",
+    "lignes": "l039-07"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c040",
+    "état": "ouverte",
+    "date de création": "12/02/2024, 03:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "mkhalid@m6.com",
+    "lignes": "l040-16,l040-21"
+  },
+  {
+    "jdds": "jdd0,jdd1",
+    "référence": "c041",
+    "état": "livrée",
+    "date de création": "12/02/2024, 03:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "hcho@brt.fr",
+    "lignes": "l041-07"
+  },
+  {
+    "jdds": "jdd0,jdd1",
+    "référence": "c042",
+    "état": "livrée",
+    "date de création": "12/02/2024, 03:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "alemoine1@sfr.fr",
+    "lignes": "l042-08"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c043",
+    "état": "notée",
+    "date de création": "14/02/2024, 01:30",
+    "note": 5.0,
+    "commentaire": NaN,
+    "client": "lfournier@sfr.fr",
+    "lignes": "l043-19"
+  },
+  {
+    "jdds": "jdd0,jdd1",
+    "référence": "c044",
+    "état": "livrée",
+    "date de création": "14/02/2024, 13:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "tguillaume@gm.fr",
+    "lignes": "l044-17,l044-01"
+  },
+  {
+    "jdds": "jdd0,jdd1",
+    "référence": "c045",
+    "état": "livrée",
+    "date de création": "14/02/2024, 13:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "njabari@brt.fr",
+    "lignes": "l045-12"
+  },
+  {
+    "jdds": "jdd0,jdd1",
+    "référence": "c046",
+    "état": "livrée",
+    "date de création": "14/02/2024, 15:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lmercier@or.fr",
+    "lignes": "l046-22"
+  },
+  {
+    "jdds": "jdd0,jdd1",
+    "référence": "c047",
+    "état": "livrée",
+    "date de création": "14/02/2024, 15:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "ljuma@but.org",
+    "lignes": "l047-05,l047-06"
+  },
+  {
+    "jdds": "jdd0,jdd1",
+    "référence": "c048",
+    "état": "livrée",
+    "date de création": "15/02/2024, 13:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "tdupont@wan.fr",
+    "lignes": "l048-05"
+  },
+  {
+    "jdds": "jdd0,jdd1",
+    "référence": "c049",
+    "état": "livrée",
+    "date de création": "15/02/2024, 13:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "tlouis@gm.fr",
+    "lignes": "l049-18,l049-10,l049-13"
+  },
+  {
+    "jdds": "jdd0,jdd1",
+    "référence": "c050",
+    "état": "livrée",
+    "date de création": "15/02/2024, 13:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "llegrand1@or.fr",
+    "lignes": "l050-22,l050-15"
+  },
+  {
+    "jdds": "jdd0,jdd1",
+    "référence": "c051",
+    "état": "livrée",
+    "date de création": "16/02/2024, 14:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lblanc@gm.fr",
+    "lignes": "l051-17,l051-03"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c052",
+    "état": "ouverte",
+    "date de création": "16/02/2024, 14:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lfaure@faure.com",
+    "lignes": "l052-04"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c053",
+    "état": "livrée",
+    "date de création": "16/02/2024, 14:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "ssharma@but.org",
+    "lignes": "l053-13"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c054",
+    "état": "livrée",
+    "date de création": "16/02/2024, 14:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "rali@m6.com",
+    "lignes": "l054-04,l054-21"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c055",
+    "état": "livrée",
+    "date de création": "16/02/2024, 14:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "ysaito@brt.fr",
+    "lignes": "l055-19"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c056",
+    "état": "livrée",
+    "date de création": "16/02/2024, 14:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "emoulin@or.fr",
+    "lignes": "l056-13"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c057",
+    "état": "notée",
+    "date de création": "19/02/2024, 12:30",
+    "note": 4.0,
+    "commentaire": NaN,
+    "client": "chong@m6.com",
+    "lignes": "l057-18"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c058",
+    "état": "notée",
+    "date de création": "19/02/2024, 12:30",
+    "note": 2.0,
+    "commentaire": NaN,
+    "client": "edenis@gm.fr",
+    "lignes": "l058-04"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c059",
+    "état": "notée",
+    "date de création": "19/02/2024, 12:30",
+    "note": 4.0,
+    "commentaire": NaN,
+    "client": "rmercier@gm.fr",
+    "lignes": "l059-01"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c060",
+    "état": "notée",
+    "date de création": "19/02/2024, 14:00",
+    "note": 4.0,
+    "commentaire": NaN,
+    "client": "hcho@brt.fr",
+    "lignes": "l060-21"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c061",
+    "état": "notée",
+    "date de création": "19/02/2024, 14:00",
+    "note": 4.0,
+    "commentaire": NaN,
+    "client": "bpetit@hot.fr",
+    "lignes": "l061-01"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c062",
+    "état": "notée",
+    "date de création": "19/02/2024, 15:30",
+    "note": 4.0,
+    "commentaire": NaN,
+    "client": "ykim@but.org",
+    "lignes": "l062-02"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c063",
+    "état": "notée",
+    "date de création": "19/02/2024, 15:30",
+    "note": 2.0,
+    "commentaire": NaN,
+    "client": "ysaito@brt.fr",
+    "lignes": "l063-03"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c064",
+    "état": "notée",
+    "date de création": "19/02/2024, 15:30",
+    "note": 4.0,
+    "commentaire": NaN,
+    "client": "mlucas@sfr.fr",
+    "lignes": "l064-06"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c065",
+    "état": "notée",
+    "date de création": "21/02/2024, 15:30",
+    "note": 4.0,
+    "commentaire": NaN,
+    "client": "mlaurent@yahoo.fr",
+    "lignes": "l065-05"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c066",
+    "état": "notée",
+    "date de création": "21/02/2024, 15:30",
+    "note": 2.0,
+    "commentaire": NaN,
+    "client": "mgauthier@sfr.fr",
+    "lignes": "l066-18"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c067",
+    "état": "notée",
+    "date de création": "21/02/2024, 16:00",
+    "note": 3.0,
+    "commentaire": NaN,
+    "client": "aandre@sfr.fr",
+    "lignes": "l067-09,l067-10,l067-01"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c068",
+    "état": "notée",
+    "date de création": "21/02/2024, 16:00",
+    "note": 3.0,
+    "commentaire": NaN,
+    "client": "lpetit@gm.fr",
+    "lignes": "l068-14"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c069",
+    "état": "notée",
+    "date de création": "26/02/2024, 16:30",
+    "note": 3.0,
+    "commentaire": NaN,
+    "client": "rdavid@or.fr",
+    "lignes": "l069-17"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c070",
+    "état": "notée",
+    "date de création": "26/02/2024, 16:30",
+    "note": 4.0,
+    "commentaire": NaN,
+    "client": "rleclerc@wan.fr",
+    "lignes": "l070-10"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c071",
+    "état": "notée",
+    "date de création": "26/02/2024, 16:30",
+    "note": 3.0,
+    "commentaire": NaN,
+    "client": "mbonnet@or.fr",
+    "lignes": "l071-16"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c072",
+    "état": "livrée",
+    "date de création": "27/02/2024, 09:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "cleclerc@wan.fr",
+    "lignes": "l072-08,l072-18"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c073",
+    "état": "livrée",
+    "date de création": "27/02/2024, 10:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "tbrun@or.fr",
+    "lignes": "l073-21"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c074",
+    "état": "livrée",
+    "date de création": "27/02/2024, 10:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "ldupuis3@gm.fr",
+    "lignes": "l074-05,l074-03"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c075",
+    "état": "livrée",
+    "date de création": "01/03/2024, 10:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lblanc@gm.fr",
+    "lignes": "l075-06,l075-19"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c076",
+    "état": "livrée",
+    "date de création": "01/03/2024, 10:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "cbonnet@wan.fr",
+    "lignes": "l076-11,l076-20"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c077",
+    "état": "notée",
+    "date de création": "01/03/2024, 09:30",
+    "note": 3.0,
+    "commentaire": NaN,
+    "client": "lfaure@faure.com",
+    "lignes": "l077-21"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c078",
+    "état": "notée",
+    "date de création": "01/03/2024, 09:30",
+    "note": 1.0,
+    "commentaire": NaN,
+    "client": "lmoreau@wan.fr",
+    "lignes": "l078-20"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c079",
+    "état": "notée",
+    "date de création": "04/03/2024, 11:30",
+    "note": 2.0,
+    "commentaire": NaN,
+    "client": "tgarnier@sfr.fr",
+    "lignes": "l079-09"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c080",
+    "état": "livrée",
+    "date de création": "04/03/2024, 11:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "tbrun@or.fr",
+    "lignes": "l080-12,l080-13,l080-13"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c081",
+    "état": "ouverte",
+    "date de création": "04/03/2024, 13:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "mbonnet@or.fr",
+    "lignes": "l081-21,l081-19,l081-14,l081-22,l081-04,l081-08,l081-10"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c082",
+    "état": "livrée",
+    "date de création": "04/03/2024, 13:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "chenry@hot.fr",
+    "lignes": "l082-16"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c083",
+    "état": "livrée",
+    "date de création": "05/03/2024, 13:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "tblanc@hot.fr",
+    "lignes": "l083-19,l083-02"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c084",
+    "état": "livrée",
+    "date de création": "05/03/2024, 15:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "aalves@brt.fr",
+    "lignes": "l084-14"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c085",
+    "état": "livrée",
+    "date de création": "05/03/2024, 16:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "maziz@m6.com",
+    "lignes": "l085-10"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c086",
+    "état": "ouverte",
+    "date de création": "05/03/2024, 17:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lmartinez@or.fr",
+    "lignes": "l086-20"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c087",
+    "état": "livrée",
+    "date de création": "06/03/2024, 15:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "hnguyen@brt.fr",
+    "lignes": "l087-03,l087-22,l087-16"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c088",
+    "état": "livrée",
+    "date de création": "06/03/2024, 15:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "nblanc@hot.fr",
+    "lignes": "l088-07"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c089",
+    "état": "livrée",
+    "date de création": "06/03/2024, 15:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "aleme@msn.com",
+    "lignes": "l089-12"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c090",
+    "état": "livrée",
+    "date de création": "07/03/2024, 15:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "llegrand1@or.fr",
+    "lignes": "l090-06"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c091",
+    "état": "livrée",
+    "date de création": "07/03/2024, 15:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "cleclerc@wan.fr",
+    "lignes": "l091-07"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c092",
+    "état": "livrée",
+    "date de création": "07/03/2024, 15:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "zmartinez@bbox.fr",
+    "lignes": "l092-02"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c093",
+    "état": "ouverte",
+    "date de création": "08/03/2024, 15:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "rdubois@gm.fr",
+    "lignes": "l093-21"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c094",
+    "état": "livrée",
+    "date de création": "08/03/2024, 15:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "sdufour@or.fr",
+    "lignes": "l094-06"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c095",
+    "état": "livrée",
+    "date de création": "08/03/2024, 15:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lblanc1@lp.net",
+    "lignes": "l095-02"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c096",
+    "état": "notée",
+    "date de création": "08/03/2024, 15:30",
+    "note": 4.0,
+    "commentaire": NaN,
+    "client": "mperrin@lp.net",
+    "lignes": "l096-02,l096-11,l096-12"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c097",
+    "état": "livrée",
+    "date de création": "11/03/2024, 12:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "rbonnet@gm.fr",
+    "lignes": "l097-17"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c098",
+    "état": "livrée",
+    "date de création": "11/03/2024, 12:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "bleroux@sfr.fr",
+    "lignes": "l098-09"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c099",
+    "état": "livrée",
+    "date de création": "11/03/2024, 13:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "ldupuis2@hot.fr",
+    "lignes": "l099-18,l099-08"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c100",
+    "état": "livrée",
+    "date de création": "11/03/2024, 13:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "nali@m6.com",
+    "lignes": "l100-09"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c101",
+    "état": "livrée",
+    "date de création": "12/03/2024, 13:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "rmercier@gm.fr",
+    "lignes": "l101-04"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c102",
+    "état": "notée",
+    "date de création": "12/03/2024, 13:30",
+    "note": 2.0,
+    "commentaire": NaN,
+    "client": "mlee@but.org",
+    "lignes": "l102-14"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c103",
+    "état": "ouverte",
+    "date de création": "12/03/2024, 13:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "mjean@lp.net",
+    "lignes": "l103-16"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c104",
+    "état": "ouverte",
+    "date de création": "12/03/2024, 14:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "pnicolas@or.fr",
+    "lignes": "l104-20"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c105",
+    "état": "ouverte",
+    "date de création": "12/03/2024, 14:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "aibrahim@but.org",
+    "lignes": "l105-12"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c106",
+    "état": "ouverte",
+    "date de création": "12/03/2024, 14:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lmoreau@wan.fr",
+    "lignes": "l106-01"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c107",
+    "état": "ouverte",
+    "date de création": "13/03/2024, 14:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "elaroche@lp.net",
+    "lignes": "l107-13"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c108",
+    "état": "ouverte",
+    "date de création": "13/03/2024, 16:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lmartin@or.fr",
+    "lignes": "l108-03"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c109",
+    "état": "ouverte",
+    "date de création": "13/03/2024, 19:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lmoreau@wan.fr",
+    "lignes": "l109-09"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c110",
+    "état": "ouverte",
+    "date de création": "14/03/2024, 08:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lguyot@lp.net",
+    "lignes": "l110-18"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c111",
+    "état": "livrée",
+    "date de création": "14/03/2024, 09:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "hmartin@hot.fr",
+    "lignes": "l111-04,l111-14,l111-15,l111-10,l111-06"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c112",
+    "état": "livrée",
+    "date de création": "14/03/2024, 09:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "sgautier@hot.fr",
+    "lignes": "l112-12"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c113",
+    "état": "livrée",
+    "date de création": "14/03/2024, 10:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "egarnier@sfr.fr",
+    "lignes": "l113-17"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c114",
+    "état": "livrée",
+    "date de création": "15/03/2024, 09:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lcharles@sfr.fr",
+    "lignes": "l114-07"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c115",
+    "état": "livrée",
+    "date de création": "15/03/2024, 10:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "llerouge@free.fr",
+    "lignes": "l115-02"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c116",
+    "état": "livrée",
+    "date de création": "15/03/2024, 10:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "aandre@sfr.fr",
+    "lignes": "l116-05"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c117",
+    "état": "livrée",
+    "date de création": "18/03/2024, 10:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "chenry@hot.fr",
+    "lignes": "l117-11"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c118",
+    "état": "livrée",
+    "date de création": "18/03/2024, 11:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "jfernandez@gm.fr",
+    "lignes": "l118-20"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c119",
+    "état": "livrée",
+    "date de création": "18/03/2024, 11:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "yali@brt.fr",
+    "lignes": "l119-08"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c120",
+    "état": "notée",
+    "date de création": "18/03/2024, 12:30",
+    "note": 3.0,
+    "commentaire": NaN,
+    "client": "smercier@sfr.fr",
+    "lignes": "l120-19"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c121",
+    "état": "notée",
+    "date de création": "18/03/2024, 12:30",
+    "note": 5.0,
+    "commentaire": NaN,
+    "client": "cpetit1@lp.net",
+    "lignes": "l121-21"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c122",
+    "état": "livrée",
+    "date de création": "18/03/2024, 12:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "smercier@sfr.fr",
+    "lignes": "l122-10"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c123",
+    "état": "livrée",
+    "date de création": "19/03/2024, 11:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "emeyer1@or.fr",
+    "lignes": "l123-14"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c124",
+    "état": "livrée",
+    "date de création": "19/03/2024, 11:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "clenoir@gm.fr",
+    "lignes": "l124-06,l124-15"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c125",
+    "état": "livrée",
+    "date de création": "19/03/2024, 11:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "tbrun@or.fr",
+    "lignes": "l125-16"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c126",
+    "état": "livrée",
+    "date de création": "19/03/2024, 11:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "mgomes@but.org",
+    "lignes": "l126-22"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c127",
+    "état": "livrée",
+    "date de création": "19/03/2024, 11:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "cguerin@sfr.fr",
+    "lignes": "l127-15"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c128",
+    "état": "livrée",
+    "date de création": "19/03/2024, 11:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "mcolin@sfr.fr",
+    "lignes": "l128-05,l128-18"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c129",
+    "état": "notée",
+    "date de création": "19/03/2024, 11:30",
+    "note": 3.0,
+    "commentaire": NaN,
+    "client": "lguillaume@lp.net",
+    "lignes": "l129-12,l129-19"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c130",
+    "état": "livrée",
+    "date de création": "19/03/2024, 12:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "tgiraud@sfr.fr",
+    "lignes": "l130-16"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c131",
+    "état": "livrée",
+    "date de création": "19/03/2024, 12:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "llemaitre@bbox.fr",
+    "lignes": "l131-11"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c132",
+    "état": "livrée",
+    "date de création": "19/03/2024, 13:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "ldubois@wel.fr",
+    "lignes": "l132-11,l132-17,l132-13"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c133",
+    "état": "ouverte",
+    "date de création": "19/03/2024, 13:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "smercier@sfr.fr",
+    "lignes": "l133-13"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c134",
+    "état": "ouverte",
+    "date de création": "19/03/2024, 14:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "tbrun@or.fr",
+    "lignes": "l134-07"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c135",
+    "état": "ouverte",
+    "date de création": "19/03/2024, 14:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lbrunet@gm.fr",
+    "lignes": "l135-19"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c136",
+    "état": "ouverte",
+    "date de création": "20/03/2024, 13:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "emeyer1@or.fr",
+    "lignes": "l136-02"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c137",
+    "état": "livrée",
+    "date de création": "20/03/2024, 14:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "apascal@or.fr",
+    "lignes": "l137-07,l137-11"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c138",
+    "état": "livrée",
+    "date de création": "20/03/2024, 14:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "emeyer1@or.fr",
+    "lignes": "l138-17"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c139",
+    "état": "livrée",
+    "date de création": "21/03/2024, 14:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "zlemaire@lp.net",
+    "lignes": "l139-05"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c140",
+    "état": "livrée",
+    "date de création": "21/03/2024, 14:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "rlambert@lp.net",
+    "lignes": "l140-08"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c141",
+    "état": "livrée",
+    "date de création": "21/03/2024, 14:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "slemaitre@sfr.fr",
+    "lignes": "l141-19"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c142",
+    "état": "livrée",
+    "date de création": "21/03/2024, 16:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "ldupuis3@gm.fr",
+    "lignes": "l142-14"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c143",
+    "état": "livrée",
+    "date de création": "21/03/2024, 16:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "sshin@but.org",
+    "lignes": "l143-04,l143-08,l143-03"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c144",
+    "état": "livrée",
+    "date de création": "21/03/2024, 16:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "mkhalid@m6.com",
+    "lignes": "l144-15"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c145",
+    "état": "livrée",
+    "date de création": "26/03/2024, 14:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "slemaitre@sfr.fr",
+    "lignes": "l145-13"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c146",
+    "état": "livrée",
+    "date de création": "26/03/2024, 15:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "egarnier@sfr.fr",
+    "lignes": "l146-15"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c147",
+    "état": "notée",
+    "date de création": "26/03/2024, 16:00",
+    "note": 2.0,
+    "commentaire": NaN,
+    "client": "pbourgeois@gm.fr",
+    "lignes": "l147-10"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c148",
+    "état": "notée",
+    "date de création": "26/03/2024, 16:00",
+    "note": 4.0,
+    "commentaire": NaN,
+    "client": "idumas@lp.net",
+    "lignes": "l148-17,l148-13"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c149",
+    "état": "notée",
+    "date de création": "26/03/2024, 16:00",
+    "note": 2.0,
+    "commentaire": NaN,
+    "client": "jgar@icloud.com",
+    "lignes": "l149-22"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c150",
+    "état": "notée",
+    "date de création": "26/03/2024, 17:00",
+    "note": 3.0,
+    "commentaire": NaN,
+    "client": "blee@but.org",
+    "lignes": "l150-10,l150-09"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c151",
+    "état": "notée",
+    "date de création": "26/03/2024, 17:00",
+    "note": 2.0,
+    "commentaire": NaN,
+    "client": "bmorel@or.fr",
+    "lignes": "l151-17"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c152",
+    "état": "livrée",
+    "date de création": "26/03/2024, 17:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "mguerin@lp.net",
+    "lignes": "l152-14"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c153",
+    "état": "livrée",
+    "date de création": "26/03/2024, 18:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "ljuma@but.org",
+    "lignes": "l153-21"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c154",
+    "état": "livrée",
+    "date de création": "26/03/2024, 18:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lfournier@sfr.fr",
+    "lignes": "l154-21"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c155",
+    "état": "livrée",
+    "date de création": "26/03/2024, 18:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "mabdullah@but.org",
+    "lignes": "l155-13,l155-03"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c156",
+    "état": "livrée",
+    "date de création": "26/03/2024, 18:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "ljuma@but.org",
+    "lignes": "l156-22,l156-07"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c157",
+    "état": "livrée",
+    "date de création": "26/03/2024, 18:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "ljuma@but.org",
+    "lignes": "l157-12,l157-15,l157-16"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c158",
+    "état": "livrée",
+    "date de création": "27/03/2024, 18:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lblanc2@wan.fr",
+    "lignes": "l158-03"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c159",
+    "état": "livrée",
+    "date de création": "27/03/2024, 18:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "tbrun@or.fr",
+    "lignes": "l159-17"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c160",
+    "état": "livrée",
+    "date de création": "27/03/2024, 18:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "jmorel@or.fr",
+    "lignes": "l160-21"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c161",
+    "état": "livrée",
+    "date de création": "27/03/2024, 18:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "ncolin@or.fr",
+    "lignes": "l161-14"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c162",
+    "état": "livrée",
+    "date de création": "27/03/2024, 19:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "mblanc@bbox.fr",
+    "lignes": "l162-06"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c163",
+    "état": "livrée",
+    "date de création": "28/03/2024, 19:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "yali@brt.fr",
+    "lignes": "l163-08"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c164",
+    "état": "ouverte",
+    "date de création": "29/03/2024, 08:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "aguyot@hot.fr",
+    "lignes": "l164-02"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c165",
+    "état": "ouverte",
+    "date de création": "01/04/2024, 08:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "clefebvre@lp.net",
+    "lignes": "l165-02"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c166",
+    "état": "ouverte",
+    "date de création": "01/04/2024, 09:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "llemaitre@bbox.fr",
+    "lignes": "l166-06,l166-07,l166-06"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c167",
+    "état": "livrée",
+    "date de création": "01/04/2024, 09:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "zmartinez@bbox.fr",
+    "lignes": "l167-15"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c168",
+    "état": "livrée",
+    "date de création": "01/04/2024, 09:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "ebernard@lp.net",
+    "lignes": "l168-10"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c169",
+    "état": "livrée",
+    "date de création": "01/04/2024, 10:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "mjoly@or.fr",
+    "lignes": "l169-19,l169-04,l169-14"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c170",
+    "état": "livrée",
+    "date de création": "01/04/2024, 10:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "jmorel@or.fr",
+    "lignes": "l170-14"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c171",
+    "état": "livrée",
+    "date de création": "01/04/2024, 11:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "eleroy@ptr.fr",
+    "lignes": "l171-08"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c172",
+    "état": "livrée",
+    "date de création": "01/04/2024, 11:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "cpetit1@lp.net",
+    "lignes": "l172-10"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c173",
+    "état": "livrée",
+    "date de création": "01/04/2024, 12:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "jguil@or.fr",
+    "lignes": "l173-01"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c174",
+    "état": "livrée",
+    "date de création": "01/04/2024, 12:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "mguerin@lp.net",
+    "lignes": "l174-13"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c175",
+    "état": "livrée",
+    "date de création": "01/04/2024, 14:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "eguerin@wan.fr",
+    "lignes": "l175-07"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c176",
+    "état": "livrée",
+    "date de création": "01/04/2024, 14:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "rleclerc@wan.fr",
+    "lignes": "l176-21"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c177",
+    "état": "livrée",
+    "date de création": "01/04/2024, 14:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "ldupuis@hot.fr",
+    "lignes": "l177-11"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c178",
+    "état": "livrée",
+    "date de création": "01/04/2024, 14:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lfournier@sfr.fr",
+    "lignes": "l178-02,l178-22,l178-03,l178-10"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c179",
+    "état": "livrée",
+    "date de création": "01/04/2024, 14:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lfournier@sfr.fr",
+    "lignes": "l179-17"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c180",
+    "état": "livrée",
+    "date de création": "01/04/2024, 16:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lfournier@sfr.fr",
+    "lignes": "l180-09,l180-07,l180-16"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c181",
+    "état": "livrée",
+    "date de création": "01/04/2024, 16:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lmartinez@or.fr",
+    "lignes": "l181-12"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c182",
+    "état": "livrée",
+    "date de création": "01/04/2024, 17:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "apascal@or.fr",
+    "lignes": "l182-13"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c183",
+    "état": "livrée",
+    "date de création": "01/04/2024, 17:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "amartin@wan.fr",
+    "lignes": "l183-07"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c184",
+    "état": "ouverte",
+    "date de création": "01/04/2024, 18:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lcharles@sfr.fr",
+    "lignes": "l184-20"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c185",
+    "état": "livrée",
+    "date de création": "01/04/2024, 18:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lfaure@faure.com",
+    "lignes": "l185-03"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c186",
+    "état": "livrée",
+    "date de création": "01/04/2024, 18:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "clegrand@or.fr",
+    "lignes": "l186-14"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c187",
+    "état": "notée",
+    "date de création": "01/04/2024, 18:00",
+    "note": 5.0,
+    "commentaire": NaN,
+    "client": "jblanc@hot.fr",
+    "lignes": "l187-07"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c188",
+    "état": "notée",
+    "date de création": "01/04/2024, 18:00",
+    "note": 3.0,
+    "commentaire": NaN,
+    "client": "lpetit@gm.fr",
+    "lignes": "l188-16"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c189",
+    "état": "notée",
+    "date de création": "01/04/2024, 18:00",
+    "note": 1.0,
+    "commentaire": NaN,
+    "client": "mgiraud1@gm.fr",
+    "lignes": "l189-18"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c190",
+    "état": "livrée",
+    "date de création": "01/04/2024, 18:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "bleroux@sfr.fr",
+    "lignes": "l190-11,l190-08,l190-06"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c191",
+    "état": "livrée",
+    "date de création": "01/04/2024, 18:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "ysung@m6.com",
+    "lignes": "l191-16,l191-01"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c192",
+    "état": "livrée",
+    "date de création": "01/04/2024, 18:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "zahmed@but.org",
+    "lignes": "l192-13,l192-15"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c193",
+    "état": "ouverte",
+    "date de création": "01/04/2024, 18:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "hcho@brt.fr",
+    "lignes": "l193-14"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c194",
+    "état": "ouverte",
+    "date de création": "01/04/2024, 18:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "mbonnet@or.fr",
+    "lignes": "l194-13"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c195",
+    "état": "ouverte",
+    "date de création": "01/04/2024, 18:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "ysaito@brt.fr",
+    "lignes": "l195-11"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c196",
+    "état": "livrée",
+    "date de création": "01/04/2024, 19:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "tblanc@hot.fr",
+    "lignes": "l196-02"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c197",
+    "état": "livrée",
+    "date de création": "01/04/2024, 19:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "marnaud1@sfr.fr",
+    "lignes": "l197-13,l197-08"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c198",
+    "état": "livrée",
+    "date de création": "01/04/2024, 19:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "rmercier@gm.fr",
+    "lignes": "l198-12"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c199",
+    "état": "livrée",
+    "date de création": "01/04/2024, 19:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "yali@brt.fr",
+    "lignes": "l199-15,l199-13"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c200",
+    "état": "livrée",
+    "date de création": "01/04/2024, 19:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "rdavid@or.fr",
+    "lignes": "l200-12"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c201",
+    "état": "livrée",
+    "date de création": "01/04/2024, 19:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "ccarre@hot.fr",
+    "lignes": "l201-13,l201-16"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c202",
+    "état": "livrée",
+    "date de création": "01/04/2024, 19:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "vlacroix@sfr.fr",
+    "lignes": "l202-08"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c203",
+    "état": "ouverte",
+    "date de création": "01/04/2024, 20:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "cdupuis1@gm.fr",
+    "lignes": "l203-01,l203-02,l203-11,l203-05"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c204",
+    "état": "livrée",
+    "date de création": "01/04/2024, 20:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "llerouge@free.fr",
+    "lignes": "l204-10"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c205",
+    "état": "livrée",
+    "date de création": "01/04/2024, 20:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "nblanc@hot.fr",
+    "lignes": "l205-10"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c206",
+    "état": "livrée",
+    "date de création": "01/04/2024, 20:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "sshin@but.org",
+    "lignes": "l206-20"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c207",
+    "état": "notée",
+    "date de création": "01/04/2024, 20:00",
+    "note": 2.0,
+    "commentaire": NaN,
+    "client": "mmorel@out.fr",
+    "lignes": "l207-16"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c208",
+    "état": "notée",
+    "date de création": "01/04/2024, 20:00",
+    "note": 4.0,
+    "commentaire": NaN,
+    "client": "apascal@or.fr",
+    "lignes": "l208-08,l208-03"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c209",
+    "état": "notée",
+    "date de création": "01/04/2024, 20:00",
+    "note": 3.0,
+    "commentaire": NaN,
+    "client": "lfournier@sfr.fr",
+    "lignes": "l209-10,l209-11"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c210",
+    "état": "notée",
+    "date de création": "01/04/2024, 20:00",
+    "note": 2.0,
+    "commentaire": NaN,
+    "client": "bmoreau@hot.fr",
+    "lignes": "l210-09,l210-22"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c211",
+    "état": "notée",
+    "date de création": "01/04/2024, 20:00",
+    "note": 4.0,
+    "commentaire": NaN,
+    "client": "rdavid@or.fr",
+    "lignes": "l211-09,l211-14"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c212",
+    "état": "notée",
+    "date de création": "01/04/2024, 20:30",
+    "note": 2.0,
+    "commentaire": NaN,
+    "client": "ppatel@m6.com",
+    "lignes": "l212-11"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c213",
+    "état": "notée",
+    "date de création": "01/04/2024, 20:30",
+    "note": 4.0,
+    "commentaire": NaN,
+    "client": "cpetit@or.fr",
+    "lignes": "l213-20"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c214",
+    "état": "notée",
+    "date de création": "01/04/2024, 20:30",
+    "note": 3.0,
+    "commentaire": NaN,
+    "client": "mmichel@bbox.fr",
+    "lignes": "l214-16"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c215",
+    "état": "livrée",
+    "date de création": "01/04/2024, 20:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lpetit@gm.fr",
+    "lignes": "l215-02"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c216",
+    "état": "livrée",
+    "date de création": "01/04/2024, 20:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "amohed@brt.fr",
+    "lignes": "l216-13,l216-14"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c217",
+    "état": "livrée",
+    "date de création": "01/04/2024, 21:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "egarnier@sfr.fr",
+    "lignes": "l217-13"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c218",
+    "état": "livrée",
+    "date de création": "01/04/2024, 21:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "akhan@but.org",
+    "lignes": "l218-20"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c219",
+    "état": "livrée",
+    "date de création": "01/04/2024, 21:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "elaroche@lp.net",
+    "lignes": "l219-06,l219-04"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c220",
+    "état": "livrée",
+    "date de création": "01/04/2024, 21:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lbarbier@lp.net",
+    "lignes": "l220-20"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c221",
+    "état": "livrée",
+    "date de création": "01/04/2024, 21:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "mkhalid@m6.com",
+    "lignes": "l221-09"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c222",
+    "état": "livrée",
+    "date de création": "01/04/2024, 21:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "zlemaire@lp.net",
+    "lignes": "l222-09"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c223",
+    "état": "livrée",
+    "date de création": "01/04/2024, 22:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "mcolin1@gm.fr",
+    "lignes": "l223-02,l223-09"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c224",
+    "état": "livrée",
+    "date de création": "01/04/2024, 22:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "aalves@brt.fr",
+    "lignes": "l224-18,l224-12"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c225",
+    "état": "livrée",
+    "date de création": "01/04/2024, 22:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "rjoly@or.fr",
+    "lignes": "l225-20"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c226",
+    "état": "livrée",
+    "date de création": "01/04/2024, 22:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "slemaitre@sfr.fr",
+    "lignes": "l226-14"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c227",
+    "état": "livrée",
+    "date de création": "01/04/2024, 22:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "jguil@or.fr",
+    "lignes": "l227-01"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c228",
+    "état": "livrée",
+    "date de création": "01/04/2024, 22:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "bmoreau@hot.fr",
+    "lignes": "l228-13"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c229",
+    "état": "livrée",
+    "date de création": "01/04/2024, 22:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "marnaud@out.fr",
+    "lignes": "l229-03"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c230",
+    "état": "livrée",
+    "date de création": "01/04/2024, 22:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "tlouis@gm.fr",
+    "lignes": "l230-09"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c231",
+    "état": "livrée",
+    "date de création": "01/04/2024, 22:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "mperrin@lp.net",
+    "lignes": "l231-09"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c232",
+    "état": "livrée",
+    "date de création": "01/04/2024, 22:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "amartin@wan.fr",
+    "lignes": "l232-10"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c233",
+    "état": "livrée",
+    "date de création": "01/04/2024, 22:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "adupuis@hot.fr",
+    "lignes": "l233-19"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c234",
+    "état": "livrée",
+    "date de création": "01/04/2024, 23:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "tguillemin@out.fr",
+    "lignes": "l234-01"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c235",
+    "état": "ouverte",
+    "date de création": "01/04/2024, 23:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lmasson@lp.net",
+    "lignes": "l235-12"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c236",
+    "état": "livrée",
+    "date de création": "01/04/2024, 23:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "bpetit@hot.fr",
+    "lignes": "l236-22,l236-17"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c237",
+    "état": "livrée",
+    "date de création": "01/04/2024, 23:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "bbarbier@or.fr",
+    "lignes": "l237-12"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c238",
+    "état": "livrée",
+    "date de création": "01/04/2024, 23:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "mbourge@gm.fr",
+    "lignes": "l238-13"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c239",
+    "état": "livrée",
+    "date de création": "01/04/2024, 23:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lblanc1@lp.net",
+    "lignes": "l239-09,l239-13"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c240",
+    "état": "livrée",
+    "date de création": "01/04/2024, 23:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lmartinez@or.fr",
+    "lignes": "l240-10"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c241",
+    "état": "livrée",
+    "date de création": "01/04/2024, 23:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "jdupont@sfr.fr",
+    "lignes": "l241-18"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c242",
+    "état": "livrée",
+    "date de création": "01/04/2024, 23:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "emarchand@ok.fr",
+    "lignes": "l242-20"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c243",
+    "état": "livrée",
+    "date de création": "01/04/2024, 23:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lfaure@faure.com",
+    "lignes": "l243-21,l243-01"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c244",
+    "état": "ouverte",
+    "date de création": "01/04/2024, 23:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "mabdullah@but.org",
+    "lignes": "l244-20"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c245",
+    "état": "ouverte",
+    "date de création": "01/04/2024, 23:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lbarbier1@lp.net",
+    "lignes": "l245-13,l245-21"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c246",
+    "état": "livrée",
+    "date de création": "01/04/2024, 23:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "egarnier@sfr.fr",
+    "lignes": "l246-08,l246-04"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c247",
+    "état": "livrée",
+    "date de création": "01/04/2024, 23:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "tdupont@wan.fr",
+    "lignes": "l247-21"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c248",
+    "état": "livrée",
+    "date de création": "01/04/2024, 23:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "tguerin@or.fr",
+    "lignes": "l248-16"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c249",
+    "état": "ouverte",
+    "date de création": "05/04/2024, 00:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "jguie@or.fr",
+    "lignes": "l249-02"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c250",
+    "état": "livrée",
+    "date de création": "05/04/2024, 00:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "zchen@brt.fr",
+    "lignes": "l250-22"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c251",
+    "état": "livrée",
+    "date de création": "05/04/2024, 01:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "mcolin1@gm.fr",
+    "lignes": "l251-22,l251-11,l251-10"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c252",
+    "état": "livrée",
+    "date de création": "05/04/2024, 01:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "ldupuis@hot.fr",
+    "lignes": "l252-08"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c253",
+    "état": "livrée",
+    "date de création": "05/04/2024, 01:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "amorin@or.fr",
+    "lignes": "l253-17"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c254",
+    "état": "livrée",
+    "date de création": "05/04/2024, 01:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "idumas@lp.net",
+    "lignes": "l254-16"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c255",
+    "état": "livrée",
+    "date de création": "05/04/2024, 01:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "rbonnet@gm.fr",
+    "lignes": "l255-11"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c256",
+    "état": "livrée",
+    "date de création": "05/04/2024, 02:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "maziz@m6.com",
+    "lignes": "l256-01"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c257",
+    "état": "livrée",
+    "date de création": "05/04/2024, 02:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "hnguyen@brt.fr",
+    "lignes": "l257-22"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c258",
+    "état": "livrée",
+    "date de création": "05/04/2024, 03:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "nchevalier@wan.fr",
+    "lignes": "l258-12"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c259",
+    "état": "livrée",
+    "date de création": "05/04/2024, 03:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "maziz@m6.com",
+    "lignes": "l259-01"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c260",
+    "état": "livrée",
+    "date de création": "05/04/2024, 03:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "nbarbier@wan.fr",
+    "lignes": "l260-01"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c261",
+    "état": "livrée",
+    "date de création": "05/04/2024, 03:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "sdufour@or.fr",
+    "lignes": "l261-08"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c262",
+    "état": "livrée",
+    "date de création": "05/04/2024, 03:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lsaleh@brt.fr",
+    "lignes": "l262-03"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c263",
+    "état": "livrée",
+    "date de création": "05/04/2024, 03:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "emarchand@ok.fr",
+    "lignes": "l263-21"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c264",
+    "état": "ouverte",
+    "date de création": "05/04/2024, 03:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "jblanc@hot.fr",
+    "lignes": "l264-08"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c265",
+    "état": "ouverte",
+    "date de création": "05/04/2024, 04:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lboucher@sfr.fr",
+    "lignes": "l265-21"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c266",
+    "état": "livrée",
+    "date de création": "05/04/2024, 04:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "rmercier@gm.fr",
+    "lignes": "l266-05,l266-13"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c267",
+    "état": "livrée",
+    "date de création": "05/04/2024, 04:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "mdupont@gm.fr",
+    "lignes": "l267-04,l267-12"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c268",
+    "état": "livrée",
+    "date de création": "05/04/2024, 04:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "bbrunet@or.fr",
+    "lignes": "l268-20,l268-17,l268-14,l268-10"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c269",
+    "état": "livrée",
+    "date de création": "05/04/2024, 05:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "llemaitre@bbox.fr",
+    "lignes": "l269-09,l269-12"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c270",
+    "état": "livrée",
+    "date de création": "05/04/2024, 05:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "sabbasi@m6.com",
+    "lignes": "l270-10"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c271",
+    "état": "livrée",
+    "date de création": "05/04/2024, 05:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "ldupuis3@gm.fr",
+    "lignes": "l271-17"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c272",
+    "état": "livrée",
+    "date de création": "05/04/2024, 06:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "cbourgeois@sfr.fr",
+    "lignes": "l272-12"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c273",
+    "état": "livrée",
+    "date de création": "05/04/2024, 06:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "azainab@m6.com",
+    "lignes": "l273-03"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c274",
+    "état": "livrée",
+    "date de création": "05/04/2024, 06:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "rmoulin@or.fr",
+    "lignes": "l274-15"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c275",
+    "état": "ouverte",
+    "date de création": "05/04/2024, 07:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "rahmed@m6.com",
+    "lignes": "l275-08"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c276",
+    "état": "ouverte",
+    "date de création": "05/04/2024, 07:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "ttan@m6.com",
+    "lignes": "l276-17"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c277",
+    "état": "livrée",
+    "date de création": "05/04/2024, 07:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "apascal@or.fr",
+    "lignes": "l277-20"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c278",
+    "état": "notée",
+    "date de création": "05/04/2024, 07:30",
+    "note": 1.0,
+    "commentaire": NaN,
+    "client": "mgomes@but.org",
+    "lignes": "l278-22"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c279",
+    "état": "livrée",
+    "date de création": "05/04/2024, 07:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "ldupuis2@hot.fr",
+    "lignes": "l279-11"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c280",
+    "état": "livrée",
+    "date de création": "05/04/2024, 08:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "jfernandez@gm.fr",
+    "lignes": "l280-16"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c281",
+    "état": "livrée",
+    "date de création": "05/04/2024, 08:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "marnaud@out.fr",
+    "lignes": "l281-14"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c282",
+    "état": "livrée",
+    "date de création": "05/04/2024, 08:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "jgar@icloud.com",
+    "lignes": "l282-01"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c283",
+    "état": "livrée",
+    "date de création": "05/04/2024, 09:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lmasson@lp.net",
+    "lignes": "l283-05"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c284",
+    "état": "livrée",
+    "date de création": "05/04/2024, 09:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "njabari@brt.fr",
+    "lignes": "l284-17"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c285",
+    "état": "livrée",
+    "date de création": "05/04/2024, 09:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "ykim@but.org",
+    "lignes": "l285-09,l285-12"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c286",
+    "état": "livrée",
+    "date de création": "05/04/2024, 09:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "emeyer1@or.fr",
+    "lignes": "l286-14"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c287",
+    "état": "livrée",
+    "date de création": "05/04/2024, 09:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "abois@lp.net",
+    "lignes": "l287-08"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c288",
+    "état": "livrée",
+    "date de création": "05/04/2024, 09:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "pbourgeois@gm.fr",
+    "lignes": "l288-22,l288-07"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c289",
+    "état": "livrée",
+    "date de création": "05/04/2024, 09:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "azainab@m6.com",
+    "lignes": "l289-12,l289-19"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c290",
+    "état": "livrée",
+    "date de création": "05/04/2024, 10:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "cgarnier@gm.fr",
+    "lignes": "l290-22,l290-03"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c291",
+    "état": "livrée",
+    "date de création": "05/04/2024, 10:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lfournier@sfr.fr",
+    "lignes": "l291-07"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c292",
+    "état": "livrée",
+    "date de création": "05/04/2024, 10:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "rleclerc@wan.fr",
+    "lignes": "l292-15,l292-02"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c293",
+    "état": "livrée",
+    "date de création": "05/04/2024, 10:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lbonnet@or.fr",
+    "lignes": "l293-07"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c294",
+    "état": "livrée",
+    "date de création": "05/04/2024, 10:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "jfernandez@gm.fr",
+    "lignes": "l294-09,l294-19"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c295",
+    "état": "livrée",
+    "date de création": "05/04/2024, 10:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lbrunet@gm.fr",
+    "lignes": "l295-21,l295-20"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c296",
+    "état": "ouverte",
+    "date de création": "05/04/2024, 11:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "slemaitre@sfr.fr",
+    "lignes": "l296-01,l296-22"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c297",
+    "état": "ouverte",
+    "date de création": "05/04/2024, 11:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "jlefebvre@or.fr",
+    "lignes": "l297-11"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c298",
+    "état": "livrée",
+    "date de création": "05/04/2024, 11:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "aalves@brt.fr",
+    "lignes": "l298-15"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c299",
+    "état": "livrée",
+    "date de création": "05/04/2024, 11:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "rmercier@gm.fr",
+    "lignes": "l299-11"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c300",
+    "état": "notée",
+    "date de création": "05/04/2024, 11:30",
+    "note": 3.0,
+    "commentaire": NaN,
+    "client": "cguillaume@lp.net",
+    "lignes": "l300-10"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c301",
+    "état": "livrée",
+    "date de création": "08/04/2024, 09:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "mjoly@or.fr",
+    "lignes": "l301-19"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c302",
+    "état": "livrée",
+    "date de création": "08/04/2024, 09:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "mbonnet@or.fr",
+    "lignes": "l302-17"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c303",
+    "état": "livrée",
+    "date de création": "08/04/2024, 09:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "jdurand@gm.fr",
+    "lignes": "l303-17"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c304",
+    "état": "notée",
+    "date de création": "08/04/2024, 10:00",
+    "note": 2.0,
+    "commentaire": NaN,
+    "client": "mabdel@m6.com",
+    "lignes": "l304-08"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c305",
+    "état": "livrée",
+    "date de création": "08/04/2024, 10:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "omenard@lp.net",
+    "lignes": "l305-05,l305-07,l305-12,l305-11,l305-17,l305-15,l305-16,l305-01,l305-13,l305-02,l305-18"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c306",
+    "état": "notée",
+    "date de création": "08/04/2024, 11:00",
+    "note": 4.0,
+    "commentaire": NaN,
+    "client": "maziz@m6.com",
+    "lignes": "l306-15"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c307",
+    "état": "livrée",
+    "date de création": "08/04/2024, 11:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "ldubois@wel.fr",
+    "lignes": "l307-03"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c308",
+    "état": "livrée",
+    "date de création": "08/04/2024, 12:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lboucher@sfr.fr",
+    "lignes": "l308-13,l308-16"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c309",
+    "état": "livrée",
+    "date de création": "08/04/2024, 12:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "ldubois@wel.fr",
+    "lignes": "l309-13"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c310",
+    "état": "livrée",
+    "date de création": "08/04/2024, 14:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "tgiraud@sfr.fr",
+    "lignes": "l310-13,l310-20"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c311",
+    "état": "livrée",
+    "date de création": "08/04/2024, 15:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "jjuma@brt.fr",
+    "lignes": "l311-13,l311-07"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c312",
+    "état": "livrée",
+    "date de création": "08/04/2024, 15:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "tlouis@gm.fr",
+    "lignes": "l312-02"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c313",
+    "état": "livrée",
+    "date de création": "08/04/2024, 16:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "adupuis@hot.fr",
+    "lignes": "l313-17,l313-06"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c314",
+    "état": "livrée",
+    "date de création": "08/04/2024, 16:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "yguerin@lp.net",
+    "lignes": "l314-18"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c315",
+    "état": "livrée",
+    "date de création": "08/04/2024, 16:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "mdupont@gm.fr",
+    "lignes": "l315-04"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c316",
+    "état": "livrée",
+    "date de création": "08/04/2024, 17:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lmichel@or.fr",
+    "lignes": "l316-13"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c317",
+    "état": "livrée",
+    "date de création": "08/04/2024, 17:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lfournier@sfr.fr",
+    "lignes": "l317-15,l317-05"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c318",
+    "état": "livrée",
+    "date de création": "08/04/2024, 18:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lbarbier1@lp.net",
+    "lignes": "l318-20"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c319",
+    "état": "livrée",
+    "date de création": "09/04/2024, 00:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "mdupont@gm.fr",
+    "lignes": "l319-11,l319-19"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c320",
+    "état": "livrée",
+    "date de création": "09/04/2024, 00:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "clement@or.fr",
+    "lignes": "l320-11,l320-22"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c321",
+    "état": "livrée",
+    "date de création": "09/04/2024, 02:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "llegrand@or.fr",
+    "lignes": "l321-10"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c322",
+    "état": "livrée",
+    "date de création": "09/04/2024, 02:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "bleroux@sfr.fr",
+    "lignes": "l322-20,l322-15"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c323",
+    "état": "livrée",
+    "date de création": "09/04/2024, 02:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "tgiraud@sfr.fr",
+    "lignes": "l323-07"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c324",
+    "état": "livrée",
+    "date de création": "09/04/2024, 03:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "llerouge@free.fr",
+    "lignes": "l324-12"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c325",
+    "état": "ouverte",
+    "date de création": "09/04/2024, 04:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "jdurand@gm.fr",
+    "lignes": "l325-14,l325-04,l325-19,l325-12,l325-16"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c326",
+    "état": "ouverte",
+    "date de création": "09/04/2024, 04:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "thenri@or.fr",
+    "lignes": "l326-06,l326-07"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c327",
+    "état": "livrée",
+    "date de création": "09/04/2024, 04:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "mbourgeois@lp.net",
+    "lignes": "l327-01,l327-11"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c328",
+    "état": "livrée",
+    "date de création": "09/04/2024, 04:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "aduval1@wan.fr",
+    "lignes": "l328-22"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c329",
+    "état": "livrée",
+    "date de création": "09/04/2024, 04:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "akhan@but.org",
+    "lignes": "l329-02"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c330",
+    "état": "livrée",
+    "date de création": "09/04/2024, 04:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "eleroy@ptr.fr",
+    "lignes": "l330-03"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c331",
+    "état": "livrée",
+    "date de création": "09/04/2024, 05:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "hmartin@hot.fr",
+    "lignes": "l331-04"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c332",
+    "état": "livrée",
+    "date de création": "09/04/2024, 05:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "mbonnet@or.fr",
+    "lignes": "l332-19"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c333",
+    "état": "livrée",
+    "date de création": "09/04/2024, 05:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "rbonnet1@hot.fr",
+    "lignes": "l333-10"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c334",
+    "état": "livrée",
+    "date de création": "09/04/2024, 06:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "ssharma@m6.com",
+    "lignes": "l334-12"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c335",
+    "état": "ouverte",
+    "date de création": "09/04/2024, 06:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "pnicolas@or.fr",
+    "lignes": "l335-15"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c336",
+    "état": "livrée",
+    "date de création": "09/04/2024, 06:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "amohed@brt.fr",
+    "lignes": "l336-22"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c337",
+    "état": "livrée",
+    "date de création": "09/04/2024, 07:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "alam@m6.com",
+    "lignes": "l337-17"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c338",
+    "état": "livrée",
+    "date de création": "09/04/2024, 07:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "abois@lp.net",
+    "lignes": "l338-13"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c339",
+    "état": "livrée",
+    "date de création": "09/04/2024, 07:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lblanc2@wan.fr",
+    "lignes": "l339-21"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c340",
+    "état": "livrée",
+    "date de création": "09/04/2024, 08:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "zlacroix@hot.fr",
+    "lignes": "l340-07"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c341",
+    "état": "ouverte",
+    "date de création": "09/04/2024, 09:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "llerouge@free.fr",
+    "lignes": "l341-04"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c342",
+    "état": "ouverte",
+    "date de création": "09/04/2024, 09:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "abois@lp.net",
+    "lignes": "l342-21"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c343",
+    "état": "livrée",
+    "date de création": "09/04/2024, 09:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "mabdullah@but.org",
+    "lignes": "l343-22"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c344",
+    "état": "livrée",
+    "date de création": "09/04/2024, 10:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lboucher@sfr.fr",
+    "lignes": "l344-19"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c345",
+    "état": "livrée",
+    "date de création": "09/04/2024, 10:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "tlouis@gm.fr",
+    "lignes": "l345-09"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c346",
+    "état": "livrée",
+    "date de création": "09/04/2024, 10:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "agilles@sfr.fr",
+    "lignes": "l346-08"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c347",
+    "état": "notée",
+    "date de création": "09/04/2024, 10:30",
+    "note": 2.0,
+    "commentaire": NaN,
+    "client": "mbourge@gm.fr",
+    "lignes": "l347-18"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c348",
+    "état": "notée",
+    "date de création": "09/04/2024, 11:00",
+    "note": 5.0,
+    "commentaire": NaN,
+    "client": "lferrand@gm.fr",
+    "lignes": "l348-03"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c349",
+    "état": "notée",
+    "date de création": "09/04/2024, 11:00",
+    "note": 5.0,
+    "commentaire": NaN,
+    "client": "lferrand@gm.fr",
+    "lignes": "l349-16,l349-12"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c350",
+    "état": "notée",
+    "date de création": "09/04/2024, 11:30",
+    "note": 2.0,
+    "commentaire": NaN,
+    "client": "jjuma@brt.fr",
+    "lignes": "l350-21,l350-13"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c351",
+    "état": "notée",
+    "date de création": "09/04/2024, 11:30",
+    "note": 3.0,
+    "commentaire": NaN,
+    "client": "emoulin@or.fr",
+    "lignes": "l351-06"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c352",
+    "état": "notée",
+    "date de création": "09/04/2024, 12:00",
+    "note": 2.0,
+    "commentaire": NaN,
+    "client": "alemoine1@sfr.fr",
+    "lignes": "l352-11,l352-14,l352-16"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c353",
+    "état": "notée",
+    "date de création": "09/04/2024, 12:00",
+    "note": 4.0,
+    "commentaire": NaN,
+    "client": "ldupuis1@hot.fr",
+    "lignes": "l353-06"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c354",
+    "état": "notée",
+    "date de création": "09/04/2024, 12:30",
+    "note": 2.0,
+    "commentaire": NaN,
+    "client": "lmercier@or.fr",
+    "lignes": "l354-02"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c355",
+    "état": "notée",
+    "date de création": "09/04/2024, 12:30",
+    "note": 3.0,
+    "commentaire": NaN,
+    "client": "lblanc1@lp.net",
+    "lignes": "l355-18"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c356",
+    "état": "livrée",
+    "date de création": "09/04/2024, 13:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "nlois@or.fr",
+    "lignes": "l356-05"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c357",
+    "état": "livrée",
+    "date de création": "09/04/2024, 13:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "pnicolas@or.fr",
+    "lignes": "l357-05,l357-21"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c358",
+    "état": "livrée",
+    "date de création": "09/04/2024, 13:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "rjoly@or.fr",
+    "lignes": "l358-01"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c359",
+    "état": "livrée",
+    "date de création": "09/04/2024, 14:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "mlucas@sfr.fr",
+    "lignes": "l359-20"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c360",
+    "état": "livrée",
+    "date de création": "09/04/2024, 14:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "tlouis@gm.fr",
+    "lignes": "l360-09"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c361",
+    "état": "livrée",
+    "date de création": "09/04/2024, 15:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "tgiraud@sfr.fr",
+    "lignes": "l361-22"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c362",
+    "état": "livrée",
+    "date de création": "09/04/2024, 16:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "smercier@sfr.fr",
+    "lignes": "l362-18"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c363",
+    "état": "livrée",
+    "date de création": "09/04/2024, 16:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "elaroche@lp.net",
+    "lignes": "l363-22"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c364",
+    "état": "livrée",
+    "date de création": "10/04/2024, 15:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lcaron@lp.net",
+    "lignes": "l364-09"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c365",
+    "état": "livrée",
+    "date de création": "10/04/2024, 16:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "clement@or.fr",
+    "lignes": "l365-15"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c366",
+    "état": "livrée",
+    "date de création": "10/04/2024, 16:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "ssingh@m6.com",
+    "lignes": "l366-08"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c367",
+    "état": "livrée",
+    "date de création": "10/04/2024, 16:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "cgirard@or.fr",
+    "lignes": "l367-21"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c368",
+    "état": "livrée",
+    "date de création": "10/04/2024, 17:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "bleroux@sfr.fr",
+    "lignes": "l368-06"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c369",
+    "état": "livrée",
+    "date de création": "10/04/2024, 17:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "hmartin@hot.fr",
+    "lignes": "l369-15"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c370",
+    "état": "livrée",
+    "date de création": "10/04/2024, 18:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "smercier@sfr.fr",
+    "lignes": "l370-11,l370-12"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c371",
+    "état": "livrée",
+    "date de création": "10/04/2024, 18:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "mcolin@sfr.fr",
+    "lignes": "l371-14"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c372",
+    "état": "livrée",
+    "date de création": "10/04/2024, 18:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lbarbier1@lp.net",
+    "lignes": "l372-14,l372-13,l372-05,l372-18"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c373",
+    "état": "livrée",
+    "date de création": "10/04/2024, 20:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "nnguyen@brt.fr",
+    "lignes": "l373-17"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c374",
+    "état": "livrée",
+    "date de création": "15/04/2024, 21:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lsaleh@brt.fr",
+    "lignes": "l374-01"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c375",
+    "état": "livrée",
+    "date de création": "15/04/2024, 21:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lguerin@gm.fr",
+    "lignes": "l375-02,l375-15,l375-13,l375-21,l375-22,l375-12"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c376",
+    "état": "livrée",
+    "date de création": "15/04/2024, 08:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "ljuma@but.org",
+    "lignes": "l376-21"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c377",
+    "état": "livrée",
+    "date de création": "15/04/2024, 08:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "mgomes@but.org",
+    "lignes": "l377-11,l377-20"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c378",
+    "état": "ouverte",
+    "date de création": "05/04/2024, 08:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "cleclerc@wan.fr",
+    "lignes": "l378-10,l378-09"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c379",
+    "état": "ouverte",
+    "date de création": "05/04/2024, 08:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "jeyer@or.fr",
+    "lignes": "l379-14,l379-11,l379-16,l379-12,l379-21"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c380",
+    "état": "livrée",
+    "date de création": "05/04/2024, 09:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lbarbier@lp.net",
+    "lignes": "l380-01"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c381",
+    "état": "livrée",
+    "date de création": "05/04/2024, 09:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "clegrand@or.fr",
+    "lignes": "l381-18"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c382",
+    "état": "ouverte",
+    "date de création": "05/04/2024, 10:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "rlambert@lp.net",
+    "lignes": "l382-20"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c383",
+    "état": "ouverte",
+    "date de création": "05/04/2024, 10:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "mmichel@bbox.fr",
+    "lignes": "l383-08"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c384",
+    "état": "livrée",
+    "date de création": "05/04/2024, 12:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "rgarcia@or.fr",
+    "lignes": "l384-14,l384-10"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c385",
+    "état": "livrée",
+    "date de création": "05/04/2024, 12:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "alemoyne@wan.fr",
+    "lignes": "l385-13,l385-09,l385-02,l385-19,l385-18"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c386",
+    "état": "livrée",
+    "date de création": "05/04/2024, 12:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lgouillaume@sfr.fr",
+    "lignes": "l386-20"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c387",
+    "état": "ouverte",
+    "date de création": "08/04/2024, 12:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lguyot@lp.net",
+    "lignes": "l387-12"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c388",
+    "état": "ouverte",
+    "date de création": "08/04/2024, 12:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "chenry@hot.fr",
+    "lignes": "l388-17"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c389",
+    "état": "livrée",
+    "date de création": "08/04/2024, 12:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "sshin@but.org",
+    "lignes": "l389-12,l389-06"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c390",
+    "état": "livrée",
+    "date de création": "08/04/2024, 12:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "tdupont@wan.fr",
+    "lignes": "l390-03,l390-04"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c391",
+    "état": "livrée",
+    "date de création": "08/04/2024, 13:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "mperrier@or.fr",
+    "lignes": "l391-07"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c392",
+    "état": "livrée",
+    "date de création": "08/04/2024, 13:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "ldupuis2@hot.fr",
+    "lignes": "l392-09"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c393",
+    "état": "livrée",
+    "date de création": "08/04/2024, 15:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lbarbier@lp.net",
+    "lignes": "l393-17,l393-05,l393-01,l393-14,l393-15,l393-13,l393-22"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c394",
+    "état": "livrée",
+    "date de création": "08/04/2024, 15:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "marnaud1@sfr.fr",
+    "lignes": "l394-17"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c395",
+    "état": "livrée",
+    "date de création": "08/04/2024, 15:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "ccarre@hot.fr",
+    "lignes": "l395-21"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c396",
+    "état": "livrée",
+    "date de création": "08/04/2024, 15:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "wnguyen@but.org",
+    "lignes": "l396-17"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c397",
+    "état": "livrée",
+    "date de création": "08/04/2024, 15:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "vmartin@lp.net",
+    "lignes": "l397-06"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c398",
+    "état": "livrée",
+    "date de création": "08/04/2024, 15:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "egarnier@sfr.fr",
+    "lignes": "l398-17"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c399",
+    "état": "livrée",
+    "date de création": "08/04/2024, 15:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "nlaurent@yahoo.fr",
+    "lignes": "l399-06"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c400",
+    "état": "livrée",
+    "date de création": "08/04/2024, 15:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "nleclerc@sfr.fr",
+    "lignes": "l400-02"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c401",
+    "état": "livrée",
+    "date de création": "08/04/2024, 15:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "mgiraud@gm.fr",
+    "lignes": "l401-16,l401-17"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c402",
+    "état": "livrée",
+    "date de création": "08/04/2024, 15:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "emeyer@or.fr",
+    "lignes": "l402-07"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c403",
+    "état": "livrée",
+    "date de création": "08/04/2024, 15:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "adupuis@hot.fr",
+    "lignes": "l403-18,l403-10,l403-06"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c404",
+    "état": "livrée",
+    "date de création": "08/04/2024, 15:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lmercier@or.fr",
+    "lignes": "l404-18,l404-04,l404-12,l404-19,l404-17,l404-02"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c405",
+    "état": "livrée",
+    "date de création": "08/04/2024, 15:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lbarbier@lp.net",
+    "lignes": "l405-16,l405-06"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c406",
+    "état": "livrée",
+    "date de création": "12/04/2024, 15:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "tguillemin@out.fr",
+    "lignes": "l406-17,l406-14,l406-05,l406-04"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c407",
+    "état": "ouverte",
+    "date de création": "15/04/2024, 15:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "bmorel@or.fr",
+    "lignes": "l407-17,l407-19"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c408",
+    "état": "ouverte",
+    "date de création": "15/04/2024, 15:30",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "lguillaume@lp.net",
+    "lignes": "l408-14,l408-09,l408-01,l408-10"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c409",
+    "état": "ouverte",
+    "date de création": "15/04/2024, 16:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "hkim@brt.fr",
+    "lignes": "l409-13,l409-02,l409-14"
+  },
+  {
+    "jdds": "jdd0",
+    "référence": "c410",
+    "état": "ouverte",
+    "date de création": "16/04/2024, 17:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": "tdufour@sfr.fr",
+    "lignes": "l410-16,l410-15,l410-20"
+  },
+  {
+    "jdds": NaN,
+    "référence": NaN,
+    "état": "ouverte",
+    "date de création": "03/02/2025, 00:00",
+    "note": NaN,
+    "commentaire": NaN,
+    "client": NaN,
+    "lignes": "#r628"
+  }
+]
