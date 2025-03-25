@@ -1,6 +1,6 @@
 import { livreurs } from "./Livreur";
 
 export interface Equipe{
-    livreurs: livreurs[]
+    livreurs: string
     camion : string
 }

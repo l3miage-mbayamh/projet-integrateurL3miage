@@ -4,5 +4,8 @@
     margin-left: 10px;
     background-color: aquamarine;
     border-radius: 5px;
+}
 
+.validerEquipe button{
+    background-color: blue;
 }

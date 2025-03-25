@@ -4,27 +4,23 @@
         
       <form [formGroup]="firstFormGroup">
         <ng-template matStepLabel>Former les equipes</ng-template>
-         <!--les champs-->
+         <!--les champs equipes-->
         <mat-form-field>
           <mat-label>Equipe</mat-label>
-          <mat-select [formControl]="equipierForm" multiple>
+          <mat-select [formControl]="equipierForm" multiple [(ngModel)]="livreursChoisit" name="equipe">
             <mat-select-trigger>
                 {{equipierForm.value?.[0] || ''}}
-                @if ((equipierForm.value?.length || 0) > 1) {
-                  <span class="selection">
-                    (+{{(equipierForm.value?.length || 0) - 1}} {{equipierForm.value?.length === 2 ? 'other' : 'others'}})
-                  </span>
-                }
+               ,{{equipierForm.value?.[1]}}
               </mat-select-trigger>
                  @for (employer of livreursListe(); track $index) {
                 <mat-option [value]="employer.nom">{{employer.nom}}</mat-option>
               }
           </mat-select>
         </mat-form-field>
-            
+           <!--les champs camion-->
         <mat-form-field>
             <mat-label>Camion</mat-label>
-            <mat-select>
+            <mat-select [formControl]="camionForm" [(ngModel)]="camionChoisit" name="camion">
             
                     @for (c of camionList(); track $index) {
                         <mat-option [value]="c.immatriculation">{{c.immatriculation}}</mat-option>
@@ -33,7 +29,20 @@
             </mat-select>
           
         </mat-form-field>
-
+        <!--validation de l'equipe dont le nom sera generer automatiquement-->
+        <div class="validerEquipe">
+            <button mat-raised-button (click)="confirmer()">Confirmer</button>
+        </div>
+        <!--affichons la liste des equipes avec indice generer avec index-->
+        <div>
+          Nombre Equipe: {{nombreEquipe()}}
+          @for (eq of equipeList(); track $index) {
+            <div>
+              <p>Equipe {{$index}}</p>
+              <p>{{eq.livreurs}} {{eq.camion}}</p>
+            </div>
+          }
+        </div>
         <div>
           <!--navigation  vers la page suivante-->
           <button mat-button matStepperNext class="navigationButton">Suivant</button>

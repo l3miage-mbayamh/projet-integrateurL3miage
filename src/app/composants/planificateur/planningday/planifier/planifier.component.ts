@@ -6,6 +6,7 @@ import { Employer } from '../../../../interfaces/Employer';
 import { livreurs } from '../../../../interfaces/Livreur';
 import { EntrepotData } from '../../../../interfaces/entrepotData';
 import { Camion } from '../../../../interfaces/Camion';
+import { Equipe } from '../../../../interfaces/Equipes';
 
 @Component({
   selector: 'app-planifier',
@@ -19,12 +20,19 @@ export class PlanifierComponent {
   public readonly comandes = signal<readonly Commande[]>([])
   public readonly livreursListe = signal<livreurs[]>([])
   public readonly camionList = signal<Camion[]>([])
+  //declaration des variables
+  public readonly camionChoisit = model<string>("")
+  public readonly livreursChoisit = model<string>("")
+  public readonly equipe = model<Equipe>({livreurs: "Euler", camion: "415655"})
+  public readonly equipeList = model<Equipe[]>([])
+  public readonly nombreEquipe = model<number>(0)
 
   constructor(){
     //commandes
     const cmd = this.service.getCommandes().then(result=>
       this.comandes.set(result)
     )
+
     //livreurs
     const employerList = this.service.getLivreurs().then(result=>
       this.livreursListe.set([...result])
@@ -32,11 +40,29 @@ export class PlanifierComponent {
     const camion = this.service.getCamion().then(result=>
       this.camionList.set(result)
     )
-  }
-  //gestion champs equipes qui utilise la liste des livreurs
-  equipierForm = new FormControl('')
 
+    //sauvegarde des donnees 
+    //tableau de equipes
+    const savedData = localStorage.getItem("equipeList")
+    if(savedData){
+      this.equipeList.set(JSON.parse(savedData))
+    }
+  }
+  //creation des equipes
+  confirmer():void{
+    this.equipe.update(()=> ({
+      livreurs: this.livreursChoisit(),
+      camion: this.camionChoisit()
+    }))
+    this.equipeList().push(this.equipe())
+    this.nombreEquipe.update(()=> this.nombreEquipe() + 1)
+    //sauvons le tableau
+    localStorage.setItem('equipeList', JSON.stringify(this.equipeList()))
+  }
   
+  //gestion champs form control
+  equipierForm = new FormControl('')
+  camionForm = new FormControl('')
 
   //la navigation dans le composant pour switcher les differentes parties
   private _formBuilder = inject(FormBuilder);
@@ -48,4 +74,8 @@ export class PlanifierComponent {
     secondCtrl: ['', Validators.required],
   });
 
+
+  
+
+  
 }
