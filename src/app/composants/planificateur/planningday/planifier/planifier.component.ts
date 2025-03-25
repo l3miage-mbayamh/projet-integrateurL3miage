@@ -60,6 +60,15 @@ export class PlanifierComponent {
     //sauvons le tableau
     localStorage.setItem('equipeList', JSON.stringify(this.equipeList()))
   }
+  //supression d'equipe de la table
+  suprimer(index: number): void{
+    if(this.equipeList().at(index) && this.nombreEquipe()>0){
+      const equipeNew = this.equipeList().filter((_,i)=> i!== index)
+      this.equipeList.update(()=>equipeNew)
+      this.nombreEquipe.set(this.nombreEquipe()-1)
+    }
+    localStorage.setItem('equipeList', JSON.stringify(this.equipeList()))
+  }
   
   //gestion champs form control
   equipierForm = new FormControl('')

@@ -1,4 +1,4 @@
-[
+{"commandes":[
     {
         "référence":"c001",
         "état":"ouverte",
@@ -2465,4 +2465,4 @@
         "date de création":"03-02-2025",
         "client":null
     }
-]
+]}

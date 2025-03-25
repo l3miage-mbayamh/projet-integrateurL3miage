@@ -5,17 +5,24 @@
     background-color: aquamarine;
     border-radius: 5px;
 }
+#F{
+    margin-top: 10px;
+}
 
 .validerEquipe button{
-    background-color: blue;
+    background-color:aqua;
+    border-radius: 15px;
 }
 
 .equipeL{
-    float: none;
+    float: left;
     background-color: aqua;
     border-radius: 10px;
-    width: 350px;
+    width: 360px;
 }
-.equipe button{
-    float: right;
+.equipe{
+    display: inline-flex;
+}
+#equipeGroupe{
+    margin-top: 20px;
 }

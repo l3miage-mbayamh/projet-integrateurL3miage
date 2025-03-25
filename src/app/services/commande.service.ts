@@ -19,7 +19,7 @@ export class CommandeService {
   }
   //recuperation des commandes
   async getCommandes(): Promise< readonly Commande[]>{
-    const commandeData = await fetch('http://localhost:3000/commandes')
+    const commandeData = await fetch('http://localhost:3004/commandes')
     return await commandeData.json()?? []
   }
   //recuperation de la liste des livreurs
