@@ -33,15 +33,18 @@
         <div class="validerEquipe">
             <button mat-raised-button (click)="confirmer()">Confirmer</button>
         </div>
-        <!--affichons la liste des equipes avec indice generer avec index-->
-        <div>
+        <!--affichons la liste des equipes avec indice generer  index-->
+        <div class="equipe">
           Nombre Equipe: {{nombreEquipe()}}
           @for (eq of equipeList(); track $index) {
             <div>
               <p>Equipe {{$index}}</p>
-              <p>{{eq.livreurs}} {{eq.camion}}</p>
             </div>
-          }
+            <div class="equipeL">
+                Livreur : {{eq.livreurs}}  Camion : {{eq.camion}}
+            </div>
+              
+            }
         </div>
         <div>
           <!--navigation  vers la page suivante-->

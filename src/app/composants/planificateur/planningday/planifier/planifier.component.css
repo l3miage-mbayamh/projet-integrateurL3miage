@@ -1,6 +1,6 @@
 .navigationButton{
     float:  right;
-    margin-top: 50px;
+    
     margin-left: 10px;
     background-color: aquamarine;
     border-radius: 5px;
@@ -8,4 +8,14 @@
 
 .validerEquipe button{
     background-color: blue;
+}
+
+.equipeL{
+    float: none;
+    background-color: aqua;
+    border-radius: 10px;
+    width: 350px;
+}
+.equipe button{
+    float: right;
 }

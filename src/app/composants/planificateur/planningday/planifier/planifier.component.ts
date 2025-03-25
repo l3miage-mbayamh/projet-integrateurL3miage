@@ -46,6 +46,7 @@ export class PlanifierComponent {
     const savedData = localStorage.getItem("equipeList")
     if(savedData){
       this.equipeList.set(JSON.parse(savedData))
+
     }
   }
   //creation des equipes
