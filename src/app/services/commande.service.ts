@@ -39,17 +39,23 @@ export class CommandeService {
   }
   //recuperation de clients data
   getClients(): Observable<Client[]>{
-    const apiClient = 'http://localhost:3001/clients'
+    const apiClient = 'http://localhost:3006/clients'
     return this.http.get<Client[]>(apiClient)
   }
   
  
   //recuperoms les commandes sous forme de tableau depuis client commandes groupees
-  getCommandePerArray(): Observable<string[][]>{
+  getCommandePerArray(): Observable<Commande[][]>{
     return this.getClients().pipe(
-      map((clients: Client[])=> clients.map((client: Client)=> client.commandes.split(',')))
+      map((clients: Client[])=> clients.map((client: Client)=> client.commandes))
     )
   }
+
+
+
+
+  
+  
   
   
   

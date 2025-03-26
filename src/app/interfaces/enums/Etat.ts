@@ -1,8 +1,8 @@
 export enum Etat{
-    ouverte,
-    livree,
-    notee,
-    planifier,
-    encour
+    ouverte ="OUVERTE",
+    livree ="LIVREE",
+    notee ="NOTEE",
+    planifier ="PLANIFIER",
+    encours ="ENCOURS"
     
 }

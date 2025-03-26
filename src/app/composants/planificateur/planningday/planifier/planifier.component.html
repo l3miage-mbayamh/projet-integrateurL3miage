@@ -74,22 +74,35 @@
           <!--choix poursuivre ou retour-->
           <button mat-button matStepperPrevious class="navigationButton">Retour</button>
         </div>
-        <!--traitement des commandes groupees test-->
-        <div>
-         @for (c0 of commandesGroupe(); track $index) {
-          <!--info client-->
+        <!--traitement des commandes groupees test check-->
+        
+        <!--traitement des commandes groupees test affiche-->
+        
+        <!--test tableau start-->
+        @for (c0 of clients(); track $index) {
+          <div class="clientInfo">
+            <mat-checkbox class="tableCommande"
+            >
+                Client: {{c0.nom}} {{c0.adresse}} {{c0.codePostal}} {{c0.ville}}
+            </mat-checkbox>
+              @if (c0.commandes.length!==0) {
           <div>
-            Client : {{clients()[$index].nom}}
-            <p>{{clients()[$index].adresse}} {{clients()[$index].codePostal}}, {{clients()[$index].ville}}</p>
+           @for (c1 of c0.commandes; track $index) {
+            
+            <!--info ref commandes-->
+            <p>{{c1.reference}} {{c1.etat}}</p>
+          
+        }
+          </div>
+         
+    }
           </div>
           <!--info ref commandes-->
-          <div>
-            @for (c1 of c0; track $index) {
-              <p>{{c1}}</p>
-            }
-          </div>
-         }
-        </div>
+        
+          
+      }
+        <!--test tableau end-->
+
       </form>
     </mat-step>
      <!--confirmation des choix

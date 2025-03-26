@@ -1,0 +1,21 @@
+<div>
+    @for (c0 of clients(); track $index) {
+     
+     <!--info client-->
+     <div>
+       Client : {{c0.nom}}
+       <p>{{c0.adresse}} {{c0.codePostal}}, {{c0.ville}}</p>
+     </div>
+     <!--info ref commandes-->
+     @if (c0.commandes.length!==0) {
+       <div>
+         @for (c1 of c0.commandes; track $index) {
+           @if(c1.etat.toUpperCase() == etat.ouverte){
+             <!--info ref commandes-->
+             <p>{{c1.reference}} {{c1.etat}}</p>
+           }
+         }
+       </div>
+     }
+    }
+   </div>

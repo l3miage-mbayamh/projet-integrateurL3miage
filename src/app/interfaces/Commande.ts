@@ -6,4 +6,7 @@ export interface Commande{
     etat: Etat,
     dateDeCreation: Date,
     client: string,
+    note:number,
+    commentaire?:string,
+    ligne:Ligne
 }

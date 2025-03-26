@@ -26,3 +26,15 @@
 #equipeGroupe{
     margin-top: 20px;
 }
+/*test start*/
+.clientTable {
+    width: 100%;
+  }
+  .clientInfo{
+    display: block;
+    background-color: rgb(165, 159, 109);
+    width: 500px;
+    border-radius: 10px;
+    
+  }
+  

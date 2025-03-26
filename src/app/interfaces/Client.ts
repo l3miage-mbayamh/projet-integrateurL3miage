@@ -11,6 +11,6 @@ export interface Client{
     ville: string,
     latitude: number,
     longitude: number,
-    commandes: string
+    commandes: Commande[]
     etat: Etat
 }
