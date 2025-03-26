@@ -15,7 +15,7 @@ export class JourneeComponent {
 //injcetion de service
 public readonly entrepotDataService = inject(CommandeService)
 //liste d'entrepot depuis le service via server
-public  entrepotData: EntrepotData[] = []
+public  entrepotData= model<EntrepotData[]>([])
 
 public readonly dialogRef = inject(MatDialogRef<JourneeComponent>)
 public readonly data = inject(MAT_DIALOG_DATA)
@@ -30,8 +30,9 @@ public readonly journee = model<Journee>({nomJournee: "J00", nomEntrepot:"Brenis
 
 //contucteur
 constructor(){
-  this.entrepotDataService.getEntrepotData().then(
-    (value)=>{this.entrepotData = value})
+  this.entrepotDataService.getEntrepotData().subscribe(result=>
+    this.entrepotData.set(result)
+  )
    // console.log(this.entrepotData);
 }
 

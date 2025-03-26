@@ -3,7 +3,7 @@ import { Produit } from "./Produit";
 
 export interface Ligne{
     jdds: string,
-    commande: Commande,
+    refCommande: string,
     produit: Produit,
     quantite: number
 }

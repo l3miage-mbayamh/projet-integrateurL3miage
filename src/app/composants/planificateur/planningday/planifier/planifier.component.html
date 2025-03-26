@@ -35,7 +35,7 @@
         </div>
         <!--affichons la liste des equipes avec indice generer  index-->
         <div id="equipeGroupe">
-          Nombre Equipe: {{nombreEquipe()}}
+        
           @for (eq of equipeList(); track $index) {
             <div>
               <p>Equipe {{$index}}</p>
@@ -59,20 +59,36 @@
       </form>
     </mat-step>
      <!--choix commande pour la livraison-->
-    <mat-step [stepControl]="secondFormGroup" errorMessage="Address is required">
+    <mat-step [stepControl]="secondFormGroup" errorMessage="commande obligatoire">
 
       <form [formGroup]="secondFormGroup">
         <ng-template matStepLabel>choix des commandes a livrees</ng-template>
 
         <mat-form-field>
-          <mat-label>Address</mat-label>
+          <mat-label>Commandes</mat-label>
+         
           <input matInput placeholder="Ex. 1 Main St, New York, NY" formControlName="secondCtrl" required>
         </mat-form-field>
-
+        
         <div>
           <!--choix poursuivre ou retour-->
-          <button mat-button matStepperNext class="navigationButton">Suivant</button>
           <button mat-button matStepperPrevious class="navigationButton">Retour</button>
+        </div>
+        <!--traitement des commandes groupees test-->
+        <div>
+         @for (c0 of commandesGroupe(); track $index) {
+          <!--info client-->
+          <div>
+            Client : {{clients()[$index].nom}}
+            <p>{{clients()[$index].adresse}} {{clients()[$index].codePostal}}, {{clients()[$index].ville}}</p>
+          </div>
+          <!--info ref commandes-->
+          <div>
+            @for (c1 of c0; track $index) {
+              <p>{{c1}}</p>
+            }
+          </div>
+         }
         </div>
       </form>
     </mat-step>

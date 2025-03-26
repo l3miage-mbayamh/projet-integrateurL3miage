@@ -43,6 +43,7 @@ import { MatDialogModule, MatDialogActions , MatDialog,} from '@angular/material
 import { PlanifierComponent } from './composants/planificateur/planningday/planifier/planifier.component';
 import {MatStepperModule} from '@angular/material/stepper';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -86,7 +87,7 @@ import {MatStepperModule} from '@angular/material/stepper';
      FormsModule,
      MatDialogModule,
      MatDialogActions,
-     MatStepperModule
+     MatStepperModule,
   ],
   providers: [
     provideAnimationsAsync(),

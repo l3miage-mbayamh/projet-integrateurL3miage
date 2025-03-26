@@ -6,7 +6,7 @@
         <mat-form-field>
             <mat-label>Entrepot: </mat-label>
             <mat-select [(ngModel)]="journee().nomEntrepot" name="entrepot">
-                @for (entr of entrepotData; track $index) {
+                @for (entr of entrepotData(); track $index) {
                     <mat-option [value]="entr.nom">{{entr.nom}}</mat-option>
                 }
             </mat-select>
