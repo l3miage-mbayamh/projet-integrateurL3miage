@@ -1,4 +1,4 @@
-import { Component, inject, model, signal } from '@angular/core';
+import { Component, effect, inject, model, signal } from '@angular/core';
 import { CommandeService } from '../../../../services/commande.service';
 import { Commande } from '../../../../interfaces/Commande';
 import { FormBuilder, FormControl, Validators } from '@angular/forms';
@@ -37,8 +37,8 @@ export class PlanifierComponent {
   //public readonly nombreEquipe = model<number>(0)
   //test commandes
   public readonly commandesGroupe = model<Commande[][]>([])
-  public readonly clientsALivrer = model<Client[]>([])
-  public readonly suivieEtat = model<boolean>(false)
+  public readonly clientALivrer = model<Client[]>([])
+  
 
 
   constructor(){
@@ -55,7 +55,9 @@ export class PlanifierComponent {
     
     */
    
-
+    //commande
+    const cmd = this.service.getCommandes()
+    cmd.subscribe(value => this.commandes.set(value))
     //livreurs
     const employerList = this.service.getLivreurs()
     employerList.subscribe(result=> this.livreursListe.set(result))
@@ -79,8 +81,10 @@ export class PlanifierComponent {
       this.equipeList.set(JSON.parse(savedData))
 
     }
-    //test via console
-   
+    //test commandes
+    effect(() => {
+      this.dataSource.data = this.clients(); // Rafraîchir les données
+    });
  
     
     
@@ -125,7 +129,92 @@ export class PlanifierComponent {
     secondCtrl: ['', Validators.required],
   });
 //test start
+//selection de toutes les commandes via client
+displayedColumns: string[] = ['select', 'nom', 'adresse', 'codePostal','ville', 'commandes','etat'];
+  dataSource = new MatTableDataSource<Client>(this.clients());
+  selection = new SelectionModel<Client>(true, []);
+
   
+
+  /** quant toutes les lignes sont selectionnees. */
+  isAllSelected() {
+    const numSelected = this.selection.selected.length;
+    const numVisible = this.dataSource.filteredData.length;  // Nombre d'éléments visibles après filtrage
+    return numSelected === numVisible;  // Retourne vrai si tous les éléments visibles sont sélectionnés
+  }
+
+  
+ 
+
+  /** selection de l'ensemble des elements. */
+  toggleAllRows() {
+    const visibleClients = this.dataSource.filteredData;  // Récupère les clients filtrés (visibles)
+  
+    if (this.isAllSelected()) {
+      this.selection.clear();  // Désélectionne tous les clients
+    } else {
+      visibleClients.forEach(client => this.selection.select(client));  // Sélectionne les clients visibles
+    }
+  }
+
+  /** la selection ligne du check */
+  checkboxLabel(row?: Client): string {
+    if (!row) {
+      return `${this.isAllSelected() ? 'deselect' : 'select'} all`;
+    }
+    return `${this.selection.isSelected(row) ? 'deselect' : 'select'} `;
+  }
+//modifions le comportement du filter pour trier les elements
+ngOnInit() {
+  this.dataSource.filterPredicate = (data: Client, filter: string) => {
+    const transformedFilter = filter.trim().toLowerCase();
+
+    // Vérifions si la recherche correspond aux infos du client
+    const matchClient =
+      data.email.toLowerCase().includes(transformedFilter) ||
+      data.prenom.toLowerCase().includes(transformedFilter) ||
+      data.nom.toLowerCase().includes(transformedFilter) ||
+      data.adresse.toLowerCase().includes(transformedFilter) ||
+      data.codePostal.toString().includes(transformedFilter) ||
+      data.ville.toLowerCase().includes(transformedFilter)
+
+
+    // Filtrons les commandes : masquer "livré" sauf si on cherche "livré"
+    let filteredCommandes = data.commandes;
+    if (transformedFilter === "ouverte") {
+      filteredCommandes = data.commandes.filter(cmd => cmd.etat.toLowerCase() === "ouverte");
+    } else if (transformedFilter !== "livrée") {
+      filteredCommandes = data.commandes.filter(cmd => cmd.etat.toLowerCase() !== "livrée");
+    }
+
+    // Vérifions si une commande restante correspond au filtre
+    const matchCommande = filteredCommandes.some(cmd =>
+      cmd.reference.toLowerCase().includes(transformedFilter) ||
+      cmd.etat.toLowerCase().includes(transformedFilter)
+    );
+
+    return matchClient || matchCommande;
+  };
+}
+//application du filtre
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+
+    if (this.dataSource.paginator ) {
+      this.dataSource.paginator.firstPage();
+    }
+  }
+
+
+//recuperation des  clients selectionner (a livree)
+getSelectedClients() {
+  const cl = this.selection.selected
+  this.clientALivrer.set(this.selection.selected); // Récupère la liste des clients sélectionnés
+  console.log(this.clientALivrer()); // Vérifie dans la console
+}
+
+
 //test end
 
   

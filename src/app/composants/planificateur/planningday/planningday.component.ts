@@ -62,7 +62,7 @@ public readonly journee = model<Journee>()
 
   //planifier journee ouvre dialog du composant plannifier
   planifier(){
-   this.journeeService.open(PlanifierComponent, {height: '500px',
+   this.journeeService.open(PlanifierComponent, {height: '600px',
     width: '800px'})
   }
 

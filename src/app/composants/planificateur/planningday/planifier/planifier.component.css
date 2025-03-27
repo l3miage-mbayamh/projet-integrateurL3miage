@@ -37,4 +37,7 @@
     border-radius: 10px;
     
   }
+  .controlButton button{
+    float: right;
+  }
   
