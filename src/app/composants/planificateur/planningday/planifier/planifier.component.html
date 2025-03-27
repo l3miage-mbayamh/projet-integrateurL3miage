@@ -70,9 +70,16 @@
           <mat-form-field>
           <mat-label>Filter</mat-label>
           <input matInput (keyup)="applyFilter($event)" placeholder="Saisir" #input>
-          
           </mat-form-field>
-          <button mat-button (click)="getSelectedClients()">ok</button>
+          <mat-form-field>
+            <mat-label>Choisir une équipe</mat-label>
+        <mat-select [(ngModel)]="equipeChoisie" name="equipeChoisie">
+           <mat-option *ngFor="let equipe of equipeList();track $index" [value]="equipe">
+              Equipe : {{ equipe.livreurs }} | Camion: {{ equipe.camion }}
+          </mat-option>
+        </mat-select>
+          </mat-form-field>
+          <button mat-button (click)="affectationDeCommandeAEquipe()">ok</button>
         </div>
         
 
@@ -168,4 +175,13 @@
   <div class="controlButton">
     <button mat-button>Valider</button>
   </div>
+
+  @for (l of livraisonList(); track $index) {
+    <div>{{l.reference}} {{l.equipe.livreurs}} {{l.equipe.camion}}</div>
+    @for (c of l.Commandes; track $index) {
+      {{c.reference}}
+    }
+    
+  }
+ 
   

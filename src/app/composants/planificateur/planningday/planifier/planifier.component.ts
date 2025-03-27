@@ -11,8 +11,9 @@ import { livraison } from '../../../../interfaces/Livraison';
 import { Etat } from '../../../../interfaces/enums/Etat';
 import { Client } from '../../../../interfaces/Client';
 import { SelectionModel } from '@angular/cdk/collections';
-import { PeriodicElement } from '../list-commande/list-commande.component';
+
 import { MatTableDataSource } from '@angular/material/table';
+import { CdkMonitorFocus } from '@angular/cdk/a11y';
 
 @Component({
   selector: 'app-planifier',
@@ -20,7 +21,18 @@ import { MatTableDataSource } from '@angular/material/table';
   styleUrl: './planifier.component.css'
 })
 export class PlanifierComponent {
-
+/*commandes peuvent etre recuperer via clients ou depuis service
+    l'objectif est d'avoir un affichage de commande que j'appelle livraison grouper par client
+    ce qui facilitera la tache au planificateur car destination unique pour caque groupe de commande
+    livreurList: regroupe les data des livreurs dont on affichera juste le nom pour la selection dans equipe
+    commandes: contient les data brute de tout les commandes non grouper
+    camionList: contient la liste des des data de tout les camion dont affiche le matricule dans equipe
+    equipesList : contient la liste d toutes les equipes former
+    clients: contient les data de tout les clients
+    livraisonList: contient les differentes livraison planifier pour un jour donner
+    commandesGroupe: contient les ref commande de toutes les commandes grouper par client
+    
+    */
   readonly service = inject(CommandeService)
   //recuperation de data depuis le service
   public readonly commandes = signal<Commande[]>([])
@@ -34,6 +46,7 @@ export class PlanifierComponent {
   public readonly livreursChoisit = model<string>("")
   public readonly equipe = model<Equipe>({livreurs: "Euler", camion: "415655"})
   public readonly etat = Etat
+  public readonly equipeChoisie:Equipe|null = null
   //public readonly nombreEquipe = model<number>(0)
   //test commandes
   public readonly commandesGroupe = model<Commande[][]>([])
@@ -42,18 +55,7 @@ export class PlanifierComponent {
 
 
   constructor(){
-    /*commandes peuvent etre recuperer via clients ou depuis service
-    l'objectif est d'avoir un affichage de commande que j'appelle livraison grouper par client
-    ce qui facilitera la tache au planificateur car destination unique pour caque groupe de commande
-    livreurList: regroupe les data des livreurs dont on affichera juste le nom pour la selection dans equipe
-    commandes: contient les data brute de tout les commandes non grouper
-    camionList: contient la liste des des data de tout les camion dont affiche le matricule dans equipe
-    equipesList : contient la liste d toutes les equipes former
-    clients: contient les data de tout les clients
-    livraisonList: contient les differentes livraison planifier pour un jour donner
-    commandesGroupe: contient les ref commande de toutes les commandes grouper par client
     
-    */
    
     //commande
     const cmd = this.service.getCommandes()
@@ -81,6 +83,11 @@ export class PlanifierComponent {
       this.equipeList.set(JSON.parse(savedData))
 
     }
+    //recuperation de donnees depuis local livraison liste
+    const savedData2 = localStorage.getItem('livraisonList');
+ if (savedData2) {
+   this.livraisonList.set(JSON.parse(savedData2));
+ }
     //test commandes
     effect(() => {
       this.dataSource.data = this.clients(); // Rafraîchir les données
@@ -136,7 +143,7 @@ displayedColumns: string[] = ['select', 'nom', 'adresse', 'codePostal','ville', 
 
   
 
-  /** quant toutes les lignes sont selectionnees. */
+  /* quant toutes les lignes sont selectionnees. */
   isAllSelected() {
     const numSelected = this.selection.selected.length;
     const numVisible = this.dataSource.filteredData.length;  // Nombre d'éléments visibles après filtrage
@@ -146,7 +153,7 @@ displayedColumns: string[] = ['select', 'nom', 'adresse', 'codePostal','ville', 
   
  
 
-  /** selection de l'ensemble des elements. */
+  /* selection de l'ensemble des elements. */
   toggleAllRows() {
     const visibleClients = this.dataSource.filteredData;  // Récupère les clients filtrés (visibles)
   
@@ -157,7 +164,7 @@ displayedColumns: string[] = ['select', 'nom', 'adresse', 'codePostal','ville', 
     }
   }
 
-  /** la selection ligne du check */
+  /* la selection ligne du check */
   checkboxLabel(row?: Client): string {
     if (!row) {
       return `${this.isAllSelected() ? 'deselect' : 'select'} all`;
@@ -211,10 +218,64 @@ ngOnInit() {
 getSelectedClients() {
   const cl = this.selection.selected
   this.clientALivrer.set(this.selection.selected); // Récupère la liste des clients sélectionnés
-  console.log(this.clientALivrer()); // Vérifie dans la console
+  
 }
 
+//affectation de commande a une equipe soit creation de livraison
 
+affectationDeCommandeAEquipe():void{
+  //recuperation de la selection
+
+  const clientsASelect = this.selection.selected
+
+  //filtrage des commandes des clients a livres pour garder que ceux ouvertes
+  if (!this.equipeChoisie) {
+    alert("Veuillez sélectionner une équipe !");
+    return;
+  }
+  console.log(this.equipeChoisie.livreurs)
+
+  const equipe = this.equipeChoisie
+
+  if (!equipe) {
+    alert("Équipe non valide !");
+    return;
+  }
+
+  
+
+  if (clientsASelect.length === 0) {
+    alert("Veuillez sélectionner au moins une commande !");
+    return;
+  }
+
+  // Filtrer les commandes non livrées
+  const commandesAffectees = clientsASelect.flatMap(client =>
+    client.commandes.filter(cmd => cmd.etat.toLowerCase() !== "livrée")
+  );
+
+  // Vérifier si des commandes sont disponibles
+  if (commandesAffectees.length === 0) {
+    alert("Aucune commande à affecter !");
+    return;
+  }
+
+  // Création d’une nouvelle livraison
+  const nouvelleLivraison: livraison = {
+    reference: `LIV-${Date.now()}`,
+    adresse: clientsASelect[0].adresse, // Adresse du premier client
+    equipe: equipe,
+    Commandes: commandesAffectees
+  };
+
+  // Ajouter à la liste des livraisons
+  this.livraisonList().push(nouvelleLivraison);
+
+  // Sauvegarde dans le localStorage
+  localStorage.setItem('livraisonList', JSON.stringify(this.livraisonList));
+
+  alert(`Commandes affectées à l'équipe ${this.equipeChoisie } !`);
+}
 //test end
 
   

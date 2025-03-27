@@ -3,6 +3,8 @@ export enum Etat{
     livree ="LIVREE",
     notee ="NOTEE",
     planifier ="PLANIFIER",
-    encours ="ENCOURS"
+    encours ="ENCOURS",
+    affectee="AFFECTEE"
+     
     
 }
