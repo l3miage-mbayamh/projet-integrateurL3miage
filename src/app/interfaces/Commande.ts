@@ -10,5 +10,5 @@ export interface Commande{
     client: string,
     ligne: Ligne
 
-    
+
 }

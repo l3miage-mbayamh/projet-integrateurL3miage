@@ -1,0 +1,65 @@
+{
+  "commandes": [
+    {
+      "reference": "c001",
+      "etat": "ouverte",
+      "dateDeCreation": "04-01-2024",
+      "client": "amartin@wan.fr",
+      "ligne": {
+        "jdds": "JD001",
+        "reference": "p001",
+        "quantite": 2
+      }
+    },
+    {
+      "reference": "c002",
+      "etat": "livrée",
+      "dateDeCreation": "05-01-2024",
+      "client": "azainab@m6.com",
+      "note": 4,
+      "commentaire": "Livraison rapide et efficace.",
+      "ligne": {
+        "jdds": "JD002",
+        "reference": "p002",
+        "quantite": 1
+      }
+    },
+    {
+      "reference": "c003",
+      "etat": "notée",
+      "dateDeCreation": "09-01-2024",
+      "client": "lsaleh@brt.fr",
+      "note": 3,
+      "commentaire": "Produit conforme mais délai long.",
+      "ligne": {
+        "jdds": "JD003",
+        "reference": "p003",
+        "quantite": 5
+      }
+    },
+    {
+      "reference": "c004",
+      "etat": "livrée",
+      "dateDeCreation": "09-01-2024",
+      "client": "lsaleh@brt.fr",
+      "note": 5,
+      "commentaire": "Excellent service.",
+      "ligne": {
+        "jdds": "JD004",
+        "reference": "p004",
+        "quantite": 3
+      }
+    },
+    {
+      "reference": "c005",
+      "etat": "livrée",
+      "dateDeCreation": "11-01-2024",
+      "client": "apascal@or.fr",
+      "ligne": {
+        "jdds": "JD005",
+        "reference": "p005",
+        "quantite": 2
+      }
+    }
+  ]
+}

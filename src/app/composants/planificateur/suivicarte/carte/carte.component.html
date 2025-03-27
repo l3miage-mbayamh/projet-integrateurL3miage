@@ -1,9 +1,23 @@
  <!--traitement de carte pour l'affichage-->
 <div style="height: 400px;"
     leaflet
+    [leafletOptions]="{ layers: layers(), zoom: zoom(), center: center() }"
     [leafletCenter]="center()"
     [leafletZoom]="zoom()"
     [leafletLayers]="layers()"
 >
 </div>
+<button (click)="traceItinerary()">Tracer l'itinéraire</button>
 
+@if(hoveredClient){
+<div
+
+[style.top.px]="tooltipY"
+[style.left.px]="tooltipX"
+class="tooltip">
+<strong>{{ hoveredClient.nom }} {{ hoveredClient.prenom }}</strong> <br>
+📍 {{ hoveredClient.adresse }}, {{ hoveredClient.ville }} <br>
+✉️ {{ hoveredClient.email }} <br>
+📦 Commandes : {{ hoveredClient.commandes.length }}
+</div>
+}
