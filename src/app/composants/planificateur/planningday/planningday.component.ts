@@ -8,6 +8,7 @@ import { PlanifierComponent } from './planifier/planifier.component';
 import { livraison } from '../../../interfaces/Livraison';
 import { Equipe } from '../../../interfaces/Equipes';
 import { Commande } from '../../../interfaces/Commande';
+import { CommandeService } from '../../../services/commande.service';
 
 
 @Component({
@@ -18,6 +19,7 @@ import { Commande } from '../../../interfaces/Commande';
 export class PlanningdayComponent {
 //element pour ajouter une journee qui fera appel au composant journee
 public readonly journeeService = inject(MatDialog)
+public readonly service = inject(CommandeService)
 //declaration de variable
 //journee
 public readonly entrepot = model<string>()
@@ -83,6 +85,7 @@ public readonly commandes = model<Commande[]>()
       if(result!== undefined){
         this.tournee.set(result)
       }
+      this.service.updateTournee(result)
       localStorage.setItem('tournee', JSON.stringify(this.tournee()));
     })
   }

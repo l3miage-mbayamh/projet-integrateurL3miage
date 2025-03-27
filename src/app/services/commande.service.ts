@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, model, signal } from '@angular/core';
 import { EntrepotData } from '../interfaces/entrepotData';
 import { Commande } from '../interfaces/Commande';
 import { livreurs } from '../interfaces/Livreur';
@@ -8,13 +8,33 @@ import { livraison } from '../interfaces/Livraison';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 import { Observable } from 'rxjs';
+import { TitleStrategy } from '@angular/router';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class CommandeService {
+  //traitement de tournee pour envoyer a un composant
+  private readonly tournne = signal<livraison[]>([])
+  private readonly clientAlivree= signal<Client[]>([])
+  //mise a jour de tournee
+  public updateTournee(tournee: livraison[]){
+    this.tournne.set(tournee)
+  }
 
+  //recuperation de tournee
+  public getTournee(): livraison[]{
+    return this.tournne()
+  }
+  //recuperons les clients a livree
+  updateClientAlivree(client: Client[]): void{
+    this.clientAlivree.set(client)
+  }
+  //recuperation de commandes
+  getClientALivree(){
+    return this.clientAlivree()
+  }
   constructor(private http: HttpClient) { }
   //recuperation de donnees depuis le server json-serve
   //liste des entrepots

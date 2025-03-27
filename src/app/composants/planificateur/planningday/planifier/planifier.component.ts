@@ -78,8 +78,11 @@ export class PlanifierComponent {
     //clients data 
     const client = this.service.getClients()
     client.subscribe(
-      result=> this.clients.set(result)
-    )
+      result=> this.clients.set(
+        result
+        .filter(client=>(client.commandes.length>0))
+        .filter(client=>client.commandes.some(commande=>commande.etat.toUpperCase()===Etat.ouverte))
+    ))
     //sauvegarde des donnees 
     //tableau de equipes
     const savedData = localStorage.getItem("equipeList")
@@ -87,6 +90,9 @@ export class PlanifierComponent {
       this.equipeList.set(JSON.parse(savedData))
 
     }
+    //envoie de donnees au service pour un access generale
+    //donnees client a livre
+    this.service.updateClientAlivree(this.getSelectedClients())
     //recuperation de donnees depuis local livraison liste
     const savedData2 = localStorage.getItem('livraisonList');
     if (savedData2) {
@@ -226,71 +232,102 @@ ngOnInit() {
 
 
 //recuperation des  clients selectionner (a livree)
-getSelectedClients() {
+getSelectedClients(): Client[] {
   const cl = this.selection.selected
-  this.clientALivrer.set(this.selection.selected); // Récupère la liste des clients sélectionnés
+  let clts=this.clientALivrer();
+  clts.push(...cl)
+  this.clientALivrer.set(clts);
+  return this.clientALivrer() 
   
 }
 //affectation de commande a une equipe soit creation de livraison
 
-affectationDeCommandeAEquipe():void{
-  //recuperation de la selection
+affectationDeCommandeAEquipe(): void {
+  
+  // Récupération de la sélection
+  const clientsASelect = this.selection.selected;
 
-  const clientsASelect = this.selection.selected
-
-  //filtrage des commandes des clients a livres pour garder que ceux ouvertes
+  //  si une équipe est choisie
   if (!this.equipeChoisie) {
     alert("Veuillez sélectionner une équipe !");
     return;
   }
- 
 
-  const equipeC = this.equipeChoisie()
+  const equipeC = this.equipeChoisie();
 
   if (!equipeC) {
     alert("Équipe non valide !");
     return;
   }
 
-  
-
   if (clientsASelect.length === 0) {
     alert("Veuillez sélectionner au moins une commande !");
     return;
   }
 
-  // Filtrer les commandes non livrées
+  // Filtrage des commandes non livrées
   const commandesAffectees = clientsASelect.flatMap(client =>
     client.commandes.filter(cmd => cmd.etat.toLowerCase() !== "livrée")
   );
 
-  // Vérifier si des commandes sont disponibles
   if (commandesAffectees.length === 0) {
     alert("Aucune commande à affecter !");
     return;
   }
 
-  // Création d’une nouvelle livraison
-  const nouvelleLivraison: livraison = {
-    reference: `LIV-${Date.now()}`,
-    adresse: clientsASelect[0].adresse,
-    codePostal: clientsASelect[0].codePostal, // Adresse du premier client
-    equipe: equipeC,
-    Commandes: commandesAffectees
-  };
+  // creation d'adresse unique avec le code postal et adresse voir object adresse
+  const adressesAvecCodePostal = Array.from(
+    new Map(
+      clientsASelect.map(client => [client.adresse, { adresse: client.adresse, codePostal: client.codePostal }])
+    ).values()
+  );
 
-  // Ajouter à la liste des livraisons
-  this.livraisonList().push(nouvelleLivraison);
+  // la liste actuelle des livraisons
+  const livraisonList = this.livraisonList();
+
+  // Vérifions si une livraison existe déjà pour cette équipe
+ 
+ let livraisonExistante = this.livraisonList().find(value=>
+  value.reference === equipeC.camion && value.equipe.livreurs === equipeC.livreurs 
+ )
+
+  if (livraisonExistante !== undefined) {
+    // Mise à jour des commandes et adresses existantes
+    livraisonExistante.Commandes.push(...commandesAffectees);
+    livraisonExistante.adresse.push(...adressesAvecCodePostal);
+    livraisonExistante.adresse = Array.from(new Map(livraisonExistante.adresse.map(a => [a.adresse, a])).values());
+  } else {
+    // Création d’une nouvelle livraison
+    const nouvelleLivraison = {
+      reference: `LIV-${Date.now()}`,
+      adresse: adressesAvecCodePostal, 
+      equipe: equipeC,
+      Commandes: commandesAffectees
+    };
+    
+    livraisonList.push(nouvelleLivraison);
+  }
 
   // Sauvegarde dans le localStorage
-  const livraison = this.livraisonList()
- localStorage.setItem('livraisonList', JSON.stringify(livraison))
+  localStorage.setItem('livraisonList', JSON.stringify(livraisonList));
 
-  alert(`Commandes affectées à l'équipe ${this.equipeChoisie()?.livreurs } !`);
+  alert(`Commandes affectées à l'équipe ${equipeC.livreurs}!`);
 }
 //test end
+//gestion des selections 
+livreurDejaSelectionner(nomLivreur: string): boolean{
+  return this.equipeList().some(equipe=>equipe.livreurs.includes(nomLivreur))
+}
 
-  
+camionDejaSelectionner(imat: string): boolean{
+  return this.equipeList().some(equipe=>equipe.camion === imat)
+}
 
-  
+equipeDejaAffecter(equipe: any): boolean{
+  return this.livraisonList().some(livraison=> livraison.equipe === equipe)
+}
+
+livraisonSelectionner(commande: any): boolean{
+  return this.livraisonList().some(livraison=> livraison.Commandes.some(cmd=>cmd.reference === commande.reference))
+}
 }

@@ -15,3 +15,8 @@
     </mat-card-content>
 
 </mat-card>
+<div>
+    @for (l of tournee; track $index) {
+        {{l.equipe.livreurs}}
+    }
+</div>

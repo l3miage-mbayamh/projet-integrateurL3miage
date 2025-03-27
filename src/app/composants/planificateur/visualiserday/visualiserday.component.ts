@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { CommandeService } from '../../../services/commande.service';
 
 @Component({
   selector: 'app-visualiserday',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class VisualiserdayComponent {
 
+  public readonly service = inject(CommandeService)
+
+  //recuperation
+  public readonly tournee = this.service.getTournee()
 }

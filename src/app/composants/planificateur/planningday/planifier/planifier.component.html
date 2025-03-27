@@ -13,7 +13,7 @@
                ,{{equipierForm.value?.[1]}}
               </mat-select-trigger>
                  @for (employer of livreursListe(); track $index) {
-                <mat-option [value]="employer.nom">{{employer.nom}}</mat-option>
+                <mat-option [value]="employer.nom" [disabled]="livreurDejaSelectionner(employer.nom)">{{employer.nom}}</mat-option>
               }
           </mat-select>
         </mat-form-field>
@@ -23,7 +23,7 @@
             <mat-select [formControl]="camionForm" [(ngModel)]="camionChoisit" name="camion" required>
             
                     @for (c of camionList(); track $index) {
-                        <mat-option [value]="c.immatriculation">{{c.immatriculation}}</mat-option>
+                        <mat-option [value]="c.immatriculation" [disabled]="camionDejaSelectionner(c.immatriculation)">{{c.immatriculation}}</mat-option>
                     }
                 
             </mat-select>
@@ -74,7 +74,7 @@
           <mat-form-field>
             <mat-label>Choisir une équipe</mat-label>
         <mat-select [formControl]="equipeForm" [(ngModel)]="equipeChoisie" required>
-           <mat-option *ngFor="let eq of equipeList()" [value]="eq">
+           <mat-option *ngFor="let eq of equipeList()" [value]="eq" [disabled]="equipeDejaAffecter(eq)">
               Equipe : {{ eq.livreurs }} | Camion: {{ eq.camion }}
           </mat-option>
         </mat-select>
@@ -85,6 +85,9 @@
 
         <div>
           <!--navigation  vers la page precedente-->
+          <div class="controlButton">
+            <button mat-button [mat-dialog-close]="livraisonList()">Valider</button>
+          </div>
           <button mat-button matStepperPrevious class="navigationButton">retour</button>
         </div>
           
@@ -103,13 +106,14 @@
                 <mat-checkbox (click)="$event.stopPropagation()"
                               (change)="$event ? selection.toggle(row) : null"
                               [checked]="selection.isSelected(row)"
+                              [disabled]="livraisonSelectionner(row)"
                               [aria-label]="checkboxLabel(row)">
                 </mat-checkbox>
               </td>
             </ng-container>
           
            
-          
+         
             <!-- nom client Column -->
             <ng-container matColumnDef="nom">
               <th mat-header-cell *matHeaderCellDef> Nom </th>
@@ -138,7 +142,10 @@
                 <th mat-header-cell *matHeaderCellDef> Commandes </th>
                 <td mat-cell *matCellDef="let element"> 
                   <ul *ngFor="let cmd of element.commandes">
-                    <li>{{cmd.reference}}</li>
+                    @if (cmd.etat.toUpperCase()===etat.ouverte) {
+                      <li>{{cmd.reference}}</li>
+                    }
+                      
                   </ul>
                    </td>
               </ng-container>
@@ -147,7 +154,10 @@
                 <th mat-header-cell *matHeaderCellDef> Etat </th>
                 <td mat-cell *matCellDef="let element">
                   <ul *ngFor="let cmd of element.commandes">
-                    <li>{{cmd.etat}}</li>
+                    @if (cmd.etat.toUpperCase()===etat.ouverte) {
+                      <li>{{cmd.etat}}</li>
+                    }
+
                   </ul>
                 </td>
               </ng-container>
@@ -172,9 +182,7 @@
     </mat-step>-->
     
   </mat-stepper>
-  <div class="controlButton">
-    <button mat-button [mat-dialog-close]="livraisonList()">Valider</button>
-  </div>
+ 
 
  <!-- @for (l of livraisonList(); track $index) {
     <div>{{l.reference}} {{l.equipe.livreurs}} {{l.equipe.camion}}</div>
