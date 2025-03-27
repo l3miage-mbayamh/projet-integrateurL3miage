@@ -14,6 +14,7 @@ import { SelectionModel } from '@angular/cdk/collections';
 
 import { MatTableDataSource } from '@angular/material/table';
 import { CdkMonitorFocus } from '@angular/cdk/a11y';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-planifier',
@@ -46,7 +47,10 @@ export class PlanifierComponent {
   public readonly livreursChoisit = model<string>("")
   public readonly equipe = model<Equipe>({livreurs: "Euler", camion: "415655"})
   public readonly etat = Etat
-  public readonly equipeChoisie:Equipe|null = null
+  public readonly equipeChoisie=model<Equipe>()
+
+  public readonly dialogRef = inject(MatDialogRef<PlanifierComponent>)
+  public readonly data = inject(MAT_DIALOG_DATA)
   //public readonly nombreEquipe = model<number>(0)
   //test commandes
   public readonly commandesGroupe = model<Commande[][]>([])
@@ -85,9 +89,15 @@ export class PlanifierComponent {
     }
     //recuperation de donnees depuis local livraison liste
     const savedData2 = localStorage.getItem('livraisonList');
- if (savedData2) {
-   this.livraisonList.set(JSON.parse(savedData2));
- }
+    if (savedData2) {
+      try {
+        const parsedData = JSON.parse(savedData2);
+        // Si le parsing réussit, on met à jour la liste
+        this.livraisonList.set(parsedData);
+      } catch (e) {
+        console.error("Erreur de parsing des données JSON dans localStorage:", e);
+      }
+    }
     //test commandes
     effect(() => {
       this.dataSource.data = this.clients(); // Rafraîchir les données
@@ -125,6 +135,7 @@ export class PlanifierComponent {
   //gestion champs form control
   equipierForm = new FormControl('')
   camionForm = new FormControl('')
+  equipeForm = new FormControl('')
 
   //la navigation dans le composant pour switcher les differentes parties
   private _formBuilder = inject(FormBuilder);
@@ -220,7 +231,6 @@ getSelectedClients() {
   this.clientALivrer.set(this.selection.selected); // Récupère la liste des clients sélectionnés
   
 }
-
 //affectation de commande a une equipe soit creation de livraison
 
 affectationDeCommandeAEquipe():void{
@@ -233,11 +243,11 @@ affectationDeCommandeAEquipe():void{
     alert("Veuillez sélectionner une équipe !");
     return;
   }
-  console.log(this.equipeChoisie.livreurs)
+ 
 
-  const equipe = this.equipeChoisie
+  const equipeC = this.equipeChoisie()
 
-  if (!equipe) {
+  if (!equipeC) {
     alert("Équipe non valide !");
     return;
   }
@@ -263,8 +273,9 @@ affectationDeCommandeAEquipe():void{
   // Création d’une nouvelle livraison
   const nouvelleLivraison: livraison = {
     reference: `LIV-${Date.now()}`,
-    adresse: clientsASelect[0].adresse, // Adresse du premier client
-    equipe: equipe,
+    adresse: clientsASelect[0].adresse,
+    codePostal: clientsASelect[0].codePostal, // Adresse du premier client
+    equipe: equipeC,
     Commandes: commandesAffectees
   };
 
@@ -272,9 +283,10 @@ affectationDeCommandeAEquipe():void{
   this.livraisonList().push(nouvelleLivraison);
 
   // Sauvegarde dans le localStorage
-  localStorage.setItem('livraisonList', JSON.stringify(this.livraisonList));
+  const livraison = this.livraisonList()
+ localStorage.setItem('livraisonList', JSON.stringify(livraison))
 
-  alert(`Commandes affectées à l'équipe ${this.equipeChoisie } !`);
+  alert(`Commandes affectées à l'équipe ${this.equipeChoisie()?.livreurs } !`);
 }
 //test end
 

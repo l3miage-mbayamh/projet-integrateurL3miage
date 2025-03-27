@@ -30,5 +30,18 @@
     </div>
   }
 </div>
+
+<div>
+  @for (t of tournee(); track $index) {
+    <div>
+      {{t.reference}} {{t.adresse}} {{t.codePostal}} {{t.equipe.livreurs}}
+    </div>
+    <div>
+      @for (c of t.Commandes; track $index) {
+       {{c.client}} {{c.etat}}
+      }
+    </div>
+  }
+</div>
    
   

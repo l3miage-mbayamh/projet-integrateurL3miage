@@ -5,6 +5,9 @@ import { JourneeComponent } from './journee/journee.component';
 import {MatDialog, MatDialogModule} from '@angular/material/dialog'
 import { Journee } from '../../../interfaces/journee';
 import { PlanifierComponent } from './planifier/planifier.component';
+import { livraison } from '../../../interfaces/Livraison';
+import { Equipe } from '../../../interfaces/Equipes';
+import { Commande } from '../../../interfaces/Commande';
 
 
 @Component({
@@ -15,13 +18,21 @@ import { PlanifierComponent } from './planifier/planifier.component';
 export class PlanningdayComponent {
 //element pour ajouter une journee qui fera appel au composant journee
 public readonly journeeService = inject(MatDialog)
+//declaration de variable
+//journee
 public readonly entrepot = model<string>()
 public readonly date = model<Date>() 
 public readonly dayName = model<string>()
-
 public readonly journee = model<Journee>()
- //liste des journees ajouter
+//tournee
+public readonly reference = model<string>()
+public readonly equipe = model<Equipe>()
+public readonly adresse = model<string>()
+public readonly commandes = model<Commande[]>()
+ //recuperation des retours dialog
  public readonly journeeList = model<Journee[]>([])
+ public readonly tournee = model<livraison[]>([])
+
  //jeu de changement d'etat
   estPlanifier = false
 
@@ -31,6 +42,7 @@ public readonly journee = model<Journee>()
  if (savedData) {
    this.journeeList.set(JSON.parse(savedData));
  }
+
 }
 
 //lancement du dialog qui ouvre le composant journee pour la definir
@@ -62,8 +74,17 @@ public readonly journee = model<Journee>()
 
   //planifier journee ouvre dialog du composant plannifier
   planifier(){
-   this.journeeService.open(PlanifierComponent, {height: '600px',
+   const dialogRefTournee = this.journeeService.open(PlanifierComponent,{
+    data:{reference: this.reference(),adresse: this.adresse(), equipe: this.equipe(), commandes: this.commandes()
+   } ,height: '600px',
     width: '800px'})
+
+    dialogRefTournee.afterClosed().subscribe(result =>{
+      if(result!== undefined){
+        this.tournee.set(result)
+      }
+      localStorage.setItem('tournee', JSON.stringify(this.tournee()));
+    })
   }
 
 }
