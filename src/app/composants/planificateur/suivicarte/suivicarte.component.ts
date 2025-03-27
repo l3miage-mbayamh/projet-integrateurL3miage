@@ -1,5 +1,6 @@
+//import { PlanningdayComponent } from './../planningday/planningday.component';
 import { Commande } from './../../../interfaces/Commande';
-import { Component, model, OnInit, signal } from '@angular/core';
+import { Component, inject, model, OnInit, signal } from '@angular/core';
 import { latLng, LatLng } from 'leaflet';
 import { CommandeService } from '../../../services/commande.service';
 import { Client } from '../../../interfaces/Client';
@@ -7,6 +8,9 @@ import { Etat } from '../../../interfaces/enums/Etat';
 import { livreurs } from '../../../interfaces/Livreur';
 import { Camion } from '../../../interfaces/Camion';
 import { Equipe } from '../../../interfaces/Equipes';
+import { livraison } from '../../../interfaces/Livraison';
+//import{PlanifierComponent} from '../planningday/planifier/planifier.component'
+
 
 @Component({
   selector: 'app-suivicarte',
@@ -14,6 +18,7 @@ import { Equipe } from '../../../interfaces/Equipes';
   styleUrls: ['./suivicarte.component.css']
 })
 export class SuivicarteComponent {
+
 
   /*public clients: Client[] = [
     {
@@ -96,9 +101,14 @@ export class SuivicarteComponent {
     public readonly equipe = model<Equipe>({livreurs: "Euler", camion: "415655"})
     public readonly equipeList = model<Equipe[]>([])
     public readonly nombreEquipe = model<number>(0)
+    public readonly service = inject(CommandeService)
 
   public markers=signal<LatLng[]>([]);
   public clts=signal<Client[]>([]);
+  public cltsPerTournee=signal<Client[][]>([]);
+  public readonly tournee = model<livraison[]>()
+
+  //public planifier = inject(PlanifierComponent);
   //readonly service = inject(CommandeService)
 
   public currentValue = latLng(45.1485200,5.7369725);
@@ -107,24 +117,31 @@ export class SuivicarteComponent {
       this.comandes.set(result);
       console.log("commande",this.comandes.le);
   })*/
-      this.commandeService.getCommandes().then(result => {
+ const tr = this.service.getTournee()
+   this.tournee.set(tr)
+   this.tournee()?.forEach(element => {  console.log("clients selected", element.equipe.livreurs);
+
+   });
+
+   this.clts.set(this.service.getClientALivree());
+   console.log("clients selectionne pour la livraison: ", this.clts());
+
+   this.cltsPerTournee.set(this.service.getClientPerTournee());
+   console.log("clients par tournee ", this.cltsPerTournee());
+
+      this.commandeService.getDataCommandes().then(result => {
         this.comandes.set(result);
       });
 
 
+      //let ClientsSelected=this.planifier.clientALivrer();
 
-      this.commandeService.getClients().then(result=>{
+      this.commandeService.getDataClients().then(result=>{
         this.clients.set(result);
-        this.commandeService.getClientsLatLng(this.clients()).subscribe(
+        this.commandeService.getClientsLatLng(this.clts()).subscribe(
           (coordinates: LatLng[]) => {
-            this.clts.set(
-              this.clients()
-              .filter(client => (client.commandes.length > 0 )) // Filtrer les clients ayant des commandes
-              .filter(client =>
-        client.commandes.some(commande => commande.etat.toUpperCase() === Etat.ouverte) // Vérifier si au moins une commande est "OUVERTE"
-      )
 
-          );
+
             this.markers.set([this.currentValue, ...coordinates]); // Ajouter les coordonnées aux marqueurs
             console.log('Coordonnées des clients avec commandes :', this.markers());
           },

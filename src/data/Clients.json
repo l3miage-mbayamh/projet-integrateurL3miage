@@ -1,219 +1,3584 @@
-{"clients":[
-  {
-    "code": "x165",
-    "email": "aalves@brt.fr",
-    "prenom": "ravi",
-    "nom": "ALVES",
-    "adresse": "20 Avenue de l'Alsace",
-    "codePostale": 38000,
-    "ville": "Grenoble",
-    "latitude": 45.165727,
-    "longitude": 5.735303,
-    "commandes": [
-      {
-        "reference": "c003",
-        "etat": "notee",
-        "dateDeCreation": "09-01-2024",
-        "client": "lsaleh@brt.fr",
-        "note": 3,
-        "commentaire": "Produit conforme mais délai long.",
-        "ligne": {
-          "jdds": "JD003",
-          "reference": "p003",
-          "quantite": 5
+{
+  "clients": [
+    {
+      "code": "x000",
+      "email": "user051@example.com",
+      "prenom": "Lucie",
+      "nom": "MARIE",
+      "adresse": "chemin de Moulin",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.170976,
+      "longitude": 5.72246,
+      "commandes": [
+        {
+          "reference": "c028",
+          "etat": "notée",
+          "dateDeCreation": "10-01-2024",
+          "client": "user051@example.com",
+          "ligne": {
+            "jdds": "JD028",
+            "reference": "p026",
+            "quantite": 1
+          },
+          "note": 2,
+          "commentaire": "Très satisfait de la qualité."
         }
-      }
-    ],
-    "etat": "livré"
-  },
-  {
-    "code": "x065",
-    "email": "aandre@sfr.fr",
-    "prenom": "arthur",
-    "nom": "ANDRE",
-    "adresse": "25 Rue de la Glacière",
-    "codePostale": 38000,
-    "ville": "Grenoble",
-    "latitude": 45.217629,
-    "longitude": 5.764548,
-    "commandes": [
-      {
-        "reference": "c004",
-        "etat": "livree",
-        "dateDeCreation": "09-01-2024",
-        "client": "lsaleh@brt.fr",
-        "note": 5,
-        "commentaire": "Excellent service.",
-        "ligne": {
-          "jdds": "JD004",
-          "reference": "p004",
-          "quantite": 3
-        }
-      }
-    ],
-    "etat": "livré"
-  },
-  {
-    "code": "x042",
-    "email": "abois@lp.net",
-    "prenom": "amanda",
-    "nom": "BOIS",
-    "adresse": "34 Rue Charles Dullin",
-    "codePostale": 38000,
-    "ville": "Grenoble",
-    "latitude": 45.107609,
-    "longitude": 5.723657,
-    "commandes": [
-      {
-        "reference": "c005",
-        "etat": "ouverte",
-        "dateDeCreation": "11-01-2024",
-        "client": "apascal@or.fr",
-        "ligne": {
-          "jdds": "JD005",
-          "reference": "p005",
-          "quantite": 2
-        }
-      }
-    ],
-    "etat": "livrable"
-  },
-  {
-    "code": "x063",
-    "email": "adupuis@hot.fr",
-    "prenom": "antoine",
-    "nom": "DUPLOT",
-    "adresse": "40 Rue Félix Esclangon",
-    "codePostale": 38100,
-    "ville": "Grenoble",
-    "latitude": 45.13184,
-    "longitude": 5.692503,
-    "commandes":[{
-      "reference": "c001",
-      "etat": "ouverte",
-      "dateDeCreation": "04-01-2024",
-      "client": "amartin@wan.fr",
-      "ligne": {
-        "jdds": "JD001",
-        "reference": "p001",
-        "quantite": 2
-      }
+      ],
+      "etat": "livrable"
     },
     {
-      "reference": "c002",
-      "etat": "livree",
-      "dateDeCreation": "05-01-2024",
-      "client": "azainab@m6.com",
-      "note": 4,
-      "commentaire": "Livraison rapide et efficace.",
-      "ligne": {
-        "jdds": "JD002",
-        "reference": "p002",
-        "quantite": 1
-      }
-    }],
-    "etat": "livré"
-  },
-  {
-    "code": "x054",
-    "email": "aduval@wan.fr",
-    "prenom": "alban",
-    "nom": "DUVAL",
-    "adresse": "60 Chemin de la Carronnerie",
-    "codePostale": 38700,
-    "ville": "La Tronche",
-    "latitude": 45.164697,
-    "longitude": 5.839192,
-    "commandes": [
-      {
-        "reference": "c002",
-        "etat": "livree",
-        "dateDeCreation": "05-01-2024",
-        "client": "azainab@m6.com",
-        "note": 4,
-        "commentaire": "Livraison rapide et efficace.",
-        "ligne": {
-          "jdds": "JD002",
-          "reference": "p002",
-          "quantite": 1
+      "code": "x001",
+      "email": "user034@example.com",
+      "prenom": "Maurice",
+      "nom": "JOLY",
+      "adresse": "9, boulevard Briand",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.190472,
+      "longitude": 5.700325,
+      "commandes": [
+        {
+          "reference": "c006",
+          "etat": "livrée",
+          "dateDeCreation": "11-03-2024",
+          "client": "user034@example.com",
+          "ligne": {
+            "jdds": "JD006",
+            "reference": "p013",
+            "quantite": 9
+          }
+        },
+        {
+          "reference": "c098",
+          "etat": "livrée",
+          "dateDeCreation": "24-03-2024",
+          "client": "user034@example.com",
+          "ligne": {
+            "jdds": "JD098",
+            "reference": "p005",
+            "quantite": 10
+          },
+          "note": 5,
+          "commentaire": "Livraison rapide et efficace."
         }
-      }
-    ],
-    "etat": "livré"
-  },
-  {
-    "code": "x058",
-    "email": "aduval1@wan.fr",
-    "prenom": "amélie",
-    "nom": "DUVAL",
-    "adresse": "50 Avenue Jean Perrot",
-    "codePostale": 38100,
-    "ville": "Grenoble",
-    "latitude": 45.21678,
-    "longitude": 5.688157,
-    "commandes": [
-      {
-        "reference": "c005",
-        "etat": "livree",
-        "dateDeCreation": "11-01-2024",
-        "client": "apascal@or.fr",
-        "ligne": {
-          "jdds": "JD005",
-          "reference": "p005",
-          "quantite": 2
-        }
-      },
-      {
-      "reference": "c001",
-      "etat": "ouverte",
-      "dateDeCreation": "04-01-2024",
-      "client": "amartin@wan.fr",
-      "ligne": {
-        "jdds": "JD001",
-        "reference": "p001",
-        "quantite": 2
-      }
-     },
+      ],
+      "etat": "livré"
+    },
     {
-      "reference": "c002",
-      "etat": "livree",
-      "dateDeCreation": "05-01-2024",
-      "client": "azainab@m6.com",
-      "note": 4,
-      "commentaire": "Livraison rapide et efficace.",
-      "ligne": {
-        "jdds": "JD002",
-        "reference": "p002",
-        "quantite": 1
-      }
+      "code": "x002",
+      "email": "user018@example.com",
+      "prenom": "Arthur",
+      "nom": "MARTINEZ",
+      "adresse": "rue Bodin",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.184907,
+      "longitude": 5.717013,
+      "commandes": [
+        {
+          "reference": "c004",
+          "etat": "livrée",
+          "dateDeCreation": "27-03-2024",
+          "client": "user018@example.com",
+          "ligne": {
+            "jdds": "JD004",
+            "reference": "p045",
+            "quantite": 1
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x003",
+      "email": "user006@example.com",
+      "prenom": "Josette",
+      "nom": "MICHEL",
+      "adresse": "78, avenue Pruvost",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.160766,
+      "longitude": 5.738175,
+      "commandes": [
+        {
+          "reference": "c030",
+          "etat": "notée",
+          "dateDeCreation": "13-01-2024",
+          "client": "user006@example.com",
+          "ligne": {
+            "jdds": "JD030",
+            "reference": "p018",
+            "quantite": 5
+          },
+          "note": 1,
+          "commentaire": "Je recommanderai à mes amis."
+        },
+        {
+          "reference": "c039",
+          "etat": "livrée",
+          "dateDeCreation": "08-03-2024",
+          "client": "user006@example.com",
+          "ligne": {
+            "jdds": "JD039",
+            "reference": "p049",
+            "quantite": 6
+          }
+        },
+        {
+          "reference": "c061",
+          "etat": "ouverte",
+          "dateDeCreation": "13-02-2024",
+          "client": "user006@example.com",
+          "ligne": {
+            "jdds": "JD061",
+            "reference": "p018",
+            "quantite": 7
+          }
+        },
+        {
+          "reference": "c086",
+          "etat": "notée",
+          "dateDeCreation": "29-03-2024",
+          "client": "user006@example.com",
+          "ligne": {
+            "jdds": "JD086",
+            "reference": "p030",
+            "quantite": 1
+          },
+          "note": 4,
+          "commentaire": "Service client réactif."
+        },
+        {
+          "reference": "c154",
+          "etat": "livrée",
+          "dateDeCreation": "23-03-2024",
+          "client": "user006@example.com",
+          "ligne": {
+            "jdds": "JD154",
+            "reference": "p042",
+            "quantite": 1
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x004",
+      "email": "user070@example.com",
+      "prenom": "Roger",
+      "nom": "ROBERT",
+      "adresse": "55, rue Ledoux",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.154637,
+      "longitude": 5.704836,
+      "commandes": [
+        {
+          "reference": "c153",
+          "etat": "ouverte",
+          "dateDeCreation": "03-03-2024",
+          "client": "user070@example.com",
+          "ligne": {
+            "jdds": "JD153",
+            "reference": "p017",
+            "quantite": 9
+          }
+        },
+        {
+          "reference": "c159",
+          "etat": "ouverte",
+          "dateDeCreation": "06-02-2024",
+          "client": "user070@example.com",
+          "ligne": {
+            "jdds": "JD159",
+            "reference": "p028",
+            "quantite": 1
+          }
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x005",
+      "email": "user078@example.com",
+      "prenom": "Yves",
+      "nom": "HENRY",
+      "adresse": "rue Agathe Barre",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.180186,
+      "longitude": 5.740356,
+      "commandes": [
+        {
+          "reference": "c013",
+          "etat": "ouverte",
+          "dateDeCreation": "14-01-2024",
+          "client": "user078@example.com",
+          "ligne": {
+            "jdds": "JD013",
+            "reference": "p045",
+            "quantite": 2
+          }
+        },
+        {
+          "reference": "c020",
+          "etat": "livrée",
+          "dateDeCreation": "20-02-2024",
+          "client": "user078@example.com",
+          "ligne": {
+            "jdds": "JD020",
+            "reference": "p002",
+            "quantite": 3
+          }
+        },
+        {
+          "reference": "c052",
+          "etat": "livrée",
+          "dateDeCreation": "19-03-2024",
+          "client": "user078@example.com",
+          "ligne": {
+            "jdds": "JD052",
+            "reference": "p025",
+            "quantite": 7
+          },
+          "note": 3,
+          "commentaire": "Le produit est arrivé endommagé."
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x006",
+      "email": "user022@example.com",
+      "prenom": "Josette",
+      "nom": "AUBRY",
+      "adresse": "avenue de Regnier",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.176811,
+      "longitude": 5.748656,
+      "commandes": [
+        {
+          "reference": "c031",
+          "etat": "livrée",
+          "dateDeCreation": "03-02-2024",
+          "client": "user022@example.com",
+          "ligne": {
+            "jdds": "JD031",
+            "reference": "p016",
+            "quantite": 1
+          },
+          "note": 3,
+          "commentaire": "Très satisfait de la qualité."
+        },
+        {
+          "reference": "c038",
+          "etat": "notée",
+          "dateDeCreation": "18-03-2024",
+          "client": "user022@example.com",
+          "ligne": {
+            "jdds": "JD038",
+            "reference": "p016",
+            "quantite": 2
+          },
+          "note": 3,
+          "commentaire": "Le produit est arrivé endommagé."
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x007",
+      "email": "user017@example.com",
+      "prenom": "Gérard",
+      "nom": "HOAREAU",
+      "adresse": "chemin de Techer",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.15394,
+      "longitude": 5.714659,
+      "commandes": [
+        {
+          "reference": "c015",
+          "etat": "livrée",
+          "dateDeCreation": "06-03-2024",
+          "client": "user017@example.com",
+          "ligne": {
+            "jdds": "JD015",
+            "reference": "p015",
+            "quantite": 10
+          }
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x008",
+      "email": "user002@example.com",
+      "prenom": "Laure",
+      "nom": "ÉTIENNE",
+      "adresse": "11, rue de Leleu",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.178868,
+      "longitude": 5.735229,
+      "commandes": [
+        {
+          "reference": "c036",
+          "etat": "ouverte",
+          "dateDeCreation": "16-01-2024",
+          "client": "user002@example.com",
+          "ligne": {
+            "jdds": "JD036",
+            "reference": "p002",
+            "quantite": 10
+          }
+        },
+        {
+          "reference": "c139",
+          "etat": "ouverte",
+          "dateDeCreation": "06-03-2024",
+          "client": "user002@example.com",
+          "ligne": {
+            "jdds": "JD139",
+            "reference": "p035",
+            "quantite": 4
+          }
+        },
+        {
+          "reference": "c178",
+          "etat": "notée",
+          "dateDeCreation": "01-01-2024",
+          "client": "user002@example.com",
+          "ligne": {
+            "jdds": "JD178",
+            "reference": "p004",
+            "quantite": 10
+          },
+          "note": 5,
+          "commentaire": "Bon rapport qualité-prix."
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x009",
+      "email": "user088@example.com",
+      "prenom": "Stéphane",
+      "nom": "CHEVALIER",
+      "adresse": "7, avenue Luce Marchal",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.183063,
+      "longitude": 5.738653,
+      "commandes": [
+        {
+          "reference": "c011",
+          "etat": "livrée",
+          "dateDeCreation": "18-02-2024",
+          "client": "user088@example.com",
+          "ligne": {
+            "jdds": "JD011",
+            "reference": "p036",
+            "quantite": 7
+          },
+          "note": 5,
+          "commentaire": "Délais de livraison non respectés."
+        },
+        {
+          "reference": "c149",
+          "etat": "notée",
+          "dateDeCreation": "16-01-2024",
+          "client": "user088@example.com",
+          "ligne": {
+            "jdds": "JD149",
+            "reference": "p034",
+            "quantite": 6
+          },
+          "note": 5,
+          "commentaire": "Délais de livraison non respectés."
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x010",
+      "email": "user054@example.com",
+      "prenom": "Isaac",
+      "nom": "LEMAÎTRE",
+      "adresse": "24, rue de Joubert",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.192766,
+      "longitude": 5.743324,
+      "commandes": [
+        {
+          "reference": "c014",
+          "etat": "ouverte",
+          "dateDeCreation": "12-01-2024",
+          "client": "user054@example.com",
+          "ligne": {
+            "jdds": "JD014",
+            "reference": "p017",
+            "quantite": 8
+          }
+        },
+        {
+          "reference": "c119",
+          "etat": "notée",
+          "dateDeCreation": "07-02-2024",
+          "client": "user054@example.com",
+          "ligne": {
+            "jdds": "JD119",
+            "reference": "p027",
+            "quantite": 2
+          },
+          "note": 4,
+          "commentaire": "Bon rapport qualité-prix."
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x011",
+      "email": "user016@example.com",
+      "prenom": "Nathalie",
+      "nom": "MOULIN",
+      "adresse": "56, boulevard de Vasseur",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.163899,
+      "longitude": 5.731784,
+      "commandes": [
+        {
+          "reference": "c085",
+          "etat": "ouverte",
+          "dateDeCreation": "13-01-2024",
+          "client": "user016@example.com",
+          "ligne": {
+            "jdds": "JD085",
+            "reference": "p046",
+            "quantite": 5
+          }
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x012",
+      "email": "user019@example.com",
+      "prenom": "Marianne",
+      "nom": "GERMAIN",
+      "adresse": "rue Gomes",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.158133,
+      "longitude": 5.717764,
+      "commandes": [
+        {
+          "reference": "c168",
+          "etat": "livrée",
+          "dateDeCreation": "17-01-2024",
+          "client": "user019@example.com",
+          "ligne": {
+            "jdds": "JD168",
+            "reference": "p045",
+            "quantite": 6
+          },
+          "note": 4,
+          "commentaire": "Très satisfait de la qualité."
+        },
+        {
+          "reference": "c182",
+          "etat": "notée",
+          "dateDeCreation": "18-01-2024",
+          "client": "user019@example.com",
+          "ligne": {
+            "jdds": "JD182",
+            "reference": "p020",
+            "quantite": 2
+          },
+          "note": 3,
+          "commentaire": "Produit conforme mais délai long."
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x013",
+      "email": "user020@example.com",
+      "prenom": "Andrée",
+      "nom": "ROYER",
+      "adresse": "boulevard Wagner",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.185091,
+      "longitude": 5.734177,
+      "commandes": [
+        {
+          "reference": "c046",
+          "etat": "ouverte",
+          "dateDeCreation": "26-03-2024",
+          "client": "user020@example.com",
+          "ligne": {
+            "jdds": "JD046",
+            "reference": "p021",
+            "quantite": 8
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x014",
+      "email": "user073@example.com",
+      "prenom": "Thomas",
+      "nom": "LECOMTE",
+      "adresse": "86, chemin Joly",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.180457,
+      "longitude": 5.708557,
+      "commandes": [
+        {
+          "reference": "c059",
+          "etat": "ouverte",
+          "dateDeCreation": "26-03-2024",
+          "client": "user073@example.com",
+          "ligne": {
+            "jdds": "JD059",
+            "reference": "p017",
+            "quantite": 10
+          }
+        },
+        {
+          "reference": "c083",
+          "etat": "livrée",
+          "dateDeCreation": "12-03-2024",
+          "client": "user073@example.com",
+          "ligne": {
+            "jdds": "JD083",
+            "reference": "p039",
+            "quantite": 10
+          },
+          "note": 3,
+          "commentaire": "Délais de livraison non respectés."
+        },
+        {
+          "reference": "c097",
+          "etat": "livrée",
+          "dateDeCreation": "13-03-2024",
+          "client": "user073@example.com",
+          "ligne": {
+            "jdds": "JD097",
+            "reference": "p031",
+            "quantite": 1
+          }
+        },
+        {
+          "reference": "c113",
+          "etat": "livrée",
+          "dateDeCreation": "20-03-2024",
+          "client": "user073@example.com",
+          "ligne": {
+            "jdds": "JD113",
+            "reference": "p035",
+            "quantite": 10
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x015",
+      "email": "user026@example.com",
+      "prenom": "Paul",
+      "nom": "VALLET",
+      "adresse": "749, avenue de Étienne",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.15817,
+      "longitude": 5.718973,
+      "commandes": [
+        {
+          "reference": "c055",
+          "etat": "ouverte",
+          "dateDeCreation": "22-03-2024",
+          "client": "user026@example.com",
+          "ligne": {
+            "jdds": "JD055",
+            "reference": "p035",
+            "quantite": 5
+          }
+        },
+        {
+          "reference": "c104",
+          "etat": "livrée",
+          "dateDeCreation": "26-03-2024",
+          "client": "user026@example.com",
+          "ligne": {
+            "jdds": "JD104",
+            "reference": "p020",
+            "quantite": 6
+          },
+          "note": 3,
+          "commentaire": "Livraison rapide et efficace."
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x016",
+      "email": "user080@example.com",
+      "prenom": "Matthieu",
+      "nom": "DOS SANTOS",
+      "adresse": "11, rue Techer",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.184231,
+      "longitude": 5.742143,
+      "commandes": [
+        {
+          "reference": "c057",
+          "etat": "livrée",
+          "dateDeCreation": "07-02-2024",
+          "client": "user080@example.com",
+          "ligne": {
+            "jdds": "JD057",
+            "reference": "p033",
+            "quantite": 7
+          }
+        },
+        {
+          "reference": "c064",
+          "etat": "ouverte",
+          "dateDeCreation": "27-01-2024",
+          "client": "user080@example.com",
+          "ligne": {
+            "jdds": "JD064",
+            "reference": "p034",
+            "quantite": 9
+          }
+        },
+        {
+          "reference": "c080",
+          "etat": "ouverte",
+          "dateDeCreation": "17-02-2024",
+          "client": "user080@example.com",
+          "ligne": {
+            "jdds": "JD080",
+            "reference": "p007",
+            "quantite": 7
+          }
+        },
+        {
+          "reference": "c179",
+          "etat": "ouverte",
+          "dateDeCreation": "01-02-2024",
+          "client": "user080@example.com",
+          "ligne": {
+            "jdds": "JD179",
+            "reference": "p038",
+            "quantite": 3
+          }
+        },
+        {
+          "reference": "c183",
+          "etat": "livrée",
+          "dateDeCreation": "07-01-2024",
+          "client": "user080@example.com",
+          "ligne": {
+            "jdds": "JD183",
+            "reference": "p006",
+            "quantite": 4
+          },
+          "note": 3,
+          "commentaire": "Commande incomplète à la réception."
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x017",
+      "email": "user048@example.com",
+      "prenom": "Hugues",
+      "nom": "BAZIN",
+      "adresse": "716, avenue de Evrard",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.161452,
+      "longitude": 5.701605,
+      "commandes": [
+        {
+          "reference": "c165",
+          "etat": "notée",
+          "dateDeCreation": "11-01-2024",
+          "client": "user048@example.com",
+          "ligne": {
+            "jdds": "JD165",
+            "reference": "p033",
+            "quantite": 2
+          },
+          "note": 4,
+          "commentaire": "Très satisfait de la qualité."
+        },
+        {
+          "reference": "c171",
+          "etat": "ouverte",
+          "dateDeCreation": "12-01-2024",
+          "client": "user048@example.com",
+          "ligne": {
+            "jdds": "JD171",
+            "reference": "p004",
+            "quantite": 6
+          }
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x018",
+      "email": "user024@example.com",
+      "prenom": "Philippe",
+      "nom": "LENOIR",
+      "adresse": "rue de Normand",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.170058,
+      "longitude": 5.703309,
+      "commandes": [
+        {
+          "reference": "c077",
+          "etat": "ouverte",
+          "dateDeCreation": "15-03-2024",
+          "client": "user024@example.com",
+          "ligne": {
+            "jdds": "JD077",
+            "reference": "p047",
+            "quantite": 1
+          }
+        },
+        {
+          "reference": "c193",
+          "etat": "ouverte",
+          "dateDeCreation": "16-01-2024",
+          "client": "user024@example.com",
+          "ligne": {
+            "jdds": "JD193",
+            "reference": "p033",
+            "quantite": 7
+          }
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x019",
+      "email": "user050@example.com",
+      "prenom": "Élise",
+      "nom": "HAMEL",
+      "adresse": "51, rue Cécile Bernard",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.160631,
+      "longitude": 5.724962,
+      "commandes": [
+        {
+          "reference": "c070",
+          "etat": "livrée",
+          "dateDeCreation": "13-02-2024",
+          "client": "user050@example.com",
+          "ligne": {
+            "jdds": "JD070",
+            "reference": "p008",
+            "quantite": 9
+          }
+        },
+        {
+          "reference": "c092",
+          "etat": "notée",
+          "dateDeCreation": "26-01-2024",
+          "client": "user050@example.com",
+          "ligne": {
+            "jdds": "JD092",
+            "reference": "p041",
+            "quantite": 10
+          },
+          "note": 5,
+          "commentaire": "Livraison rapide et efficace."
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x020",
+      "email": "user095@example.com",
+      "prenom": "Michelle",
+      "nom": "FOUQUET",
+      "adresse": "228, chemin de Riou",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.157144,
+      "longitude": 5.706982,
+      "commandes": [
+        {
+          "reference": "c144",
+          "etat": "livrée",
+          "dateDeCreation": "22-03-2024",
+          "client": "user095@example.com",
+          "ligne": {
+            "jdds": "JD144",
+            "reference": "p006",
+            "quantite": 2
+          },
+          "note": 3,
+          "commentaire": "Délais de livraison non respectés."
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x021",
+      "email": "user097@example.com",
+      "prenom": "Corinne",
+      "nom": "RAYNAUD",
+      "adresse": "35, boulevard de Martin",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.187351,
+      "longitude": 5.721422,
+      "commandes": [
+        {
+          "reference": "c007",
+          "etat": "ouverte",
+          "dateDeCreation": "10-02-2024",
+          "client": "user097@example.com",
+          "ligne": {
+            "jdds": "JD007",
+            "reference": "p045",
+            "quantite": 9
+          }
+        },
+        {
+          "reference": "c054",
+          "etat": "livrée",
+          "dateDeCreation": "28-01-2024",
+          "client": "user097@example.com",
+          "ligne": {
+            "jdds": "JD054",
+            "reference": "p017",
+            "quantite": 9
+          },
+          "note": 5,
+          "commentaire": "Le produit est arrivé endommagé."
+        },
+        {
+          "reference": "c120",
+          "etat": "livrée",
+          "dateDeCreation": "11-01-2024",
+          "client": "user097@example.com",
+          "ligne": {
+            "jdds": "JD120",
+            "reference": "p047",
+            "quantite": 10
+          }
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x022",
+      "email": "user003@example.com",
+      "prenom": "Joséphine",
+      "nom": "BRETON",
+      "adresse": "2, chemin Olivier Boyer",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.1681,
+      "longitude": 5.749866,
+      "commandes": [
+        {
+          "reference": "c047",
+          "etat": "notée",
+          "dateDeCreation": "01-02-2024",
+          "client": "user003@example.com",
+          "ligne": {
+            "jdds": "JD047",
+            "reference": "p040",
+            "quantite": 8
+          },
+          "note": 1,
+          "commentaire": "Livraison rapide et efficace."
+        },
+        {
+          "reference": "c102",
+          "etat": "notée",
+          "dateDeCreation": "28-01-2024",
+          "client": "user003@example.com",
+          "ligne": {
+            "jdds": "JD102",
+            "reference": "p006",
+            "quantite": 10
+          },
+          "note": 3,
+          "commentaire": "Service client réactif."
+        },
+        {
+          "reference": "c115",
+          "etat": "notée",
+          "dateDeCreation": "03-01-2024",
+          "client": "user003@example.com",
+          "ligne": {
+            "jdds": "JD115",
+            "reference": "p037",
+            "quantite": 3
+          },
+          "note": 3,
+          "commentaire": "Je recommanderai à mes amis."
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x023",
+      "email": "user047@example.com",
+      "prenom": "Olivier",
+      "nom": "DUHAMEL",
+      "adresse": "avenue Muller",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.175476,
+      "longitude": 5.704545,
+      "commandes": [
+        {
+          "reference": "c041",
+          "etat": "notée",
+          "dateDeCreation": "11-02-2024",
+          "client": "user047@example.com",
+          "ligne": {
+            "jdds": "JD041",
+            "reference": "p037",
+            "quantite": 3
+          },
+          "note": 4,
+          "commentaire": "Livraison rapide et efficace."
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x024",
+      "email": "user025@example.com",
+      "prenom": "Patricia",
+      "nom": "ROSSI",
+      "adresse": "97, chemin Evrard",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.193055,
+      "longitude": 5.707642,
+      "commandes": [
+        {
+          "reference": "c024",
+          "etat": "notée",
+          "dateDeCreation": "05-01-2024",
+          "client": "user025@example.com",
+          "ligne": {
+            "jdds": "JD024",
+            "reference": "p040",
+            "quantite": 8
+          },
+          "note": 2,
+          "commentaire": "Livraison rapide et efficace."
+        },
+        {
+          "reference": "c040",
+          "etat": "livrée",
+          "dateDeCreation": "13-02-2024",
+          "client": "user025@example.com",
+          "ligne": {
+            "jdds": "JD040",
+            "reference": "p009",
+            "quantite": 5
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x025",
+      "email": "user060@example.com",
+      "prenom": "Julie",
+      "nom": "BRIAND",
+      "adresse": "734, chemin de Navarro",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.189604,
+      "longitude": 5.721108,
+      "commandes": [
+        {
+          "reference": "c062",
+          "etat": "livrée",
+          "dateDeCreation": "21-03-2024",
+          "client": "user060@example.com",
+          "ligne": {
+            "jdds": "JD062",
+            "reference": "p016",
+            "quantite": 9
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x026",
+      "email": "user059@example.com",
+      "prenom": "Diane",
+      "nom": "SAUVAGE",
+      "adresse": "rue Andre",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.169238,
+      "longitude": 5.729794,
+      "commandes": [
+        {
+          "reference": "c009",
+          "etat": "notée",
+          "dateDeCreation": "07-03-2024",
+          "client": "user059@example.com",
+          "ligne": {
+            "jdds": "JD009",
+            "reference": "p044",
+            "quantite": 10
+          },
+          "note": 4,
+          "commentaire": "Service client réactif."
+        },
+        {
+          "reference": "c069",
+          "etat": "livrée",
+          "dateDeCreation": "22-03-2024",
+          "client": "user059@example.com",
+          "ligne": {
+            "jdds": "JD069",
+            "reference": "p036",
+            "quantite": 9
+          }
+        },
+        {
+          "reference": "c103",
+          "etat": "notée",
+          "dateDeCreation": "18-01-2024",
+          "client": "user059@example.com",
+          "ligne": {
+            "jdds": "JD103",
+            "reference": "p044",
+            "quantite": 3
+          },
+          "note": 1,
+          "commentaire": "Commande incomplète à la réception."
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x027",
+      "email": "user027@example.com",
+      "prenom": "Yves",
+      "nom": "LEFEBVRE",
+      "adresse": "439, rue Neveu",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.176456,
+      "longitude": 5.748554,
+      "commandes": [
+        {
+          "reference": "c114",
+          "etat": "ouverte",
+          "dateDeCreation": "07-03-2024",
+          "client": "user027@example.com",
+          "ligne": {
+            "jdds": "JD114",
+            "reference": "p017",
+            "quantite": 6
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x028",
+      "email": "user090@example.com",
+      "prenom": "Louise",
+      "nom": "LOPEZ",
+      "adresse": "1, rue Denise Gomez",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.184014,
+      "longitude": 5.705728,
+      "commandes": [
+        {
+          "reference": "c167",
+          "etat": "livrée",
+          "dateDeCreation": "21-02-2024",
+          "client": "user090@example.com",
+          "ligne": {
+            "jdds": "JD167",
+            "reference": "p045",
+            "quantite": 8
+          }
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x029",
+      "email": "user098@example.com",
+      "prenom": "Roger",
+      "nom": "LAROCHE",
+      "adresse": "38, boulevard de Verdier",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.18843,
+      "longitude": 5.717009,
+      "commandes": [
+        {
+          "reference": "c060",
+          "etat": "ouverte",
+          "dateDeCreation": "20-03-2024",
+          "client": "user098@example.com",
+          "ligne": {
+            "jdds": "JD060",
+            "reference": "p011",
+            "quantite": 2
+          }
+        },
+        {
+          "reference": "c198",
+          "etat": "ouverte",
+          "dateDeCreation": "19-02-2024",
+          "client": "user098@example.com",
+          "ligne": {
+            "jdds": "JD198",
+            "reference": "p004",
+            "quantite": 2
+          }
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x030",
+      "email": "user079@example.com",
+      "prenom": "Christelle",
+      "nom": "BERGER",
+      "adresse": "23, avenue Monnier",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.171738,
+      "longitude": 5.722686,
+      "commandes": [
+        {
+          "reference": "c173",
+          "etat": "ouverte",
+          "dateDeCreation": "27-03-2024",
+          "client": "user079@example.com",
+          "ligne": {
+            "jdds": "JD173",
+            "reference": "p001",
+            "quantite": 8
+          }
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x031",
+      "email": "user062@example.com",
+      "prenom": "Audrey",
+      "nom": "BOUCHET",
+      "adresse": "2, avenue Petitjean",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.198594,
+      "longitude": 5.738098,
+      "commandes": [
+        {
+          "reference": "c010",
+          "etat": "notée",
+          "dateDeCreation": "19-01-2024",
+          "client": "user062@example.com",
+          "ligne": {
+            "jdds": "JD010",
+            "reference": "p032",
+            "quantite": 8
+          },
+          "note": 3,
+          "commentaire": "Le produit est arrivé endommagé."
+        },
+        {
+          "reference": "c199",
+          "etat": "livrée",
+          "dateDeCreation": "15-01-2024",
+          "client": "user062@example.com",
+          "ligne": {
+            "jdds": "JD199",
+            "reference": "p039",
+            "quantite": 2
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x032",
+      "email": "user011@example.com",
+      "prenom": "Yves",
+      "nom": "NICOLAS",
+      "adresse": "93, rue Audrey Vidal",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.193526,
+      "longitude": 5.714922,
+      "commandes": [
+        {
+          "reference": "c169",
+          "etat": "notée",
+          "dateDeCreation": "13-03-2024",
+          "client": "user011@example.com",
+          "ligne": {
+            "jdds": "JD169",
+            "reference": "p049",
+            "quantite": 6
+          },
+          "note": 2,
+          "commentaire": "Commande incomplète à la réception."
+        },
+        {
+          "reference": "c181",
+          "etat": "ouverte",
+          "dateDeCreation": "07-01-2024",
+          "client": "user011@example.com",
+          "ligne": {
+            "jdds": "JD181",
+            "reference": "p013",
+            "quantite": 8
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x033",
+      "email": "user091@example.com",
+      "prenom": "Roger",
+      "nom": "PINTO",
+      "adresse": "8, rue de Girard",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.157642,
+      "longitude": 5.738126,
+      "commandes": [
+        {
+          "reference": "c186",
+          "etat": "ouverte",
+          "dateDeCreation": "09-02-2024",
+          "client": "user091@example.com",
+          "ligne": {
+            "jdds": "JD186",
+            "reference": "p020",
+            "quantite": 5
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x034",
+      "email": "user014@example.com",
+      "prenom": "Manon",
+      "nom": "GIMENEZ",
+      "adresse": "rue Brun",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.179947,
+      "longitude": 5.72443,
+      "commandes": [
+        {
+          "reference": "c096",
+          "etat": "livrée",
+          "dateDeCreation": "03-01-2024",
+          "client": "user014@example.com",
+          "ligne": {
+            "jdds": "JD096",
+            "reference": "p030",
+            "quantite": 2
+          }
+        },
+        {
+          "reference": "c180",
+          "etat": "notée",
+          "dateDeCreation": "24-03-2024",
+          "client": "user014@example.com",
+          "ligne": {
+            "jdds": "JD180",
+            "reference": "p031",
+            "quantite": 7
+          },
+          "note": 4,
+          "commentaire": "Produit conforme mais délai long."
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x035",
+      "email": "user093@example.com",
+      "prenom": "Anouk",
+      "nom": "VALLÉE",
+      "adresse": "16, avenue Bernard",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.196455,
+      "longitude": 5.743936,
+      "commandes": [
+        {
+          "reference": "c042",
+          "etat": "ouverte",
+          "dateDeCreation": "01-03-2024",
+          "client": "user093@example.com",
+          "ligne": {
+            "jdds": "JD042",
+            "reference": "p031",
+            "quantite": 8
+          }
+        },
+        {
+          "reference": "c148",
+          "etat": "ouverte",
+          "dateDeCreation": "06-01-2024",
+          "client": "user093@example.com",
+          "ligne": {
+            "jdds": "JD148",
+            "reference": "p009",
+            "quantite": 4
+          }
+        },
+        {
+          "reference": "c197",
+          "etat": "livrée",
+          "dateDeCreation": "20-03-2024",
+          "client": "user093@example.com",
+          "ligne": {
+            "jdds": "JD197",
+            "reference": "p032",
+            "quantite": 1
+          },
+          "note": 3,
+          "commentaire": "Le produit est arrivé endommagé."
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x036",
+      "email": "user029@example.com",
+      "prenom": "Amélie",
+      "nom": "AUBRY",
+      "adresse": "96, avenue de Meyer",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.161973,
+      "longitude": 5.712044,
+      "commandes": [
+        {
+          "reference": "c003",
+          "etat": "notée",
+          "dateDeCreation": "30-01-2024",
+          "client": "user029@example.com",
+          "ligne": {
+            "jdds": "JD003",
+            "reference": "p028",
+            "quantite": 6
+          },
+          "note": 3,
+          "commentaire": "Bon rapport qualité-prix."
+        },
+        {
+          "reference": "c133",
+          "etat": "notée",
+          "dateDeCreation": "14-02-2024",
+          "client": "user029@example.com",
+          "ligne": {
+            "jdds": "JD133",
+            "reference": "p006",
+            "quantite": 1
+          },
+          "note": 2,
+          "commentaire": "Produit conforme mais délai long."
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x037",
+      "email": "user100@example.com",
+      "prenom": "Laurent",
+      "nom": "COLLET",
+      "adresse": "9, chemin Boyer",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.154283,
+      "longitude": 5.7243,
+      "commandes": [
+        {
+          "reference": "c081",
+          "etat": "livrée",
+          "dateDeCreation": "25-02-2024",
+          "client": "user100@example.com",
+          "ligne": {
+            "jdds": "JD081",
+            "reference": "p024",
+            "quantite": 9
+          }
+        },
+        {
+          "reference": "c095",
+          "etat": "ouverte",
+          "dateDeCreation": "22-01-2024",
+          "client": "user100@example.com",
+          "ligne": {
+            "jdds": "JD095",
+            "reference": "p049",
+            "quantite": 9
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x038",
+      "email": "user012@example.com",
+      "prenom": "Benoît",
+      "nom": "MARY",
+      "adresse": "182, rue de Lemoine",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.198899,
+      "longitude": 5.726635,
+      "commandes": [
+        {
+          "reference": "c022",
+          "etat": "notée",
+          "dateDeCreation": "11-03-2024",
+          "client": "user012@example.com",
+          "ligne": {
+            "jdds": "JD022",
+            "reference": "p014",
+            "quantite": 4
+          },
+          "note": 4,
+          "commentaire": "Livraison rapide et efficace."
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x039",
+      "email": "user068@example.com",
+      "prenom": "Daniel",
+      "nom": "VALENTIN",
+      "adresse": "rue de Antoine",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.15642,
+      "longitude": 5.723764,
+      "commandes": [
+        {
+          "reference": "c131",
+          "etat": "ouverte",
+          "dateDeCreation": "01-01-2024",
+          "client": "user068@example.com",
+          "ligne": {
+            "jdds": "JD131",
+            "reference": "p008",
+            "quantite": 3
+          }
+        },
+        {
+          "reference": "c145",
+          "etat": "ouverte",
+          "dateDeCreation": "17-01-2024",
+          "client": "user068@example.com",
+          "ligne": {
+            "jdds": "JD145",
+            "reference": "p040",
+            "quantite": 3
+          }
+        },
+        {
+          "reference": "c158",
+          "etat": "notée",
+          "dateDeCreation": "28-03-2024",
+          "client": "user068@example.com",
+          "ligne": {
+            "jdds": "JD158",
+            "reference": "p007",
+            "quantite": 6
+          },
+          "note": 2,
+          "commentaire": "Délais de livraison non respectés."
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x040",
+      "email": "user021@example.com",
+      "prenom": "Georges",
+      "nom": "COLAS",
+      "adresse": "290, boulevard Geneviève Barbe",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.163253,
+      "longitude": 5.743622,
+      "commandes": [
+        {
+          "reference": "c017",
+          "etat": "notée",
+          "dateDeCreation": "06-03-2024",
+          "client": "user021@example.com",
+          "ligne": {
+            "jdds": "JD017",
+            "reference": "p027",
+            "quantite": 5
+          },
+          "note": 3,
+          "commentaire": "Excellent service."
+        },
+        {
+          "reference": "c032",
+          "etat": "livrée",
+          "dateDeCreation": "13-03-2024",
+          "client": "user021@example.com",
+          "ligne": {
+            "jdds": "JD032",
+            "reference": "p025",
+            "quantite": 6
+          }
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x041",
+      "email": "user044@example.com",
+      "prenom": "Thomas",
+      "nom": "BERTIN",
+      "adresse": "53, rue Marguerite Imbert",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.198218,
+      "longitude": 5.746446,
+      "commandes": [
+        {
+          "reference": "c140",
+          "etat": "notée",
+          "dateDeCreation": "04-02-2024",
+          "client": "user044@example.com",
+          "ligne": {
+            "jdds": "JD140",
+            "reference": "p013",
+            "quantite": 4
+          },
+          "note": 3,
+          "commentaire": "Commande incomplète à la réception."
+        },
+        {
+          "reference": "c147",
+          "etat": "notée",
+          "dateDeCreation": "01-01-2024",
+          "client": "user044@example.com",
+          "ligne": {
+            "jdds": "JD147",
+            "reference": "p011",
+            "quantite": 8
+          },
+          "note": 3,
+          "commentaire": "Livraison rapide et efficace."
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x042",
+      "email": "user032@example.com",
+      "prenom": "Théophile",
+      "nom": "ALBERT",
+      "adresse": "1, boulevard Geneviève Roussel",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.185647,
+      "longitude": 5.71995,
+      "commandes": [
+        {
+          "reference": "c111",
+          "etat": "ouverte",
+          "dateDeCreation": "17-01-2024",
+          "client": "user032@example.com",
+          "ligne": {
+            "jdds": "JD111",
+            "reference": "p010",
+            "quantite": 7
+          }
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x043",
+      "email": "user035@example.com",
+      "prenom": "David",
+      "nom": "TANGUY",
+      "adresse": "642, rue Lemaître",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.171905,
+      "longitude": 5.725879,
+      "commandes": [
+        {
+          "reference": "c106",
+          "etat": "ouverte",
+          "dateDeCreation": "12-01-2024",
+          "client": "user035@example.com",
+          "ligne": {
+            "jdds": "JD106",
+            "reference": "p045",
+            "quantite": 10
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x044",
+      "email": "user033@example.com",
+      "prenom": "Roland",
+      "nom": "BARBIER",
+      "adresse": "949, boulevard Ribeiro",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.162395,
+      "longitude": 5.703201,
+      "commandes": [
+        {
+          "reference": "c002",
+          "etat": "ouverte",
+          "dateDeCreation": "18-03-2024",
+          "client": "user033@example.com",
+          "ligne": {
+            "jdds": "JD002",
+            "reference": "p045",
+            "quantite": 2
+          }
+        },
+        {
+          "reference": "c170",
+          "etat": "livrée",
+          "dateDeCreation": "12-02-2024",
+          "client": "user033@example.com",
+          "ligne": {
+            "jdds": "JD170",
+            "reference": "p009",
+            "quantite": 3
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x045",
+      "email": "user081@example.com",
+      "prenom": "Margaud",
+      "nom": "DUVAL",
+      "adresse": "21, boulevard de Meyer",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.179415,
+      "longitude": 5.711506,
+      "commandes": [
+        {
+          "reference": "c035",
+          "etat": "livrée",
+          "dateDeCreation": "02-03-2024",
+          "client": "user081@example.com",
+          "ligne": {
+            "jdds": "JD035",
+            "reference": "p011",
+            "quantite": 9
+          }
+        },
+        {
+          "reference": "c051",
+          "etat": "notée",
+          "dateDeCreation": "17-03-2024",
+          "client": "user081@example.com",
+          "ligne": {
+            "jdds": "JD051",
+            "reference": "p018",
+            "quantite": 10
+          },
+          "note": 2,
+          "commentaire": "Service client réactif."
+        },
+        {
+          "reference": "c079",
+          "etat": "notée",
+          "dateDeCreation": "29-03-2024",
+          "client": "user081@example.com",
+          "ligne": {
+            "jdds": "JD079",
+            "reference": "p007",
+            "quantite": 2
+          },
+          "note": 1,
+          "commentaire": "Bon rapport qualité-prix."
+        },
+        {
+          "reference": "c121",
+          "etat": "notée",
+          "dateDeCreation": "24-03-2024",
+          "client": "user081@example.com",
+          "ligne": {
+            "jdds": "JD121",
+            "reference": "p034",
+            "quantite": 9
+          },
+          "note": 1,
+          "commentaire": "Produit conforme mais délai long."
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x046",
+      "email": "user013@example.com",
+      "prenom": "Richard",
+      "nom": "CARRE",
+      "adresse": "45, chemin de Bodin",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.15036,
+      "longitude": 5.735392,
+      "commandes": [
+        {
+          "reference": "c063",
+          "etat": "ouverte",
+          "dateDeCreation": "24-03-2024",
+          "client": "user013@example.com",
+          "ligne": {
+            "jdds": "JD063",
+            "reference": "p029",
+            "quantite": 6
+          }
+        },
+        {
+          "reference": "c164",
+          "etat": "notée",
+          "dateDeCreation": "20-03-2024",
+          "client": "user013@example.com",
+          "ligne": {
+            "jdds": "JD164",
+            "reference": "p013",
+            "quantite": 3
+          },
+          "note": 4,
+          "commentaire": "Commande incomplète à la réception."
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x047",
+      "email": "user058@example.com",
+      "prenom": "Claudine",
+      "nom": "DESCHAMPS",
+      "adresse": "avenue Baron",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.161447,
+      "longitude": 5.745271,
+      "commandes": [
+        {
+          "reference": "c044",
+          "etat": "livrée",
+          "dateDeCreation": "15-02-2024",
+          "client": "user058@example.com",
+          "ligne": {
+            "jdds": "JD044",
+            "reference": "p022",
+            "quantite": 2
+          }
+        },
+        {
+          "reference": "c053",
+          "etat": "ouverte",
+          "dateDeCreation": "11-01-2024",
+          "client": "user058@example.com",
+          "ligne": {
+            "jdds": "JD053",
+            "reference": "p020",
+            "quantite": 2
+          }
+        },
+        {
+          "reference": "c160",
+          "etat": "ouverte",
+          "dateDeCreation": "13-01-2024",
+          "client": "user058@example.com",
+          "ligne": {
+            "jdds": "JD160",
+            "reference": "p017",
+            "quantite": 9
+          }
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x048",
+      "email": "user065@example.com",
+      "prenom": "Benjamin",
+      "nom": "BERNARD",
+      "adresse": "34, avenue de Courtois",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.153543,
+      "longitude": 5.7119,
+      "commandes": [
+        {
+          "reference": "c005",
+          "etat": "ouverte",
+          "dateDeCreation": "03-02-2024",
+          "client": "user065@example.com",
+          "ligne": {
+            "jdds": "JD005",
+            "reference": "p030",
+            "quantite": 10
+          }
+        },
+        {
+          "reference": "c019",
+          "etat": "ouverte",
+          "dateDeCreation": "08-02-2024",
+          "client": "user065@example.com",
+          "ligne": {
+            "jdds": "JD019",
+            "reference": "p048",
+            "quantite": 5
+          }
+        },
+        {
+          "reference": "c068",
+          "etat": "livrée",
+          "dateDeCreation": "04-03-2024",
+          "client": "user065@example.com",
+          "ligne": {
+            "jdds": "JD068",
+            "reference": "p013",
+            "quantite": 7
+          }
+        },
+        {
+          "reference": "c128",
+          "etat": "ouverte",
+          "dateDeCreation": "04-02-2024",
+          "client": "user065@example.com",
+          "ligne": {
+            "jdds": "JD128",
+            "reference": "p004",
+            "quantite": 6
+          }
+        },
+        {
+          "reference": "c194",
+          "etat": "livrée",
+          "dateDeCreation": "23-01-2024",
+          "client": "user065@example.com",
+          "ligne": {
+            "jdds": "JD194",
+            "reference": "p036",
+            "quantite": 9
+          },
+          "note": 5,
+          "commentaire": "Je recommanderai à mes amis."
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x049",
+      "email": "user096@example.com",
+      "prenom": "Maryse",
+      "nom": "LAUNAY",
+      "adresse": "2, rue Morvan",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.160712,
+      "longitude": 5.706616,
+      "commandes": [
+        {
+          "reference": "c101",
+          "etat": "ouverte",
+          "dateDeCreation": "08-02-2024",
+          "client": "user096@example.com",
+          "ligne": {
+            "jdds": "JD101",
+            "reference": "p039",
+            "quantite": 3
+          }
+        },
+        {
+          "reference": "c127",
+          "etat": "ouverte",
+          "dateDeCreation": "22-02-2024",
+          "client": "user096@example.com",
+          "ligne": {
+            "jdds": "JD127",
+            "reference": "p045",
+            "quantite": 4
+          }
+        },
+        {
+          "reference": "c136",
+          "etat": "notée",
+          "dateDeCreation": "01-03-2024",
+          "client": "user096@example.com",
+          "ligne": {
+            "jdds": "JD136",
+            "reference": "p013",
+            "quantite": 1
+          },
+          "note": 2,
+          "commentaire": "Excellent service."
+        },
+        {
+          "reference": "c174",
+          "etat": "ouverte",
+          "dateDeCreation": "11-02-2024",
+          "client": "user096@example.com",
+          "ligne": {
+            "jdds": "JD174",
+            "reference": "p013",
+            "quantite": 8
+          }
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x050",
+      "email": "user010@example.com",
+      "prenom": "Auguste",
+      "nom": "LEMAÎTRE",
+      "adresse": "326, chemin Marchal",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.16215,
+      "longitude": 5.723649,
+      "commandes": [
+        {
+          "reference": "c132",
+          "etat": "ouverte",
+          "dateDeCreation": "08-02-2024",
+          "client": "user010@example.com",
+          "ligne": {
+            "jdds": "JD132",
+            "reference": "p038",
+            "quantite": 10
+          }
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x051",
+      "email": "user094@example.com",
+      "prenom": "Stéphanie",
+      "nom": "FOURNIER",
+      "adresse": "23, boulevard Anouk Legendre",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.15952,
+      "longitude": 5.704847,
+      "commandes": [
+        {
+          "reference": "c023",
+          "etat": "ouverte",
+          "dateDeCreation": "20-01-2024",
+          "client": "user094@example.com",
+          "ligne": {
+            "jdds": "JD023",
+            "reference": "p014",
+            "quantite": 6
+          }
+        },
+        {
+          "reference": "c143",
+          "etat": "livrée",
+          "dateDeCreation": "26-02-2024",
+          "client": "user094@example.com",
+          "ligne": {
+            "jdds": "JD143",
+            "reference": "p009",
+            "quantite": 7
+          },
+          "note": 4,
+          "commentaire": "Commande incomplète à la réception."
+        },
+        {
+          "reference": "c157",
+          "etat": "ouverte",
+          "dateDeCreation": "20-03-2024",
+          "client": "user094@example.com",
+          "ligne": {
+            "jdds": "JD157",
+            "reference": "p050",
+            "quantite": 1
+          }
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x052",
+      "email": "user055@example.com",
+      "prenom": "Océane",
+      "nom": "MEYER",
+      "adresse": "72, rue Gallet",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.167715,
+      "longitude": 5.720555,
+      "commandes": [
+        {
+          "reference": "c001",
+          "etat": "ouverte",
+          "dateDeCreation": "04-02-2024",
+          "client": "user055@example.com",
+          "ligne": {
+            "jdds": "JD001",
+            "reference": "p024",
+            "quantite": 10
+          }
+        },
+        {
+          "reference": "c056",
+          "etat": "livrée",
+          "dateDeCreation": "24-02-2024",
+          "client": "user055@example.com",
+          "ligne": {
+            "jdds": "JD056",
+            "reference": "p014",
+            "quantite": 10
+          }
+        },
+        {
+          "reference": "c071",
+          "etat": "notée",
+          "dateDeCreation": "19-02-2024",
+          "client": "user055@example.com",
+          "ligne": {
+            "jdds": "JD071",
+            "reference": "p047",
+            "quantite": 8
+          },
+          "note": 3,
+          "commentaire": "Je recommanderai à mes amis."
+        },
+        {
+          "reference": "c088",
+          "etat": "notée",
+          "dateDeCreation": "22-02-2024",
+          "client": "user055@example.com",
+          "ligne": {
+            "jdds": "JD088",
+            "reference": "p033",
+            "quantite": 6
+          },
+          "note": 5,
+          "commentaire": "Produit conforme mais délai long."
+        },
+        {
+          "reference": "c134",
+          "etat": "notée",
+          "dateDeCreation": "29-02-2024",
+          "client": "user055@example.com",
+          "ligne": {
+            "jdds": "JD134",
+            "reference": "p017",
+            "quantite": 1
+          },
+          "note": 2,
+          "commentaire": "Bon rapport qualité-prix."
+        },
+        {
+          "reference": "c192",
+          "etat": "ouverte",
+          "dateDeCreation": "26-01-2024",
+          "client": "user055@example.com",
+          "ligne": {
+            "jdds": "JD192",
+            "reference": "p039",
+            "quantite": 5
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x053",
+      "email": "user086@example.com",
+      "prenom": "Xavier",
+      "nom": "BOUCHET",
+      "adresse": "34, rue de Weber",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.183668,
+      "longitude": 5.749208,
+      "commandes": [
+        {
+          "reference": "c029",
+          "etat": "livrée",
+          "dateDeCreation": "23-03-2024",
+          "client": "user086@example.com",
+          "ligne": {
+            "jdds": "JD029",
+            "reference": "p041",
+            "quantite": 9
+          },
+          "note": 5,
+          "commentaire": "Délais de livraison non respectés."
+        },
+        {
+          "reference": "c050",
+          "etat": "livrée",
+          "dateDeCreation": "12-02-2024",
+          "client": "user086@example.com",
+          "ligne": {
+            "jdds": "JD050",
+            "reference": "p041",
+            "quantite": 3
+          },
+          "note": 4,
+          "commentaire": "Bon rapport qualité-prix."
+        },
+        {
+          "reference": "c058",
+          "etat": "ouverte",
+          "dateDeCreation": "15-02-2024",
+          "client": "user086@example.com",
+          "ligne": {
+            "jdds": "JD058",
+            "reference": "p043",
+            "quantite": 10
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x054",
+      "email": "user049@example.com",
+      "prenom": "Auguste",
+      "nom": "LELIÈVRE",
+      "adresse": "67, rue Maurice Laurent",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.153031,
+      "longitude": 5.736411,
+      "commandes": [
+        {
+          "reference": "c049",
+          "etat": "livrée",
+          "dateDeCreation": "11-03-2024",
+          "client": "user049@example.com",
+          "ligne": {
+            "jdds": "JD049",
+            "reference": "p043",
+            "quantite": 10
+          }
+        },
+        {
+          "reference": "c162",
+          "etat": "livrée",
+          "dateDeCreation": "20-01-2024",
+          "client": "user049@example.com",
+          "ligne": {
+            "jdds": "JD162",
+            "reference": "p023",
+            "quantite": 6
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x055",
+      "email": "user037@example.com",
+      "prenom": "Margaux",
+      "nom": "OLIVIER",
+      "adresse": "24, chemin Lucy Grégoire",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.162433,
+      "longitude": 5.70951,
+      "commandes": [
+        {
+          "reference": "c008",
+          "etat": "livrée",
+          "dateDeCreation": "05-02-2024",
+          "client": "user037@example.com",
+          "ligne": {
+            "jdds": "JD008",
+            "reference": "p042",
+            "quantite": 7
+          }
+        },
+        {
+          "reference": "c099",
+          "etat": "ouverte",
+          "dateDeCreation": "25-02-2024",
+          "client": "user037@example.com",
+          "ligne": {
+            "jdds": "JD099",
+            "reference": "p026",
+            "quantite": 8
+          }
+        },
+        {
+          "reference": "c129",
+          "etat": "livrée",
+          "dateDeCreation": "19-03-2024",
+          "client": "user037@example.com",
+          "ligne": {
+            "jdds": "JD129",
+            "reference": "p014",
+            "quantite": 2
+          },
+          "note": 5,
+          "commentaire": "Bon rapport qualité-prix."
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x056",
+      "email": "user045@example.com",
+      "prenom": "Andrée",
+      "nom": "POTIER",
+      "adresse": "20, rue Inès Aubry",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.157009,
+      "longitude": 5.709174,
+      "commandes": [
+        {
+          "reference": "c093",
+          "etat": "livrée",
+          "dateDeCreation": "11-03-2024",
+          "client": "user045@example.com",
+          "ligne": {
+            "jdds": "JD093",
+            "reference": "p007",
+            "quantite": 2
+          },
+          "note": 4,
+          "commentaire": "Livraison rapide et efficace."
+        },
+        {
+          "reference": "c135",
+          "etat": "livrée",
+          "dateDeCreation": "29-02-2024",
+          "client": "user045@example.com",
+          "ligne": {
+            "jdds": "JD135",
+            "reference": "p032",
+            "quantite": 10
+          }
+        },
+        {
+          "reference": "c141",
+          "etat": "livrée",
+          "dateDeCreation": "22-02-2024",
+          "client": "user045@example.com",
+          "ligne": {
+            "jdds": "JD141",
+            "reference": "p045",
+            "quantite": 6
+          }
+        },
+        {
+          "reference": "c195",
+          "etat": "notée",
+          "dateDeCreation": "16-02-2024",
+          "client": "user045@example.com",
+          "ligne": {
+            "jdds": "JD195",
+            "reference": "p024",
+            "quantite": 5
+          },
+          "note": 3,
+          "commentaire": "Excellent service."
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x057",
+      "email": "user056@example.com",
+      "prenom": "Auguste",
+      "nom": "NICOLAS",
+      "adresse": "65, boulevard Danielle Ferreira",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.16249,
+      "longitude": 5.746163,
+      "commandes": [
+        {
+          "reference": "c021",
+          "etat": "notée",
+          "dateDeCreation": "11-03-2024",
+          "client": "user056@example.com",
+          "ligne": {
+            "jdds": "JD021",
+            "reference": "p040",
+            "quantite": 4
+          },
+          "note": 3,
+          "commentaire": "Délais de livraison non respectés."
+        },
+        {
+          "reference": "c190",
+          "etat": "livrée",
+          "dateDeCreation": "20-03-2024",
+          "client": "user056@example.com",
+          "ligne": {
+            "jdds": "JD190",
+            "reference": "p045",
+            "quantite": 9
+          }
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x058",
+      "email": "user084@example.com",
+      "prenom": "Alice",
+      "nom": "VERDIER",
+      "adresse": "70, boulevard Tanguy",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.190401,
+      "longitude": 5.742798,
+      "commandes": [
+        {
+          "reference": "c152",
+          "etat": "ouverte",
+          "dateDeCreation": "17-02-2024",
+          "client": "user084@example.com",
+          "ligne": {
+            "jdds": "JD152",
+            "reference": "p031",
+            "quantite": 8
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x059",
+      "email": "user052@example.com",
+      "prenom": "Marianne",
+      "nom": "FOUQUET",
+      "adresse": "75, chemin Ferrand",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.152529,
+      "longitude": 5.749964,
+      "commandes": [
+        {
+          "reference": "c034",
+          "etat": "ouverte",
+          "dateDeCreation": "23-03-2024",
+          "client": "user052@example.com",
+          "ligne": {
+            "jdds": "JD034",
+            "reference": "p030",
+            "quantite": 1
+          }
+        },
+        {
+          "reference": "c078",
+          "etat": "ouverte",
+          "dateDeCreation": "13-03-2024",
+          "client": "user052@example.com",
+          "ligne": {
+            "jdds": "JD078",
+            "reference": "p042",
+            "quantite": 6
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x060",
+      "email": "user008@example.com",
+      "prenom": "Thomas",
+      "nom": "DUPRÉ",
+      "adresse": "chemin de Guillou",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.19845,
+      "longitude": 5.746318,
+      "commandes": [
+        {
+          "reference": "c166",
+          "etat": "ouverte",
+          "dateDeCreation": "31-01-2024",
+          "client": "user008@example.com",
+          "ligne": {
+            "jdds": "JD166",
+            "reference": "p006",
+            "quantite": 10
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x061",
+      "email": "user074@example.com",
+      "prenom": "Thierry",
+      "nom": "MARTINEAU",
+      "adresse": "56, rue de Olivier",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.158316,
+      "longitude": 5.724282,
+      "commandes": [
+        {
+          "reference": "c027",
+          "etat": "notée",
+          "dateDeCreation": "13-02-2024",
+          "client": "user074@example.com",
+          "ligne": {
+            "jdds": "JD027",
+            "reference": "p037",
+            "quantite": 3
+          },
+          "note": 1,
+          "commentaire": "Je recommanderai à mes amis."
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x062",
+      "email": "user036@example.com",
+      "prenom": "Astrid",
+      "nom": "CHARTIER",
+      "adresse": "59, boulevard Victoire Martin",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.193233,
+      "longitude": 5.745122,
+      "commandes": [
+        {
+          "reference": "c037",
+          "etat": "notée",
+          "dateDeCreation": "21-02-2024",
+          "client": "user036@example.com",
+          "ligne": {
+            "jdds": "JD037",
+            "reference": "p012",
+            "quantite": 10
+          },
+          "note": 1,
+          "commentaire": "Excellent service."
+        },
+        {
+          "reference": "c100",
+          "etat": "ouverte",
+          "dateDeCreation": "29-03-2024",
+          "client": "user036@example.com",
+          "ligne": {
+            "jdds": "JD100",
+            "reference": "p001",
+            "quantite": 4
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x063",
+      "email": "user038@example.com",
+      "prenom": "Thibaut",
+      "nom": "RENAULT",
+      "adresse": "69, avenue Capucine Parent",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.168949,
+      "longitude": 5.749265,
+      "commandes": [
+        {
+          "reference": "c026",
+          "etat": "ouverte",
+          "dateDeCreation": "09-03-2024",
+          "client": "user038@example.com",
+          "ligne": {
+            "jdds": "JD026",
+            "reference": "p018",
+            "quantite": 6
+          }
+        },
+        {
+          "reference": "c045",
+          "etat": "ouverte",
+          "dateDeCreation": "25-03-2024",
+          "client": "user038@example.com",
+          "ligne": {
+            "jdds": "JD045",
+            "reference": "p016",
+            "quantite": 5
+          }
+        },
+        {
+          "reference": "c108",
+          "etat": "livrée",
+          "dateDeCreation": "22-01-2024",
+          "client": "user038@example.com",
+          "ligne": {
+            "jdds": "JD108",
+            "reference": "p019",
+            "quantite": 9
+          }
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x064",
+      "email": "user071@example.com",
+      "prenom": "Marcel",
+      "nom": "GROS",
+      "adresse": "51, boulevard de Daniel",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.196326,
+      "longitude": 5.739256,
+      "commandes": [
+        {
+          "reference": "c112",
+          "etat": "livrée",
+          "dateDeCreation": "03-03-2024",
+          "client": "user071@example.com",
+          "ligne": {
+            "jdds": "JD112",
+            "reference": "p025",
+            "quantite": 4
+          }
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x065",
+      "email": "user007@example.com",
+      "prenom": "Éric",
+      "nom": "HAMEL",
+      "adresse": "43, rue Lambert",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.17115,
+      "longitude": 5.747866,
+      "commandes": [
+        {
+          "reference": "c082",
+          "etat": "livrée",
+          "dateDeCreation": "01-03-2024",
+          "client": "user007@example.com",
+          "ligne": {
+            "jdds": "JD082",
+            "reference": "p002",
+            "quantite": 7
+          }
+        },
+        {
+          "reference": "c105",
+          "etat": "notée",
+          "dateDeCreation": "29-01-2024",
+          "client": "user007@example.com",
+          "ligne": {
+            "jdds": "JD105",
+            "reference": "p017",
+            "quantite": 8
+          },
+          "note": 5,
+          "commentaire": "Excellent service."
+        },
+        {
+          "reference": "c138",
+          "etat": "livrée",
+          "dateDeCreation": "31-01-2024",
+          "client": "user007@example.com",
+          "ligne": {
+            "jdds": "JD138",
+            "reference": "p044",
+            "quantite": 3
+          }
+        },
+        {
+          "reference": "c185",
+          "etat": "ouverte",
+          "dateDeCreation": "19-02-2024",
+          "client": "user007@example.com",
+          "ligne": {
+            "jdds": "JD185",
+            "reference": "p006",
+            "quantite": 8
+          }
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x066",
+      "email": "user069@example.com",
+      "prenom": "Patrick",
+      "nom": "OLLIVIER",
+      "adresse": "8, boulevard Léon Wagner",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.15774,
+      "longitude": 5.714835,
+      "commandes": [
+        {
+          "reference": "c123",
+          "etat": "livrée",
+          "dateDeCreation": "09-02-2024",
+          "client": "user069@example.com",
+          "ligne": {
+            "jdds": "JD123",
+            "reference": "p017",
+            "quantite": 3
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x067",
+      "email": "user099@example.com",
+      "prenom": "Marthe",
+      "nom": "JACOB",
+      "adresse": "33, rue de Hamel",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.178959,
+      "longitude": 5.72711,
+      "commandes": [
+        {
+          "reference": "c048",
+          "etat": "livrée",
+          "dateDeCreation": "08-02-2024",
+          "client": "user099@example.com",
+          "ligne": {
+            "jdds": "JD048",
+            "reference": "p040",
+            "quantite": 5
+          },
+          "note": 3,
+          "commentaire": "Délais de livraison non respectés."
+        },
+        {
+          "reference": "c175",
+          "etat": "livrée",
+          "dateDeCreation": "01-04-2024",
+          "client": "user099@example.com",
+          "ligne": {
+            "jdds": "JD175",
+            "reference": "p036",
+            "quantite": 8
+          },
+          "note": 4,
+          "commentaire": "Je recommanderai à mes amis."
+        },
+        {
+          "reference": "c177",
+          "etat": "ouverte",
+          "dateDeCreation": "02-02-2024",
+          "client": "user099@example.com",
+          "ligne": {
+            "jdds": "JD177",
+            "reference": "p002",
+            "quantite": 2
+          }
+        },
+        {
+          "reference": "c187",
+          "etat": "notée",
+          "dateDeCreation": "17-03-2024",
+          "client": "user099@example.com",
+          "ligne": {
+            "jdds": "JD187",
+            "reference": "p016",
+            "quantite": 2
+          },
+          "note": 2,
+          "commentaire": "Je recommanderai à mes amis."
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x068",
+      "email": "user041@example.com",
+      "prenom": "Pénélope",
+      "nom": "GAUTIER",
+      "adresse": "92, rue Frédérique Menard",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.152858,
+      "longitude": 5.729209,
+      "commandes": [
+        {
+          "reference": "c110",
+          "etat": "livrée",
+          "dateDeCreation": "31-03-2024",
+          "client": "user041@example.com",
+          "ligne": {
+            "jdds": "JD110",
+            "reference": "p036",
+            "quantite": 5
+          }
+        },
+        {
+          "reference": "c124",
+          "etat": "ouverte",
+          "dateDeCreation": "04-02-2024",
+          "client": "user041@example.com",
+          "ligne": {
+            "jdds": "JD124",
+            "reference": "p001",
+            "quantite": 7
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x069",
+      "email": "user075@example.com",
+      "prenom": "Claude",
+      "nom": "RIVIÈRE",
+      "adresse": "97, boulevard de Prévost",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.152844,
+      "longitude": 5.725391,
+      "commandes": [
+        {
+          "reference": "c067",
+          "etat": "notée",
+          "dateDeCreation": "29-03-2024",
+          "client": "user075@example.com",
+          "ligne": {
+            "jdds": "JD067",
+            "reference": "p041",
+            "quantite": 10
+          },
+          "note": 3,
+          "commentaire": "Très satisfait de la qualité."
+        },
+        {
+          "reference": "c125",
+          "etat": "livrée",
+          "dateDeCreation": "02-03-2024",
+          "client": "user075@example.com",
+          "ligne": {
+            "jdds": "JD125",
+            "reference": "p050",
+            "quantite": 5
+          },
+          "note": 3,
+          "commentaire": "Délais de livraison non respectés."
+        },
+        {
+          "reference": "c146",
+          "etat": "ouverte",
+          "dateDeCreation": "15-01-2024",
+          "client": "user075@example.com",
+          "ligne": {
+            "jdds": "JD146",
+            "reference": "p003",
+            "quantite": 8
+          }
+        },
+        {
+          "reference": "c200",
+          "etat": "ouverte",
+          "dateDeCreation": "12-02-2024",
+          "client": "user075@example.com",
+          "ligne": {
+            "jdds": "JD200",
+            "reference": "p026",
+            "quantite": 8
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x070",
+      "email": "user092@example.com",
+      "prenom": "Olivie",
+      "nom": "PICHON",
+      "adresse": "868, avenue Lebreton",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.153426,
+      "longitude": 5.703398,
+      "commandes": [
+        {
+          "reference": "c073",
+          "etat": "livrée",
+          "dateDeCreation": "01-04-2024",
+          "client": "user092@example.com",
+          "ligne": {
+            "jdds": "JD073",
+            "reference": "p032",
+            "quantite": 5
+          }
+        },
+        {
+          "reference": "c172",
+          "etat": "notée",
+          "dateDeCreation": "12-03-2024",
+          "client": "user092@example.com",
+          "ligne": {
+            "jdds": "JD172",
+            "reference": "p009",
+            "quantite": 8
+          },
+          "note": 2,
+          "commentaire": "Livraison rapide et efficace."
+        },
+        {
+          "reference": "c184",
+          "etat": "livrée",
+          "dateDeCreation": "10-02-2024",
+          "client": "user092@example.com",
+          "ligne": {
+            "jdds": "JD184",
+            "reference": "p002",
+            "quantite": 1
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x071",
+      "email": "user040@example.com",
+      "prenom": "Raymond",
+      "nom": "HAMEL",
+      "adresse": "88, rue de Paris",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.170189,
+      "longitude": 5.74708,
+      "commandes": [
+        {
+          "reference": "c075",
+          "etat": "livrée",
+          "dateDeCreation": "16-02-2024",
+          "client": "user040@example.com",
+          "ligne": {
+            "jdds": "JD075",
+            "reference": "p018",
+            "quantite": 6
+          },
+          "note": 5,
+          "commentaire": "Très satisfait de la qualité."
+        },
+        {
+          "reference": "c091",
+          "etat": "ouverte",
+          "dateDeCreation": "18-02-2024",
+          "client": "user040@example.com",
+          "ligne": {
+            "jdds": "JD091",
+            "reference": "p023",
+            "quantite": 7
+          }
+        },
+        {
+          "reference": "c116",
+          "etat": "ouverte",
+          "dateDeCreation": "04-01-2024",
+          "client": "user040@example.com",
+          "ligne": {
+            "jdds": "JD116",
+            "reference": "p043",
+            "quantite": 2
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x072",
+      "email": "user004@example.com",
+      "prenom": "Brigitte",
+      "nom": "GARNIER",
+      "adresse": "53, chemin Élodie Faure",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.178946,
+      "longitude": 5.701987,
+      "commandes": [
+        {
+          "reference": "c016",
+          "etat": "notée",
+          "dateDeCreation": "03-02-2024",
+          "client": "user004@example.com",
+          "ligne": {
+            "jdds": "JD016",
+            "reference": "p034",
+            "quantite": 4
+          },
+          "note": 3,
+          "commentaire": "Je recommanderai à mes amis."
+        },
+        {
+          "reference": "c076",
+          "etat": "livrée",
+          "dateDeCreation": "28-02-2024",
+          "client": "user004@example.com",
+          "ligne": {
+            "jdds": "JD076",
+            "reference": "p048",
+            "quantite": 6
+          }
+        },
+        {
+          "reference": "c142",
+          "etat": "notée",
+          "dateDeCreation": "22-01-2024",
+          "client": "user004@example.com",
+          "ligne": {
+            "jdds": "JD142",
+            "reference": "p011",
+            "quantite": 1
+          },
+          "note": 5,
+          "commentaire": "Le produit est arrivé endommagé."
+        },
+        {
+          "reference": "c155",
+          "etat": "notée",
+          "dateDeCreation": "28-02-2024",
+          "client": "user004@example.com",
+          "ligne": {
+            "jdds": "JD155",
+            "reference": "p021",
+            "quantite": 10
+          },
+          "note": 4,
+          "commentaire": "Service client réactif."
+        },
+        {
+          "reference": "c191",
+          "etat": "livrée",
+          "dateDeCreation": "06-02-2024",
+          "client": "user004@example.com",
+          "ligne": {
+            "jdds": "JD191",
+            "reference": "p001",
+            "quantite": 2
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x073",
+      "email": "user043@example.com",
+      "prenom": "Guillaume",
+      "nom": "FERNANDES",
+      "adresse": "42, avenue Cordier",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.170961,
+      "longitude": 5.729184,
+      "commandes": [
+        {
+          "reference": "c089",
+          "etat": "ouverte",
+          "dateDeCreation": "09-02-2024",
+          "client": "user043@example.com",
+          "ligne": {
+            "jdds": "JD089",
+            "reference": "p005",
+            "quantite": 9
+          }
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x074",
+      "email": "user039@example.com",
+      "prenom": "Vincent",
+      "nom": "ALLARD",
+      "adresse": "40, avenue Pénélope Mary",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.196735,
+      "longitude": 5.710213,
+      "commandes": [
+        {
+          "reference": "c043",
+          "etat": "livrée",
+          "dateDeCreation": "29-03-2024",
+          "client": "user039@example.com",
+          "ligne": {
+            "jdds": "JD043",
+            "reference": "p040",
+            "quantite": 8
+          }
+        },
+        {
+          "reference": "c137",
+          "etat": "ouverte",
+          "dateDeCreation": "13-01-2024",
+          "client": "user039@example.com",
+          "ligne": {
+            "jdds": "JD137",
+            "reference": "p006",
+            "quantite": 9
+          }
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x075",
+      "email": "user082@example.com",
+      "prenom": "Marthe",
+      "nom": "LEFEBVRE",
+      "adresse": "17, chemin Odette Perrier",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.161934,
+      "longitude": 5.719789,
+      "commandes": [
+        {
+          "reference": "c012",
+          "etat": "notée",
+          "dateDeCreation": "19-02-2024",
+          "client": "user082@example.com",
+          "ligne": {
+            "jdds": "JD012",
+            "reference": "p024",
+            "quantite": 1
+          },
+          "note": 4,
+          "commentaire": "Je recommanderai à mes amis."
+        },
+        {
+          "reference": "c176",
+          "etat": "ouverte",
+          "dateDeCreation": "31-01-2024",
+          "client": "user082@example.com",
+          "ligne": {
+            "jdds": "JD176",
+            "reference": "p045",
+            "quantite": 1
+          }
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x076",
+      "email": "user057@example.com",
+      "prenom": "Dominique",
+      "nom": "HUMBERT",
+      "adresse": "893, chemin Nguyen",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.172861,
+      "longitude": 5.746451,
+      "commandes": [
+        {
+          "reference": "c025",
+          "etat": "notée",
+          "dateDeCreation": "07-03-2024",
+          "client": "user057@example.com",
+          "ligne": {
+            "jdds": "JD025",
+            "reference": "p016",
+            "quantite": 4
+          },
+          "note": 1,
+          "commentaire": "Commande incomplète à la réception."
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x077",
+      "email": "user087@example.com",
+      "prenom": "Claire",
+      "nom": "LEROY",
+      "adresse": "36, rue Laurence Joubert",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.150466,
+      "longitude": 5.731058,
+      "commandes": [
+        {
+          "reference": "c118",
+          "etat": "livrée",
+          "dateDeCreation": "25-01-2024",
+          "client": "user087@example.com",
+          "ligne": {
+            "jdds": "JD118",
+            "reference": "p023",
+            "quantite": 4
+          },
+          "note": 3,
+          "commentaire": "Très satisfait de la qualité."
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x078",
+      "email": "user064@example.com",
+      "prenom": "André",
+      "nom": "CARLIER",
+      "adresse": "701, avenue Vidal",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.153663,
+      "longitude": 5.710658,
+      "commandes": [
+        {
+          "reference": "c065",
+          "etat": "livrée",
+          "dateDeCreation": "19-01-2024",
+          "client": "user064@example.com",
+          "ligne": {
+            "jdds": "JD065",
+            "reference": "p044",
+            "quantite": 1
+          },
+          "note": 3,
+          "commentaire": "Délais de livraison non respectés."
+        },
+        {
+          "reference": "c163",
+          "etat": "livrée",
+          "dateDeCreation": "19-01-2024",
+          "client": "user064@example.com",
+          "ligne": {
+            "jdds": "JD163",
+            "reference": "p016",
+            "quantite": 3
+          }
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x079",
+      "email": "user066@example.com",
+      "prenom": "Benoît",
+      "nom": "BERTIN",
+      "adresse": "83, chemin Patricia Gillet",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.156623,
+      "longitude": 5.71745,
+      "commandes": [
+        {
+          "reference": "c018",
+          "etat": "notée",
+          "dateDeCreation": "25-03-2024",
+          "client": "user066@example.com",
+          "ligne": {
+            "jdds": "JD018",
+            "reference": "p004",
+            "quantite": 5
+          },
+          "note": 1,
+          "commentaire": "Livraison rapide et efficace."
+        },
+        {
+          "reference": "c074",
+          "etat": "livrée",
+          "dateDeCreation": "04-01-2024",
+          "client": "user066@example.com",
+          "ligne": {
+            "jdds": "JD074",
+            "reference": "p041",
+            "quantite": 7
+          },
+          "note": 3,
+          "commentaire": "Le produit est arrivé endommagé."
+        },
+        {
+          "reference": "c084",
+          "etat": "livrée",
+          "dateDeCreation": "01-04-2024",
+          "client": "user066@example.com",
+          "ligne": {
+            "jdds": "JD084",
+            "reference": "p027",
+            "quantite": 3
+          }
+        },
+        {
+          "reference": "c122",
+          "etat": "notée",
+          "dateDeCreation": "29-01-2024",
+          "client": "user066@example.com",
+          "ligne": {
+            "jdds": "JD122",
+            "reference": "p049",
+            "quantite": 4
+          },
+          "note": 1,
+          "commentaire": "Délais de livraison non respectés."
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x080",
+      "email": "user009@example.com",
+      "prenom": "Roger",
+      "nom": "CHRÉTIEN",
+      "adresse": "81, boulevard Roux",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.193964,
+      "longitude": 5.718476,
+      "commandes": [
+        {
+          "reference": "c117",
+          "etat": "livrée",
+          "dateDeCreation": "30-01-2024",
+          "client": "user009@example.com",
+          "ligne": {
+            "jdds": "JD117",
+            "reference": "p032",
+            "quantite": 1
+          }
+        },
+        {
+          "reference": "c151",
+          "etat": "ouverte",
+          "dateDeCreation": "09-02-2024",
+          "client": "user009@example.com",
+          "ligne": {
+            "jdds": "JD151",
+            "reference": "p037",
+            "quantite": 4
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x081",
+      "email": "user030@example.com",
+      "prenom": "Adèle",
+      "nom": "HUBERT",
+      "adresse": "1, rue Bourgeois",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.171909,
+      "longitude": 5.727161,
+      "commandes": [
+        {
+          "reference": "c072",
+          "etat": "notée",
+          "dateDeCreation": "16-03-2024",
+          "client": "user030@example.com",
+          "ligne": {
+            "jdds": "JD072",
+            "reference": "p049",
+            "quantite": 3
+          },
+          "note": 3,
+          "commentaire": "Commande incomplète à la réception."
+        },
+        {
+          "reference": "c087",
+          "etat": "notée",
+          "dateDeCreation": "31-01-2024",
+          "client": "user030@example.com",
+          "ligne": {
+            "jdds": "JD087",
+            "reference": "p009",
+            "quantite": 4
+          },
+          "note": 2,
+          "commentaire": "Commande incomplète à la réception."
+        },
+        {
+          "reference": "c126",
+          "etat": "notée",
+          "dateDeCreation": "28-01-2024",
+          "client": "user030@example.com",
+          "ligne": {
+            "jdds": "JD126",
+            "reference": "p003",
+            "quantite": 5
+          },
+          "note": 3,
+          "commentaire": "Bon rapport qualité-prix."
+        },
+        {
+          "reference": "c150",
+          "etat": "notée",
+          "dateDeCreation": "10-03-2024",
+          "client": "user030@example.com",
+          "ligne": {
+            "jdds": "JD150",
+            "reference": "p045",
+            "quantite": 10
+          },
+          "note": 2,
+          "commentaire": "Produit conforme mais délai long."
+        },
+        {
+          "reference": "c189",
+          "etat": "ouverte",
+          "dateDeCreation": "08-03-2024",
+          "client": "user030@example.com",
+          "ligne": {
+            "jdds": "JD189",
+            "reference": "p009",
+            "quantite": 7
+          }
+        },
+        {
+          "reference": "c196",
+          "etat": "ouverte",
+          "dateDeCreation": "31-01-2024",
+          "client": "user030@example.com",
+          "ligne": {
+            "jdds": "JD196",
+            "reference": "p016",
+            "quantite": 10
+          }
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x082",
+      "email": "user072@example.com",
+      "prenom": "Virginie",
+      "nom": "LEFEBVRE",
+      "adresse": "33, rue Geneviève Carpentier",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.180584,
+      "longitude": 5.749362,
+      "commandes": [
+        {
+          "reference": "c033",
+          "etat": "ouverte",
+          "dateDeCreation": "02-03-2024",
+          "client": "user072@example.com",
+          "ligne": {
+            "jdds": "JD033",
+            "reference": "p033",
+            "quantite": 5
+          }
+        },
+        {
+          "reference": "c066",
+          "etat": "livrée",
+          "dateDeCreation": "31-03-2024",
+          "client": "user072@example.com",
+          "ligne": {
+            "jdds": "JD066",
+            "reference": "p048",
+            "quantite": 10
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x083",
+      "email": "user023@example.com",
+      "prenom": "Chantal",
+      "nom": "BONNIN",
+      "adresse": "22, chemin Nicolas",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.183393,
+      "longitude": 5.72773,
+      "commandes": [
+        {
+          "reference": "c107",
+          "etat": "notée",
+          "dateDeCreation": "17-03-2024",
+          "client": "user023@example.com",
+          "ligne": {
+            "jdds": "JD107",
+            "reference": "p008",
+            "quantite": 5
+          },
+          "note": 1,
+          "commentaire": "Très satisfait de la qualité."
+        },
+        {
+          "reference": "c130",
+          "etat": "notée",
+          "dateDeCreation": "03-03-2024",
+          "client": "user023@example.com",
+          "ligne": {
+            "jdds": "JD130",
+            "reference": "p016",
+            "quantite": 8
+          },
+          "note": 4,
+          "commentaire": "Excellent service."
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x084",
+      "email": "user001@example.com",
+      "prenom": "Inès",
+      "nom": "MICHEL",
+      "adresse": "466, boulevard Blot",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.196947,
+      "longitude": 5.706715,
+      "commandes": [
+        {
+          "reference": "c109",
+          "etat": "livrée",
+          "dateDeCreation": "16-02-2024",
+          "client": "user001@example.com",
+          "ligne": {
+            "jdds": "JD109",
+            "reference": "p030",
+            "quantite": 5
+          }
+        },
+        {
+          "reference": "c156",
+          "etat": "livrée",
+          "dateDeCreation": "24-02-2024",
+          "client": "user001@example.com",
+          "ligne": {
+            "jdds": "JD156",
+            "reference": "p007",
+            "quantite": 7
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x085",
+      "email": "user031@example.com",
+      "prenom": "Véronique",
+      "nom": "TECHER",
+      "adresse": "5, boulevard de Mathieu",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.194486,
+      "longitude": 5.737121,
+      "commandes": [
+        {
+          "reference": "c090",
+          "etat": "notée",
+          "dateDeCreation": "15-02-2024",
+          "client": "user031@example.com",
+          "ligne": {
+            "jdds": "JD090",
+            "reference": "p040",
+            "quantite": 10
+          },
+          "note": 3,
+          "commentaire": "Bon rapport qualité-prix."
+        },
+        {
+          "reference": "c161",
+          "etat": "ouverte",
+          "dateDeCreation": "22-03-2024",
+          "client": "user031@example.com",
+          "ligne": {
+            "jdds": "JD161",
+            "reference": "p032",
+            "quantite": 3
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x086",
+      "email": "user005@example.com",
+      "prenom": "Stéphanie",
+      "nom": "MORENO",
+      "adresse": "boulevard Aurélie Peltier",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.163617,
+      "longitude": 5.730241,
+      "commandes": [
+        {
+          "reference": "c094",
+          "etat": "livrée",
+          "dateDeCreation": "22-02-2024",
+          "client": "user005@example.com",
+          "ligne": {
+            "jdds": "JD094",
+            "reference": "p033",
+            "quantite": 7
+          }
+        },
+        {
+          "reference": "c188",
+          "etat": "livrée",
+          "dateDeCreation": "26-01-2024",
+          "client": "user005@example.com",
+          "ligne": {
+            "jdds": "JD188",
+            "reference": "p039",
+            "quantite": 8
+          }
+        }
+      ],
+      "etat": "livrable"
     }
-    ],
-    "etat": "livré"
-  },
-  {
-    "code": "x067",
-    "email": "agilles@sfr.fr",
-    "prenom": "axel",
-    "nom": "GILLES",
-    "adresse": "160bis Avenue Jean Jaures",
-    "codePostale": 38320,
-    "ville": "Eybens",
-    "latitude": 45.148263,
-    "longitude": 5.750864,
-    "commandes": [],
-    "etat": "livré"
-  },
-  {
-    "code": "x020",
-    "email": "aguyot@hot.fr",
-    "prenom": "alicia",
-    "nom": "GUYOT",
-    "adresse": "3 Rue Laurent Darve",
-    "codePostale": 38170,
-    "ville": "Seyssinet-Pariset",
-    "latitude": 45.184334,
-    "longitude": 5.695172,
-    "commandes": [],
-    "etat": "livrable"
-  }
-  ]}
+  ]
+}
