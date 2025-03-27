@@ -106,7 +106,7 @@ export class PlanifierComponent {
     }
     //test commandes
     effect(() => {
-      this.dataSource.data = this.clients(); // Rafraîchir les données
+      this.dataSource.data = this.clients();
     });
  
     
@@ -172,12 +172,14 @@ displayedColumns: string[] = ['select', 'nom', 'adresse', 'codePostal','ville', 
 
   /* selection de l'ensemble des elements. */
   toggleAllRows() {
-    const visibleClients = this.dataSource.filteredData;  // Récupère les clients filtrés (visibles)
+     // Récuperation les clients filtrés (visibles)
+    const visibleClients = this.dataSource.filteredData; 
   
     if (this.isAllSelected()) {
-      this.selection.clear();  // Désélectionne tous les clients
+      // Désélectionnons tous les clients
+      this.selection.clear();  
     } else {
-      visibleClients.forEach(client => this.selection.select(client));  // Sélectionne les clients visibles
+      visibleClients.forEach(client => this.selection.select(client)); 
     }
   }
 
@@ -192,7 +194,7 @@ displayedColumns: string[] = ['select', 'nom', 'adresse', 'codePostal','ville', 
 ngOnInit() {
   this.dataSource.filterPredicate = (data: Client, filter: string) => {
     const transformedFilter = filter.trim().toLowerCase();
-
+   
     // Vérifions si la recherche correspond aux infos du client
     const matchClient =
       data.email.toLowerCase().includes(transformedFilter) ||
@@ -203,7 +205,7 @@ ngOnInit() {
       data.ville.toLowerCase().includes(transformedFilter)
 
 
-    // Filtrons les commandes : masquer "livré" sauf si on cherche "livré"
+    // Filtrons les commandes 
     let filteredCommandes = data.commandes;
     if (transformedFilter === "ouverte") {
       filteredCommandes = data.commandes.filter(cmd => cmd.etat.toLowerCase() === "ouverte");
@@ -219,6 +221,18 @@ ngOnInit() {
 
     return matchClient || matchCommande;
   };
+
+  this.commandeSelectDefault()
+}
+
+//selection par default de 5 clients 
+commandeSelectDefault(){
+
+  const dataSelect = this.dataSource.data.slice(0,5)
+  dataSelect.map(client => this.selection.select(client)
+
+    
+  );
 }
 //application du filtre
   applyFilter(event: Event) {
@@ -286,6 +300,7 @@ affectationDeCommandeAEquipe(): void {
   const livraisonList = this.livraisonList();
 
   // Vérifions si une livraison existe déjà pour cette équipe
+  //le code n'est pas totalement au point la verif ne passe pas 
  
  let livraisonExistante = this.livraisonList().find(value=>
   value.reference === equipeC.camion && value.equipe.livreurs === equipeC.livreurs 
@@ -327,7 +342,5 @@ equipeDejaAffecter(equipe: any): boolean{
   return this.livraisonList().some(livraison=> livraison.equipe === equipe)
 }
 
-livraisonSelectionner(commande: any): boolean{
-  return this.livraisonList().some(livraison=> livraison.Commandes.some(cmd=>cmd.reference === commande.reference))
-}
+
 }

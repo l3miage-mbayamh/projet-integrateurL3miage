@@ -16,7 +16,7 @@
 
 </mat-card>
 <div>
-    @for (l of tournee; track $index) {
+    @for (l of tournee(); track $index) {
         {{l.equipe.livreurs}}
     }
 </div>
