@@ -7,7 +7,7 @@ export interface Client{
     prenom: string,
     nom: string,
     adresse: string,
-    codePostale: number,
+    codePostal: number,
     ville: string,
     latitude: number,
     longitude: number,

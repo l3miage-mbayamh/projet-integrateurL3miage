@@ -6,6 +6,7 @@ export interface Ligne{
     jdds: string,
     reference:string,
     //commande: Commande,
+    //refCommande: string,
     //produit: Produit,
     quantite: number
 }

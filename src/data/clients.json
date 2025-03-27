@@ -1,0 +1,219 @@
+{"clients":[
+    {
+      "code": "x165",
+      "email": "aalves@brt.fr",
+      "prenom": "ravi",
+      "nom": "ALVES",
+      "adresse": "20 Avenue de l'Alsace",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.165727,
+      "longitude": 5.735303,
+      "commandes": [
+        {
+          "reference": "c003",
+          "etat": "ouverte",
+          "dateDeCreation": "09-01-2024",
+          "client": "lsaleh@brt.fr",
+          "note": 3,
+          "commentaire": "Produit conforme mais délai long.",
+          "ligne": {
+            "jdds": "JD003",
+            "reference": "p003",
+            "quantite": 5
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x065",
+      "email": "aandre@sfr.fr",
+      "prenom": "arthur",
+      "nom": "ANDRE",
+      "adresse": "25 Rue de la Glacière",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.217629,
+      "longitude": 5.764548,
+      "commandes": [
+        {
+          "reference": "c004",
+          "etat": "livrée",
+          "dateDeCreation": "09-01-2024",
+          "client": "lsaleh@brt.fr",
+          "note": 5,
+          "commentaire": "Excellent service.",
+          "ligne": {
+            "jdds": "JD004",
+            "reference": "p004",
+            "quantite": 3
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x042",
+      "email": "abois@lp.net",
+      "prenom": "amanda",
+      "nom": "BOIS",
+      "adresse": "34 Rue Charles Dullin",
+      "codePostal": 38000,
+      "ville": "Grenoble",
+      "latitude": 45.107609,
+      "longitude": 5.723657,
+      "commandes": [
+        {
+          "reference": "c005",
+          "etat": "livrée",
+          "dateDeCreation": "11-01-2024",
+          "client": "apascal@or.fr",
+          "ligne": {
+            "jdds": "JD005",
+            "reference": "p005",
+            "quantite": 2
+          }
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x063",
+      "email": "adupuis@hot.fr",
+      "prenom": "antoine",
+      "nom": "DUPLOT",
+      "adresse": "40 Rue Félix Esclangon",
+      "codePostal": 38100,
+      "ville": "Grenoble",
+      "latitude": 45.13184,
+      "longitude": 5.692503,
+      "commandes":[{
+        "reference": "c001",
+        "etat": "ouverte",
+        "dateDeCreation": "04-01-2024",
+        "client": "amartin@wan.fr",
+        "ligne": {
+          "jdds": "JD001",
+          "reference": "p001",
+          "quantite": 2
+        }
+      },
+      {
+        "reference": "c002",
+        "etat": "ouverte",
+        "dateDeCreation": "05-01-2024",
+        "client": "azainab@m6.com",
+        "note": 4,
+        "commentaire": "Livraison rapide et efficace.",
+        "ligne": {
+          "jdds": "JD002",
+          "reference": "p002",
+          "quantite": 1
+        }
+      }],
+      "etat": "livré"
+    },
+    {
+      "code": "x054",
+      "email": "aduval@wan.fr",
+      "prenom": "alban",
+      "nom": "DUVAL",
+      "adresse": "60 Chemin de la Carronnerie",
+      "codePostal": 38700,
+      "ville": "La Tronche",
+      "latitude": 45.164697,
+      "longitude": 5.839192,
+      "commandes": [
+        {
+          "reference": "c002",
+          "etat": "livrée",
+          "dateDeCreation": "05-01-2024",
+          "client": "azainab@m6.com",
+          "note": 4,
+          "commentaire": "Livraison rapide et efficace.",
+          "ligne": {
+            "jdds": "JD002",
+            "reference": "p002",
+            "quantite": 1
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x058",
+      "email": "aduval1@wan.fr",
+      "prenom": "amélie",
+      "nom": "DUVAL",
+      "adresse": "50 Avenue Jean Perrot",
+      "codePostal": 38100,
+      "ville": "Grenoble",
+      "latitude": 45.21678,
+      "longitude": 5.688157,
+      "commandes": [
+        {
+          "reference": "c005",
+          "etat": "livrée",
+          "dateDeCreation": "11-01-2024",
+          "client": "apascal@or.fr",
+          "ligne": {
+            "jdds": "JD005",
+            "reference": "p005",
+            "quantite": 2
+          }
+        },
+        {
+        "reference": "c001",
+        "etat": "ouverte",
+        "dateDeCreation": "04-01-2024",
+        "client": "amartin@wan.fr",
+        "ligne": {
+          "jdds": "JD001",
+          "reference": "p001",
+          "quantite": 2
+        }
+       },
+      {
+        "reference": "c002",
+        "etat": "livrée",
+        "dateDeCreation": "05-01-2024",
+        "client": "azainab@m6.com",
+        "note": 4,
+        "commentaire": "Livraison rapide et efficace.",
+        "ligne": {
+          "jdds": "JD002",
+          "reference": "p002",
+          "quantite": 1
+        }
+      }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x067",
+      "email": "agilles@sfr.fr",
+      "prenom": "axel",
+      "nom": "GILLES",
+      "adresse": "160bis Avenue Jean Jaures",
+      "codePostal": 38320,
+      "ville": "Eybens",
+      "latitude": 45.148263,
+      "longitude": 5.750864,
+      "commandes": [],
+      "etat": "livré"
+    },
+    {
+      "code": "x020",
+      "email": "aguyot@hot.fr",
+      "prenom": "alicia",
+      "nom": "GUYOT",
+      "adresse": "3 Rue Laurent Darve",
+      "codePostal": 38170,
+      "ville": "Seyssinet-Pariset",
+      "latitude": 45.184334,
+      "longitude": 5.695172,
+      "commandes": [],
+      "etat": "livrable"
+    }
+    ]}

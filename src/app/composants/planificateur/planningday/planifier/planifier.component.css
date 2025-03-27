@@ -1,11 +1,43 @@
 .navigationButton{
     float:  right;
-    margin-top: 50px;
+    
     margin-left: 10px;
     background-color: aquamarine;
     border-radius: 5px;
 }
+#F{
+    margin-top: 10px;
+}
 
 .validerEquipe button{
-    background-color: blue;
+    background-color:aqua;
+    border-radius: 15px;
 }
+
+.equipeL{
+    float: left;
+    background-color: aqua;
+    border-radius: 10px;
+    width: 360px;
+}
+.equipe{
+    display: inline-flex;
+}
+#equipeGroupe{
+    margin-top: 20px;
+}
+/*test start*/
+.clientTable {
+    width: 100%;
+  }
+  .clientInfo{
+    display: block;
+    background-color: rgb(165, 159, 109);
+    width: 500px;
+    border-radius: 10px;
+    
+  }
+  .controlButton button{
+    float: right;
+  }
+  

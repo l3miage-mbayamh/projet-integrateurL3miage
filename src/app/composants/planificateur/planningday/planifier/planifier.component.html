@@ -5,7 +5,7 @@
       <form [formGroup]="firstFormGroup">
         <ng-template matStepLabel>Former les equipes</ng-template>
          <!--les champs equipes-->
-        <mat-form-field>
+        <mat-form-field id="F">
           <mat-label>Equipe</mat-label>
           <mat-select [formControl]="equipierForm" multiple [(ngModel)]="livreursChoisit" name="equipe">
             <mat-select-trigger>
@@ -31,17 +31,25 @@
         </mat-form-field>
         <!--validation de l'equipe dont le nom sera generer automatiquement-->
         <div class="validerEquipe">
-            <button mat-raised-button (click)="confirmer()">Confirmer</button>
+            <button mat-raised-button (click)="confirmer()">Ajouter</button>
         </div>
-        <!--affichons la liste des equipes avec indice generer avec index-->
-        <div>
-          Nombre Equipe: {{nombreEquipe()}}
+        <!--affichons la liste des equipes avec indice generer  index-->
+        <div id="equipeGroupe">
+        
           @for (eq of equipeList(); track $index) {
             <div>
               <p>Equipe {{$index}}</p>
-              <p>{{eq.livreurs}} {{eq.camion}}</p>
             </div>
-          }
+            <div class="equipe">
+                <p class="equipeL">
+                  Livreur : {{eq.livreurs}}  Camion : {{eq.camion}}
+                </p>
+                <button mat-icon-button (click)="suprimer($index)">
+                    <mat-icon class="mat-18" >delete</mat-icon>
+                </button>
+            </div>
+              
+            }
         </div>
         <div>
           <!--navigation  vers la page suivante-->
@@ -51,21 +59,107 @@
       </form>
     </mat-step>
      <!--choix commande pour la livraison-->
-    <mat-step [stepControl]="secondFormGroup" errorMessage="Address is required">
+    <mat-step [stepControl]="secondFormGroup" errorMessage="commande obligatoire">
 
       <form [formGroup]="secondFormGroup">
-        <ng-template matStepLabel>choix des commandes a livrees</ng-template>
+        <ng-template matStepLabel>choix des clients a livrees</ng-template>
 
-        <mat-form-field>
-          <mat-label>Address</mat-label>
-          <input matInput placeholder="Ex. 1 Main St, New York, NY" formControlName="secondCtrl" required>
-        </mat-form-field>
+       
+        <!--traitement des commandes groupees test affiche-->
+        <div class="filtre">
+          <mat-form-field>
+          <mat-label>Filter</mat-label>
+          <input matInput (keyup)="applyFilter($event)" placeholder="Saisir" #input>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Choisir une équipe</mat-label>
+        <mat-select [(ngModel)]="equipeChoisie" name="equipeChoisie">
+           <mat-option *ngFor="let equipe of equipeList();track $index" [value]="equipe">
+              Equipe : {{ equipe.livreurs }} | Camion: {{ equipe.camion }}
+          </mat-option>
+        </mat-select>
+          </mat-form-field>
+          <button mat-button (click)="affectationDeCommandeAEquipe()">ok</button>
+        </div>
+        
 
         <div>
-          <!--choix poursuivre ou retour-->
-          <button mat-button matStepperNext class="navigationButton">Suivant</button>
-          <button mat-button matStepperPrevious class="navigationButton">Retour</button>
+          <!--navigation  vers la page precedente-->
+          <button mat-button matStepperPrevious class="navigationButton">retour</button>
         </div>
+          
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+        
+            <!-- Checkbox Column -->
+            <ng-container matColumnDef="select">
+              <th mat-header-cell *matHeaderCellDef>
+                <mat-checkbox (change)="$event ? toggleAllRows() : null"
+                              [checked]="selection.hasValue() && isAllSelected()"
+                              [indeterminate]="selection.hasValue() && !isAllSelected()"
+                              [aria-label]="checkboxLabel()">
+                </mat-checkbox>
+              </th>
+              <td mat-cell *matCellDef="let row">
+                <mat-checkbox (click)="$event.stopPropagation()"
+                              (change)="$event ? selection.toggle(row) : null"
+                              [checked]="selection.isSelected(row)"
+                              [aria-label]="checkboxLabel(row)">
+                </mat-checkbox>
+              </td>
+            </ng-container>
+          
+           
+          
+            <!-- nom client Column -->
+            <ng-container matColumnDef="nom">
+              <th mat-header-cell *matHeaderCellDef> Nom </th>
+              <td mat-cell *matCellDef="let element"> {{element.nom}} </td>
+            </ng-container>
+          
+            <!-- adresse Column -->
+            <ng-container matColumnDef="adresse">
+              <th mat-header-cell *matHeaderCellDef>  Adresse </th>
+              <td mat-cell *matCellDef="let element"> {{element.adresse}} </td>
+            </ng-container>
+        
+              <!-- codePostal Column -->
+              <ng-container matColumnDef="codePostal">
+                <th mat-header-cell *matHeaderCellDef> CodePostal </th>
+                <td mat-cell *matCellDef="let element"> {{element.codePostal}} </td>
+              </ng-container>
+               <!-- ville Column -->
+               <ng-container matColumnDef="ville">
+                <th mat-header-cell *matHeaderCellDef> Ville </th>
+                <td mat-cell *matCellDef="let element"> {{element.ville}} </td>
+              </ng-container>
+              
+               <!-- commandes Column -->
+               <ng-container matColumnDef="commandes">
+                <th mat-header-cell *matHeaderCellDef> Commandes </th>
+                <td mat-cell *matCellDef="let element"> 
+                  <ul *ngFor="let cmd of element.commandes">
+                    <li>{{cmd.reference}}</li>
+                  </ul>
+                   </td>
+              </ng-container>
+               <!-- etat Column -->
+               <ng-container matColumnDef="etat">
+                <th mat-header-cell *matHeaderCellDef> Etat </th>
+                <td mat-cell *matCellDef="let element">
+                  <ul *ngFor="let cmd of element.commandes">
+                    <li>{{cmd.etat}}</li>
+                  </ul>
+                </td>
+              </ng-container>
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"
+                (click)="selection.toggle(row)">
+            </tr>
+          </table>
+        <!--test tableau start-->
+        <!--selection de toutes les commandes-->
+        
+        
       </form>
     </mat-step>
      <!--confirmation des choix
@@ -76,5 +170,18 @@
         <button mat-button matStepperPrevious class="navigationButton">Back</button>
       </div>
     </mat-step>-->
+    
   </mat-stepper>
+  <div class="controlButton">
+    <button mat-button>Valider</button>
+  </div>
+
+  @for (l of livraisonList(); track $index) {
+    <div>{{l.reference}} {{l.equipe.livreurs}} {{l.equipe.camion}}</div>
+    @for (c of l.Commandes; track $index) {
+      {{c.reference}}
+    }
+    
+  }
+ 
   
