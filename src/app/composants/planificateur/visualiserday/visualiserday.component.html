@@ -17,6 +17,14 @@
 </mat-card>
 <div>
     @for (l of tournee(); track $index) {
-        {{l.equipe.livreurs}}
+        <mat-card appearance="outlined">
+            <mat-card-header>
+              <mat-card-title>Livraison {{$index}}: {{l.reference}}</mat-card-title>
+              <mat-card-subtitle>{{l.equipe.livreurs}}</mat-card-subtitle>
+              @for (a of l.adresse; track $index) {
+                <mat-card-subtitle>{{a.adresse}} {{a.codePostal}}</mat-card-subtitle>
+              }
+            </mat-card-header>
+          </mat-card>
     }
 </div>
