@@ -2,6 +2,7 @@ import { Component, inject, model } from '@angular/core';
 import { CommandeService } from '../../../services/commande.service';
 import { livraison } from '../../../interfaces/Livraison';
 import { Client } from '../../../interfaces/Client';
+import { Etat } from '../../../interfaces/enums/Etat';
 
 @Component({
   selector: 'app-visualiserday',
@@ -12,6 +13,7 @@ export class VisualiserdayComponent {
 
   //declarations
   public readonly service = inject(CommandeService)
+  public readonly etat = model<Etat>(Etat.encours)
 
   //recuperation
   public readonly tournee = model<livraison[]>()
