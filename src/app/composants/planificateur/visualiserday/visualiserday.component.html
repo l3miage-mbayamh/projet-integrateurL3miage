@@ -22,9 +22,11 @@
               <mat-card-title>Livraison {{$index}}: {{l.reference}}</mat-card-title>
               <mat-card-subtitle>{{l.equipe.livreurs}}</mat-card-subtitle>
               @for (a of l.adresse; track $index) {
-                <mat-card-subtitle>{{a.adresse}} {{a.codePostal}}</mat-card-subtitle>
+                <mat-card-subtitle>{{a.adresse}} {{a.codePostal}}
+                    <button mat-button >{{etat().toLowerCase()}}</button>
+                </mat-card-subtitle>
               }
-              <button mat-button>{{etat().toLowerCase()}}</button>
+              
             </mat-card-header>
             
           </mat-card>

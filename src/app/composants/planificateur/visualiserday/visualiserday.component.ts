@@ -26,6 +26,7 @@ export class VisualiserdayComponent {
 
     const c = this.service.getClientALivree()
     this.clients.set(c)
+    console.log(this.clients().map(value => value.etat))
     const dataSaveTournee = localStorage.getItem('livraisonList')
     if (dataSaveTournee) {
       try {
@@ -38,5 +39,6 @@ export class VisualiserdayComponent {
       }
     }
   }
- 
+
+  
 }

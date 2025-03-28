@@ -5,7 +5,8 @@ export enum Etat{
     planifier ="PLANIFIER",
     encours ="ENCOURS",
     affectee="AFFECTEE",
-    encourDeLivraison="ENCOURDELIVRAISON"
+    encourDeLivraison="ENCOURDELIVRAISON",
+    annulee= "annulee"
      
     
 }

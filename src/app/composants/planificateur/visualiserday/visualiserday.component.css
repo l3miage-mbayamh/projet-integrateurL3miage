@@ -24,5 +24,6 @@
   }
   button{
     background-color: aqua;
-    border-radius: 10px;
+    border-radius: 15px;
+    height: 20px;
   }
