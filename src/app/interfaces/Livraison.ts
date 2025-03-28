@@ -4,8 +4,8 @@ import { Equipe } from "./Equipes";
 
 
 export interface livraison{
-  reference: string,
-  adresse: Adresse[],
-  equipe: Equipe,
-  Commandes: Commande[]
+    reference: string,
+    adresse: Adresse[],
+    equipe: Equipe
+    Commandes: Commande[]
 }

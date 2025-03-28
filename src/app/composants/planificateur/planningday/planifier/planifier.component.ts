@@ -47,10 +47,7 @@ export class PlanifierComponent {
   public readonly livreursChoisit = model<string>("")
   public readonly equipe = model<Equipe>({ livreurs: "Euler", camion: "415655" })
   public readonly etat = Etat
-  public readonly equipeChoisie = model<Equipe>()
-
-  public readonly dialogRef = inject(MatDialogRef<PlanifierComponent>)
-  public readonly data = inject(MAT_DIALOG_DATA)
+  public readonly equipeChoisie:Equipe|null = null
   //public readonly nombreEquipe = model<number>(0)
   //test commandes
   public readonly commandesGroupe = model<Commande[][]>([])
@@ -80,7 +77,7 @@ export class PlanifierComponent {
     //clients data
     const client = this.service.getClients()
     client.subscribe(
-      result => this.clients.set(result)
+      result=> this.clients.set(result)
     )
     //sauvegarde des donnees
     //tableau de equipes
@@ -89,6 +86,9 @@ export class PlanifierComponent {
       this.equipeList.set(JSON.parse(savedData))
 
     }
+    //envoie de donnees au service pour un access generale
+    //donnees client a livre
+    this.service.updateClientALivree(this.getSelectedClients())
     //recuperation de donnees depuis local livraison liste
     const savedData2 = localStorage.getItem('livraisonList');
     if (savedData2) {
@@ -102,7 +102,7 @@ export class PlanifierComponent {
     }
     //test commandes
     effect(() => {
-      this.dataSource.data = this.clients(); // Rafraîchir les données
+      this.dataSource.data = this.clients();
     });
 
 
@@ -171,9 +171,10 @@ export class PlanifierComponent {
     const visibleClients = this.dataSource.filteredData;  // Récupère les clients filtrés (visibles)
 
     if (this.isAllSelected()) {
-      this.selection.clear();  // Désélectionne tous les clients
+      // Désélectionnons tous les clients
+      this.selection.clear();
     } else {
-      visibleClients.forEach(client => this.selection.select(client));  // Sélectionne les clients visibles
+      visibleClients.forEach(client => this.selection.select(client));
     }
   }
 
@@ -184,28 +185,28 @@ export class PlanifierComponent {
     }
     return `${this.selection.isSelected(row) ? 'deselect' : 'select'} `;
   }
-  //modifions le comportement du filter pour trier les elements
-  ngOnInit() {
-    this.dataSource.filterPredicate = (data: Client, filter: string) => {
-      const transformedFilter = filter.trim().toLowerCase();
+//modifions le comportement du filter pour trier les elements
+ngOnInit() {
+  this.dataSource.filterPredicate = (data: Client, filter: string) => {
+    const transformedFilter = filter.trim().toLowerCase();
 
-      // Vérifions si la recherche correspond aux infos du client
-      const matchClient =
-        data.email.toLowerCase().includes(transformedFilter) ||
-        data.prenom.toLowerCase().includes(transformedFilter) ||
-        data.nom.toLowerCase().includes(transformedFilter) ||
-        data.adresse.toLowerCase().includes(transformedFilter) ||
-        data.codePostal.toString().includes(transformedFilter) ||
-        data.ville.toLowerCase().includes(transformedFilter)
+    // Vérifions si la recherche correspond aux infos du client
+    const matchClient =
+      data.email.toLowerCase().includes(transformedFilter) ||
+      data.prenom.toLowerCase().includes(transformedFilter) ||
+      data.nom.toLowerCase().includes(transformedFilter) ||
+      data.adresse.toLowerCase().includes(transformedFilter) ||
+      data.codePostal.toString().includes(transformedFilter) ||
+      data.ville.toLowerCase().includes(transformedFilter)
 
 
-      // Filtrons les commandes : masquer "livré" sauf si on cherche "livré"
-      let filteredCommandes = data.commandes;
-      if (transformedFilter === "ouverte") {
-        filteredCommandes = data.commandes.filter(cmd => cmd.etat.toLowerCase() === "ouverte");
-      } else if (transformedFilter !== "livrée") {
-        filteredCommandes = data.commandes.filter(cmd => cmd.etat.toLowerCase() !== "livrée");
-      }
+    // Filtrons les commandes : masquer "livré" sauf si on cherche "livré"
+    let filteredCommandes = data.commandes;
+    if (transformedFilter === "ouverte") {
+      filteredCommandes = data.commandes.filter(cmd => cmd.etat.toLowerCase() === "ouverte");
+    } else if (transformedFilter !== "livrée") {
+      filteredCommandes = data.commandes.filter(cmd => cmd.etat.toLowerCase() !== "livrée");
+    }
 
       // Vérifions si une commande restante correspond au filtre
       const matchCommande = filteredCommandes.some(cmd =>
@@ -213,10 +214,10 @@ export class PlanifierComponent {
         cmd.etat.toLowerCase().includes(transformedFilter)
       );
 
-      return matchClient || matchCommande;
-    };
-  }
-  //application du filtre
+    return matchClient || matchCommande;
+  };
+}
+//application du filtre
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
@@ -227,34 +228,35 @@ export class PlanifierComponent {
   }
 
 
-  //recuperation des  clients selectionner (a livree)
-  getSelectedClients(): Client[] {
-    const cl = this.selection.selected
-    let clts = this.clientALivrer();
-    clts.push(...cl)
-    this.clientALivrer.set(clts); // Récupère la liste des clients sélectionnés
-    return this.clientALivrer();
+//recuperation des  clients selectionner (a livree)
+getSelectedClients(): Client[] {
+  const cl = this.selection.selected
+  let clts = this.clientALivrer();
+  clts.push(...cl)
+  this.clientALivrer.set(clts); // Récupère la liste des clients sélectionnés
+  return this.clientALivrer();
+}
+
+//affectation de commande a une equipe soit creation de livraison
+
+affectationDeCommandeAEquipe():void{
+  //recuperation de la selection
+
+  const clientsASelect = this.selection.selected
+
+  //filtrage des commandes des clients a livres pour garder que ceux ouvertes
+  if (!this.equipeChoisie) {
+    alert("Veuillez sélectionner une équipe !");
+    return;
   }
-  //affectation de commande a une equipe soit creation de livraison
+  console.log(this.equipeChoisie.livreurs)
 
-  affectationDeCommandeAEquipe(): void {
-    //recuperation de la selection
+  const equipe = this.equipeChoisie
 
-    const clientsASelect = this.selection.selected
-
-    //filtrage des commandes des clients a livres pour garder que ceux ouvertes
-    if (!this.equipeChoisie) {
-      alert("Veuillez sélectionner une équipe !");
-      return;
-    }
-
-
-    const equipeC = this.equipeChoisie()
-
-    if (!equipeC) {
-      alert("Équipe non valide !");
-      return;
-    }
+  if (!equipe) {
+    alert("Équipe non valide !");
+    return;
+  }
 
 
 
@@ -265,19 +267,18 @@ export class PlanifierComponent {
 
     this.ClientsPerTournee().push(clientsASelect);
 
-    // Filtrer les commandes non livrées
-    const commandesAffectees = clientsASelect.flatMap(client =>
-      client.commandes.filter(cmd => cmd.etat.toLowerCase() !== "livrée")
-    );
+  // Filtrer les commandes non livrées
+  const commandesAffectees = clientsASelect.flatMap(client =>
+    client.commandes.filter(cmd => cmd.etat.toLowerCase() !== "livrée")
+  );
 
-    // Vérifier si des commandes sont disponibles
-    if (commandesAffectees.length === 0) {
-      alert("Aucune commande à affecter !");
-      return;
-    }
+  // Vérifier si des commandes sont disponibles
+  if (commandesAffectees.length === 0) {
+    alert("Aucune commande à affecter !");
+    return;
+  }
 
-    // Création d’une nouvelle livraison
-    const adressesAvecCodePostal = Array.from(
+  const adressesAvecCodePostal = Array.from(
       new Map(
         clientsASelect.map(client => [client.adresse, { adresse: client.adresse, codePostal: client.codePostal }])
       ).values()
@@ -286,22 +287,19 @@ export class PlanifierComponent {
     const nouvelleLivraison = {
       reference: `LIV-${Date.now()}`,
       adresse: adressesAvecCodePostal, // Tableau d'adresses avec code postal
-      equipe: equipeC,
+      equipe: equipe,
       Commandes: commandesAffectees
     };
 
-    // Ajouter à la liste des livraisons
-    this.livraisonList().push(nouvelleLivraison);
+  // Ajouter à la liste des livraisons
+  this.livraisonList().push(nouvelleLivraison);
 
-    // Sauvegarde dans le localStorage
-    const livraison = this.livraisonList()
-    localStorage.setItem('livraisonList', JSON.stringify(livraison))
+  // Sauvegarde dans le localStorage
+  localStorage.setItem('livraisonList', JSON.stringify(this.livraisonList));
 
-    alert(`Commandes affectées à l'équipe ${this.equipeChoisie()?.livreurs} !`);
-    this.service.updateClientALivree(this.getSelectedClients())
-    this.service.updateClientPerTournee(this.ClientsPerTournee());
-  }
-  //test end
+  alert(`Commandes affectées à l'équipe ${this.equipeChoisie } !`);
+}
+//test end
 
 
 

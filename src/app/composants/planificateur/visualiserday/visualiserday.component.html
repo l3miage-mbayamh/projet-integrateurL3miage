@@ -15,3 +15,20 @@
     </mat-card-content>
 
 </mat-card>
+<div>
+    @for (l of tournee(); track $index) {
+        <mat-card appearance="outlined" class="example-box">
+            <mat-card-header>
+              <mat-card-title>Livraison {{$index}}: {{l.reference}}</mat-card-title>
+              <mat-card-subtitle>{{l.equipe.livreurs}}</mat-card-subtitle>
+              @for (a of l.adresse; track $index) {
+                <mat-card-subtitle>{{a.adresse}} {{a.codePostal}}</mat-card-subtitle>
+              }
+              <button mat-button>{{etat().toLowerCase()}}</button>
+            </mat-card-header>
+            
+          </mat-card>
+          
+         
+    }
+</div>

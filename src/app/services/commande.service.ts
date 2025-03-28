@@ -1,11 +1,5 @@
-import { Client } from './../interfaces/Client';
-import { Commande } from './../interfaces/Commande';
 import { Injectable, signal } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Observable, forkJoin, of } from 'rxjs';
-import { catchError, elementAt, map } from 'rxjs/operators';
-import { Feature, Point } from 'geojson';
-import { geoJSON, latLng, LatLng } from 'leaflet';
+import { Commande } from '../interfaces/Commande';
 import { livreurs } from '../interfaces/Livreur';
 import { Camion } from '../interfaces/Camion';
 
@@ -13,14 +7,17 @@ import { EntrepotData } from '../interfaces/entrepotData';
 import { Etat } from '../interfaces/enums/Etat';
 import { __values } from 'tslib';
 import { livraison } from '../interfaces/Livraison';
-
+import { HttpClient } from '@angular/common/http';
+import { catchError, map } from 'rxjs/operators';
+import { forkJoin, Observable, of } from 'rxjs';
+import { Client } from '../interfaces/Client';
+import { latLng, LatLng } from 'leaflet';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class CommandeService {
-
 
   constructor(private http: HttpClient) { }
 
@@ -349,7 +346,7 @@ export class CommandeService {
 
 
   // Obtenir les coordonnées d'une commande spécifique
-  getLatLngCommande(idCommande: string): Observable<[number, number]> {
+  /*getLatLngCommande(idCommande: string): Observable<[number, number]> {
     return this.http.get<Feature<Point>>(`${this.jsonServerURL}/commandes/${idCommande}`)
       .pipe(
         map(f => {
@@ -359,5 +356,5 @@ export class CommandeService {
           throw new Error("Coordonnées non trouvées");
         })
       );
-  }
+  }*/
 }
