@@ -1,4 +1,4 @@
-import { Injectable, signal } from '@angular/core';
+import { Injectable, model, signal } from '@angular/core';
 import { Commande } from '../interfaces/Commande';
 import { livreurs } from '../interfaces/Livreur';
 import { Camion } from '../interfaces/Camion';
@@ -9,7 +9,7 @@ import { __values } from 'tslib';
 import { livraison } from '../interfaces/Livraison';
 import { HttpClient } from '@angular/common/http';
 import { catchError, map } from 'rxjs/operators';
-import { forkJoin, Observable, of } from 'rxjs';
+import { firstValueFrom, forkJoin, lastValueFrom, Observable, of } from 'rxjs';
 import { Client } from '../interfaces/Client';
 import { latLng, LatLng } from 'leaflet';
 
@@ -32,7 +32,10 @@ export class CommandeService {
   //private readonly apiKey = '5b3ce3597851110001cf62481e732f07a07a4748af741d9c667ec9e6'; // Remplace par ta clé API Google Maps
   private readonly apiKey = '5b3ce3597851110001cf62484349c98918ee486fb2be1990c40753a3'
   private readonly apiUrl = 'https://api.openrouteservice.org/v2/directions/driving-car';
-  public ClientsPerTournee=signal<Client[][]>([])
+  public ClientsPerTournee = signal<Client[][]>([])
+  private coordEntrepotLatLng: LatLng | null = null;
+
+  public coordEntrepot!: EntrepotData;
 
   // Récupération des entrepôts
   //recuperation de donnees depuis le server json-serve
@@ -179,6 +182,12 @@ export class CommandeService {
   updateClientPerTournee(client: Client[][]): void {
     this.ClientsPerTournee.set(client)
   }
+
+
+  updateCoordonneeEntrepot(coordonne: EntrepotData) {
+    this.coordEntrepot = coordonne;
+  }
+
   //recupeartion de client
   getClientALivree(): Client[] {
     return this.clientALivree()
@@ -187,6 +196,10 @@ export class CommandeService {
   getClientPerTournee(): Client[][] {
     return this.ClientsPerTournee()
   }
+
+  /*getCoordonneeEntrepot():EntrepotData{
+    return this.coordonneEntrepot()
+  }*/
 
   private cache = new Map<string, LatLng>();
 
@@ -284,6 +297,30 @@ export class CommandeService {
     return forkJoin(requests);
   }
 
+
+  getCoordonneEntrepot():LatLng{
+    let coordone!:LatLng
+    this.getCoordinates(this.coordEntrepot.adresse,this.coordEntrepot.codePostale,this.coordEntrepot.ville).subscribe(
+      result=>(coordone=result,console.log("client",coordone)
+      )
+    )
+    return coordone
+  }
+
+
+  /*getCoordonneEntrepot(): LatLng {
+    if (!this.coordEntrepotLatLng) {
+      throw new Error("Les coordonnées de l'entrepôt ne sont pas encore chargées !");
+    }
+    return this.coordEntrepotLatLng;
+  }*/
+
+  async initialiserCoordonneesEntrepot() {
+    const result = await firstValueFrom(
+      this.getCoordinates(this.coordEntrepot.adresse, this.coordEntrepot.codePostale, this.coordEntrepot.ville)
+    );
+    this.coordEntrepotLatLng = new LatLng(result.lat, result.lng);
+  }
   /**
    * Trouve l'itinéraire optimal en minimisant la distance totale
    * Utilisation d'un algorithme naïf du voyageur de commerce (TSP)

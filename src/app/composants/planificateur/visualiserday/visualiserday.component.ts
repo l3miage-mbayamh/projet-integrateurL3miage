@@ -26,7 +26,7 @@ export class VisualiserdayComponent {
   constructor(){
     //recupration depuis service
     const t = this.service.getTournee()
-    this.tournee.set([])
+    this.tournee.set(t)
     localStorage.setItem('livraisonList', JSON.stringify(this.tournee()))
     const c = this.service.getClientALivree()
     this.clients.set(c)

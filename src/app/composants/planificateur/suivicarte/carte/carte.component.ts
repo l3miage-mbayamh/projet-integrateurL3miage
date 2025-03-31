@@ -1,6 +1,6 @@
 import { map } from 'rxjs/operators';
 import { CommandeService } from './../../../../services/commande.service';
-import { ChangeDetectorRef, Component, computed, input, model, output, signal } from '@angular/core';
+import { ChangeDetectorRef, Component, computed, inject, input, model, output, signal } from '@angular/core';
 import { Icon, icon, LatLng, latLng, Layer, marker, Marker, tileLayer, geoJSON, GeoJSON, LeafletMouseEvent } from 'leaflet';
 import { Client } from '../../../../interfaces/Client';
 import { Etat } from '../../../../interfaces/enums/Etat';
@@ -16,6 +16,7 @@ export class CarteComponent {
   public readonly longitude = model<number>(5.71667);
   public readonly zoom = model<number>(10);
   public readonly clickOnMap = output<LatLng>();
+  public service =inject(CommandeService);
 
   // Gestion de la carte avec le centre et la couche de la carte
   public readonly center = computed<LatLng>(() => latLng(this.latitude(), this.longitude()));
@@ -28,7 +29,7 @@ export class CarteComponent {
   public readonly marquer = input.required<readonly LatLng[]>();
 
   // Calcul des marqueurs à partir des LatLng
-  public readonly markers = computed(() => this.marquer().map(latLngToMarker.bind(this)));
+  public readonly markers = computed(() => this.marquer().map((latLng, index) => latLngToMarker(latLng, index)));
 
   // Définir les couches de la carte
   //public readonly layers = computed<Layer[]>(() => [this.layer, ...this.markers()]);
@@ -38,45 +39,7 @@ export class CarteComponent {
   public readonly routeGeoJson = signal<any>(null);
   public clients = input.required<Client[][]>();
 
-  // Couches affichées
-  /*public readonly layers = computed<Layer[]>(() => {
-    const layers: Layer[] = [this.layer, ...this.markers()];
-    if (this.routeGeoJson()) {
-      layers.push(geoJSON(this.routeGeoJson() as any, { style: { color: 'blue', weight: 4 } }));
-    }
-    return layers;
-  });*/
 
-  /*
-  public readonly layers = computed<Layer[]>(() => {
-    const layers: Layer[] = [this.layer, ...this.markers()];
-    if (this.routeGeoJson()) {
-      layers.push(geoJSON(this.routeGeoJson() as any, { style: { color: 'blue', weight: 4 } }));
-    }
-    return layers;
-  });*/
-
-
-  /*
-  public readonly layers = computed<Layer[]>(() => {
-    const layers: Layer[] = [this.layer, ...this.markers()];
-
-    // Ajouter les itinéraires de chaque groupe de clients à la couche
-    if (this.routeGeoJson()) {
-      layers.push(geoJSON(this.routeGeoJson() as any, {
-        style: (feature) => {
-          if (!feature || !feature.properties) {
-            return { color: 'blue', weight: 4 }; // Valeur par défaut si feature est undefined
-          }
-          return {
-            color: feature.properties.color || 'blue', // Appliquer la couleur du GeoJSON
-            weight: 4
-          };
-        }
-      }));
-    }
-    return layers;
-});*/
 
   public readonly layers = computed<Layer[]>(() => {
     const layers: Layer[] = [this.layer, ...this.markers()];
@@ -129,7 +92,9 @@ export class CarteComponent {
       }
 
 
-  constructor(public commandeService: CommandeService,private cdr: ChangeDetectorRef) { }
+  constructor(public commandeService: CommandeService,private cdr: ChangeDetectorRef) {
+
+  }
 
 
   hoveredClient: Client | null = null;
@@ -223,6 +188,8 @@ private getColorForGroup(groupIndex: number): string {
 
   // Fonction pour convertir LatLng en marqueur
 }
+
+/*
 function latLngToMarker(latLng: LatLng): Marker {
   return marker([latLng.lat, latLng.lng], {
     icon: icon({
@@ -231,5 +198,27 @@ function latLngToMarker(latLng: LatLng): Marker {
       iconRetinaUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon-2x.png',
       shadowUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png'
     })
+  });
+}
+
+*/
+function latLngToMarker(latLng: LatLng, index: number): Marker {
+  return marker([latLng.lat, latLng.lng], {
+    icon: icon({
+      iconUrl: index === 0
+        ? 'https://cdn-icons-png.flaticon.com/128/1076/1076999.png'  // Icône entrepôt plus petite
+        : 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png', // Icône par défaut
+
+      iconRetinaUrl: index === 0
+        ? 'https://cdn-icons-png.flaticon.com/128/1076/1076999.png'  // Version Retina
+        : 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon-2x.png',
+
+      shadowUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png',
+      iconSize: [32, 32],       // Taille de l'icône (ajuste selon tes besoins)
+      iconAnchor: [16, 32],     // Point d’ancrage au bas du marqueur
+      popupAnchor: [0, -32]     // Position du popup par rapport à l’icône
+
+    })
+
   });
 }

@@ -111,12 +111,19 @@ export class SuivicarteComponent {
   //public planifier = inject(PlanifierComponent);
   //readonly service = inject(CommandeService)
 
-  public currentValue = latLng(45.1485200, 5.7369725);
+  public currentValue = this.service.getCoordonneEntrepot();
+
   constructor(private commandeService: CommandeService) {
+
     /*const cmd = this.commandeService.getCommandes().then(result=>{
       this.comandes.set(result);
       console.log("commande",this.comandes.le);
   })*/
+
+
+    //this.service.getCoordonneEntrepot().subscribe()
+
+
     const tr = this.service.getTournee()
     this.tournee.set(tr)
     this.tournee()?.forEach(element => {
