@@ -6,6 +6,6 @@ import { Equipe } from "./Equipes";
 export interface livraison{
     reference: string,
     adresse: Adresse[],
-    equipe: Equipe
+    equipe: Equipe,
     Commandes: Commande[]
 }

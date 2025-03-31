@@ -263,6 +263,7 @@
           "quantite": 1
         }
       }
+<<<<<<< HEAD
     ],
     "etat": "livré"
   },
@@ -845,3 +846,663 @@
     "etat": "livrable"
   }
   ]}
+=======
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x067",
+      "email": "agilles@sfr.fr",
+      "prenom": "axel",
+      "nom": "GILLES",
+      "adresse": "160bis Avenue Jean Jaures",
+      "codePostal": 38320,
+      "ville": "Eybens",
+      "latitude": 45.148263,
+      "longitude": 5.750864,
+      "commandes": [],
+      "etat": "livré"
+    },
+    {
+      "code": "x020",
+      "email": "aguyot@hot.fr",
+      "prenom": "alicia",
+      "nom": "GUYOT",
+      "adresse": "3 Rue Laurent Darve",
+      "codePostal": 38170,
+      "ville": "Seyssinet-Pariset",
+      "latitude": 45.184334,
+      "longitude": 5.695172,
+      "commandes": [],
+      "etat": "livrable"
+    },
+    {
+      "code": "105244",
+      "email": "client1@example.com",
+      "prenom": "Jean",
+      "nom": "Dupont",
+      "adresse": "10 Rue de Paris",
+      "codePostal": 75001,
+      "ville": "Paris",
+      "latitude": 48.8566,
+      "longitude": 2.3522,
+      "commandes": [
+        {
+          "reference": "CMD001",
+          "etat": "ouverte",
+          "dateDeCreation": "01-03-2024",
+          "client": "client1@example.com",
+          "ligne": {
+            "jdds": "JD001",
+            "reference": "PROD001",
+            "quantite": 2
+          }
+        }
+      ],
+      "etat": "en cours"
+    },
+    {
+      "code": "105245",
+      "email": "client2@example.com",
+      "prenom": "Sophie",
+      "nom": "Martin",
+      "adresse": "15 Avenue des Champs",
+      "codePostal": 75008,
+      "ville": "Paris",
+      "latitude": 48.8708,
+      "longitude": 2.3076,
+      "commandes": [
+        {
+          "reference": "CMD002",
+          "etat": "livrée",
+          "dateDeCreation": "28-02-2024",
+          "client": "client2@example.com",
+          "ligne": {
+            "jdds": "JD002",
+            "reference": "PROD002",
+            "quantite": 1
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "105246",
+      "email": "client3@example.com",
+      "prenom": "Marc",
+      "nom": "Lemoine",
+      "adresse": "25 Boulevard Haussmann",
+      "codePostal": 75009,
+      "ville": "Paris",
+      "latitude": 48.8721,
+      "longitude": 2.3324,
+      "commandes": [
+        {
+          "reference": "CMD003",
+          "etat": "annulée",
+          "dateDeCreation": "15-02-2024",
+          "client": "client3@example.com",
+          "note": 2,
+          "commentaire": "Commande annulée pour retard de livraison.",
+          "ligne": {
+            "jdds": "JD003",
+            "reference": "PROD003",
+            "quantite": 3
+          }
+        }
+      ],
+      "etat": "annulée"
+    },
+    {
+      "code": "105247",
+      "email": "client4@example.com",
+      "prenom": "Isabelle",
+      "nom": "Durand",
+      "adresse": "5 Place Bellecour",
+      "codePostal": 69002,
+      "ville": "Lyon",
+      "latitude": 45.7578,
+      "longitude": 4.832,
+      "commandes": [
+        {
+          "reference": "CMD004",
+          "etat": "expédiée",
+          "dateDeCreation": "05-03-2024",
+          "client": "client4@example.com",
+          "ligne": {
+            "jdds": "JD004",
+            "reference": "PROD004",
+            "quantite": 4
+          }
+        }
+      ],
+      "etat": "expédiée"
+    },
+    {
+      "code": "x031",
+      "email": "jguie@or.fr",
+      "prenom": "julie",
+      "nom": "GUILLAUME",
+      "adresse": "1965 Route de Gières",
+      "codePostal": 38410,
+      "ville": "Saint-Martin-d'Uriage",
+      "latitude": 45.158588,
+      "longitude": 5.819766,
+      "commandes": [
+        {
+          "reference": "c249",
+          "etat": "ouverte",
+          "dateDeCreation": "14-03-2024",
+          "client": "jguie@or.fr",
+          "ligne": {
+            "jdds": "JD249",
+            "reference": "p249",
+            "quantite": 1
+          }
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x110",
+      "email": "jguil@or.fr",
+      "prenom": "julie",
+      "nom": "GUIL",
+      "adresse": "5 Rue du Drac",
+      "codePostal": 38130,
+      "ville": "Échirolles",
+      "latitude": 45.147451,
+      "longitude": 5.692349,
+      "commandes": [
+        {
+          "reference": "c173",
+          "etat": "ouverte",
+          "dateDeCreation": "25-02-2024",
+          "client": "jguil@or.fr",
+          "ligne": {
+            "jdds": "JD173",
+            "reference": "p173",
+            "quantite": 3
+          }
+        },
+        {
+          "reference": "c227",
+          "etat": "ouverte",
+          "dateDeCreation": "10-03-2024",
+          "client": "jguil@or.fr",
+          "ligne": {
+            "jdds": "JD227",
+            "reference": "p227",
+            "quantite": 2
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x059",
+      "email": "jjuma@brt.fr",
+      "prenom": "amina",
+      "nom": "JUMA",
+      "adresse": "737 Route du Gua",
+      "codePostal": 38950,
+      "ville": "Quaix-en-Chartreuse",
+      "latitude": 45.259605,
+      "longitude": 5.707849,
+      "commandes": [
+        {
+          "reference": "c311",
+          "etat": "ouverte",
+          "dateDeCreation": "19-02-2024",
+          "client": "jjuma@brt.fr",
+          "ligne": {
+            "jdds": "JD311",
+            "reference": "p311",
+            "quantite": 1
+          }
+        },
+        {
+          "reference": "c350",
+          "etat": "ouverte",
+          "dateDeCreation": "22-02-2024",
+          "client": "jjuma@brt.fr",
+          "ligne": {
+            "jdds": "JD350",
+            "reference": "p350",
+            "quantite": 2
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x030",
+      "email": "jlefebvre@or.fr",
+      "prenom": "juliette",
+      "nom": "LEFEBVRE",
+      "adresse": "710 Rue Aristide Berges",
+      "codePostal": 38330,
+      "ville": "Montbonnot-Saint-Martin",
+      "latitude": 45.221682,
+      "longitude": 5.819505,
+      "commandes": [
+        {
+          "reference": "c297",
+          "etat": "ouverte",
+          "dateDeCreation": "02-03-2024",
+          "client": "jlefebvre@or.fr",
+          "ligne": {
+            "jdds": "JD297",
+            "reference": "p297",
+            "quantite": 1
+          }
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x105",
+      "email": "jmorel@or.fr",
+      "prenom": "jenna",
+      "nom": "MOREL",
+      "adresse": "296 Chemin des Quartallées",
+      "codePostal": 38330,
+      "ville": "Saint-Ismier",
+      "latitude": 45.252076,
+      "longitude": 5.834169,
+      "commandes": [
+        {
+          "reference": "c160",
+          "etat": "ouverte",
+          "dateDeCreation": "11-01-2024",
+          "client": "jmorel@or.fr",
+          "ligne": {
+            "jdds": "JD160",
+            "reference": "p160",
+            "quantite": 1
+          }
+        },
+        {
+          "reference": "c170",
+          "etat": "ouverte",
+          "dateDeCreation": "15-01-2024",
+          "client": "jmorel@or.fr",
+          "ligne": {
+            "jdds": "JD170",
+            "reference": "p170",
+            "quantite": 2
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x111",
+      "email": "lbarbier@lp.net",
+      "prenom": "léa",
+      "nom": "BARBIER",
+      "adresse": "21bis Avenue Pierre Mendès-france",
+      "codePostal": 38320,
+      "ville": "Poisat",
+      "latitude": 45.155848,
+      "longitude": 5.761886,
+      "commandes": [
+        {
+          "reference": "c220",
+          "etat": "ouverte",
+          "dateDeCreation": "21-02-2024",
+          "client": "lbarbier@lp.net",
+          "ligne": {
+            "jdds": "JD220",
+            "reference": "p220",
+            "quantite": 1
+          }
+        },
+        {
+          "reference": "c380",
+          "etat": "ouverte",
+          "dateDeCreation": "01-03-2024",
+          "client": "lbarbier@lp.net",
+          "ligne": {
+            "jdds": "JD380",
+            "reference": "p380",
+            "quantite": 3
+          }
+        },
+        {
+          "reference": "c393",
+          "etat": "ouverte",
+          "dateDeCreation": "05-03-2024",
+          "client": "lbarbier@lp.net",
+          "ligne": {
+            "jdds": "JD393",
+            "reference": "p393",
+            "quantite": 2
+          }
+        },
+        {
+          "reference": "c405",
+          "etat": "ouverte",
+          "dateDeCreation": "12-03-2024",
+          "client": "lbarbier@lp.net",
+          "ligne": {
+            "jdds": "JD405",
+            "reference": "p405",
+            "quantite": 1
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x024",
+      "email": "lbarbier1@lp.net",
+      "prenom": "lola",
+      "nom": "BARBIER",
+      "adresse": "1 Rue du Saint-eynard",
+      "codePostal": 38240,
+      "ville": "Meylan",
+      "latitude": 45.220077,
+      "longitude": 5.78704,
+      "commandes": [
+        {
+          "reference": "c245",
+          "etat": "ouverte",
+          "dateDeCreation": "18-02-2024",
+          "client": "lbarbier1@lp.net",
+          "ligne": {
+            "jdds": "JD245",
+            "reference": "p245",
+            "quantite": 2
+          }
+        },
+        {
+          "reference": "c318",
+          "etat": "ouverte",
+          "dateDeCreation": "10-03-2024",
+          "client": "lbarbier1@lp.net",
+          "ligne": {
+            "jdds": "JD318",
+            "reference": "p318",
+            "quantite": 1
+          }
+        },
+        {
+          "reference": "c372",
+          "etat": "ouverte",
+          "dateDeCreation": "14-03-2024",
+          "client": "lbarbier1@lp.net",
+          "ligne": {
+            "jdds": "JD372",
+            "reference": "p372",
+            "quantite": 3
+          }
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x121",
+      "email": "lblanc@gm.fr",
+      "prenom": "léo",
+      "nom": "BLANC",
+      "adresse": "16 Rue Henri Barbusse",
+      "codePostal": 38100,
+      "ville": "Grenoble",
+      "latitude": 45.157124,
+      "longitude": 5.736643,
+      "commandes": [
+        {
+          "reference": "c012",
+          "etat": "ouverte",
+          "dateDeCreation": "22-02-2024",
+          "client": "lblanc@gm.fr",
+          "ligne": {
+            "jdds": "JD012",
+            "reference": "p012",
+            "quantite": 1
+          }
+        },
+        {
+          "reference": "c018",
+          "etat": "ouverte",
+          "dateDeCreation": "15-03-2024",
+          "client": "lblanc@gm.fr",
+          "ligne": {
+            "jdds": "JD018",
+            "reference": "p018",
+            "quantite": 2
+          }
+        },
+        {
+          "reference": "c051",
+          "etat": "ouverte",
+          "dateDeCreation": "20-03-2024",
+          "client": "lblanc@gm.fr",
+          "ligne": {
+            "jdds": "JD051",
+            "reference": "p051",
+            "quantite": 1
+          }
+        },
+        {
+          "reference": "c075",
+          "etat": "ouverte",
+          "dateDeCreation": "23-03-2024",
+          "client": "lblanc@gm.fr",
+          "ligne": {
+            "jdds": "JD075",
+            "reference": "p075",
+            "quantite": 2
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x193",
+      "email": "alam@m6.com",
+      "prenom": "yara",
+      "nom": "LAM",
+      "adresse": "23 Impasse des Myrtilles",
+      "codePostal": 38360,
+      "ville": "Sassenage",
+      "latitude": 45.202262,
+      "longitude": 5.660234,
+      "commandes": [
+        {
+          "reference": "c337",
+          "etat": "ouverte",
+          "dateDeCreation": "22-02-2024",
+          "client": "alam@m6.com",
+          "ligne": {
+            "jdds": "JD337",
+            "reference": "p337",
+            "quantite": 1
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x064",
+      "email": "aleme@msn.com",
+      "prenom": "antoine",
+      "nom": "LEMOINE",
+      "adresse": "40 Rue du Pré Didier",
+      "codePostal": 38120,
+      "ville": "Fontanil-Cornillon",
+      "latitude": 45.249096,
+      "longitude": 5.660703,
+      "commandes": [
+        {
+          "reference": "c089",
+          "etat": "ouverte",
+          "dateDeCreation": "22-02-2024",
+          "client": "aleme@msn.com",
+          "ligne": {
+            "jdds": "JD089",
+            "reference": "p089",
+            "quantite": 1
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x068",
+      "email": "alemoine1@sfr.fr",
+      "prenom": "axel",
+      "nom": "LEMOINE",
+      "adresse": "3 rue des abattoirs",
+      "codePostal": 38120,
+      "ville": "Saint-Égrève",
+      "latitude": 45.240528,
+      "longitude": 5.663658,
+      "commandes": [
+        {
+          "reference": "c042",
+          "etat": "ouverte",
+          "dateDeCreation": "22-02-2024",
+          "client": "alemoine1@sfr.fr",
+          "ligne": {
+            "jdds": "JD042",
+            "reference": "p042",
+            "quantite": 1
+          }
+        },
+        {
+          "reference": "c352",
+          "etat": "ouverte",
+          "dateDeCreation": "23-02-2024",
+          "client": "alemoine1@sfr.fr",
+          "ligne": {
+            "jdds": "JD352",
+            "reference": "p352",
+            "quantite": 2
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x061",
+      "email": "alemoyne@wan.fr",
+      "prenom": "anaïs",
+      "nom": "LEMOYNE",
+      "adresse": "1382 Route de Sarcenas",
+      "codePostal": 38950,
+      "ville": "Quaix-en-Chartreuse",
+      "latitude": 45.246182,
+      "longitude": 5.730494,
+      "commandes": [
+        {
+          "reference": "c385",
+          "etat": "ouverte",
+          "dateDeCreation": "22-02-2024",
+          "client": "alemoyne@wan.fr",
+          "ligne": {
+            "jdds": "JD385",
+            "reference": "p385",
+            "quantite": 1
+          }
+        }
+      ],
+      "etat": "livré"
+    },
+    {
+      "code": "x001",
+      "email": "amartin@wan.fr",
+      "prenom": "agathe",
+      "nom": "MARTIN",
+      "adresse": "332 Route de la Jars",
+      "codePostal": 38950,
+      "ville": "Quaix-en-Chartreuse",
+      "latitude": 45.25666,
+      "longitude": 5.72195,
+      "commandes": [
+        {
+          "reference": "c001",
+          "etat": "ouverte",
+          "dateDeCreation": "22-02-2024",
+          "client": "amartin@wan.fr",
+          "ligne": {
+            "jdds": "JD001",
+            "reference": "p001",
+            "quantite": 1
+          }
+        },
+        {
+          "reference": "c183",
+          "etat": "ouverte",
+          "dateDeCreation": "23-02-2024",
+          "client": "amartin@wan.fr",
+          "ligne": {
+            "jdds": "JD183",
+            "reference": "p183",
+            "quantite": 1
+          }
+        },
+        {
+          "reference": "c232",
+          "etat": "ouverte",
+          "dateDeCreation": "24-02-2024",
+          "client": "amartin@wan.fr",
+          "ligne": {
+            "jdds": "JD232",
+            "reference": "p232",
+            "quantite": 1
+          }
+        }
+      ],
+      "etat": "livrable"
+    },
+    {
+      "code": "x004",
+      "email": "amohed@brt.fr",
+      "prenom": "leyla",
+      "nom": "MOHAMMED",
+      "adresse": "9 Chemin des Vouillants",
+      "codePostal": 38600,
+      "ville": "Fontaine",
+      "latitude": 45.187277,
+      "longitude": 5.672983,
+      "commandes": [
+        {
+          "reference": "c022",
+          "etat": "ouverte",
+          "dateDeCreation": "22-02-2024",
+          "client": "amohed@brt.fr",
+          "ligne": {
+            "jdds": "JD022",
+            "reference": "p022",
+            "quantite": 1
+          }
+        },
+        {
+          "reference": "c216",
+          "etat": "ouverte",
+          "dateDeCreation": "23-02-2024",
+          "client": "amohed@brt.fr",
+          "ligne": {
+            "jdds": "JD216",
+            "reference": "p216",
+            "quantite": 1
+          }
+        },
+        {
+          "reference": "c336",
+          "etat": "ouverte",
+          "dateDeCreation": "24-02-2024",
+          "client": "amohed@brt.fr",
+          "ligne": {
+            "jdds": "JD336",
+            "reference": "p336",
+            "quantite": 1
+          }
+        }
+      ],
+      "etat": "livrable"
+    }
+    ]}
+>>>>>>> 5d9a227705cc49c4ef075616a4a8b4e18b54e225
