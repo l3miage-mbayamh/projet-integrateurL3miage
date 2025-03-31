@@ -26,17 +26,19 @@ export class VisualiserdayComponent {
 
     const c = this.service.getClientALivree()
     this.clients.set(c)
+    console.log(this.clients().map(value => value.etat))
     const dataSaveTournee = localStorage.getItem('livraisonList')
     if (dataSaveTournee) {
       try {
         const data = JSON.parse(dataSaveTournee);
         // Si le parsing réussit, on met à jour la liste
         this.tournee.set(data);
-        //localStorage.setItem('livraisonList', JSON.stringify(this.tournee()))
+        localStorage.setItem('livraisonList', JSON.stringify(this.tournee()))
       } catch (e) {
         console.error("Erreur de parsing des données JSON dans localStorage:", e);
       }
     }
   }
- 
+
+
 }

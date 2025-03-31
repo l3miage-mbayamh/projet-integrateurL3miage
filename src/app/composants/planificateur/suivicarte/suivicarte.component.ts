@@ -93,63 +93,64 @@ export class SuivicarteComponent {
 
   public readonly comandes = signal<readonly Commande[]>([])
   public clients = signal<Client[]>([])
-    public readonly livreursListe = signal<livreurs[]>([])
-    public readonly camionList = signal<Camion[]>([])
-    //declaration des variables
-    public readonly camionChoisit = model<string>("")
-    public readonly livreursChoisit = model<string>("")
-    public readonly equipe = model<Equipe>({livreurs: "Euler", camion: "415655"})
-    public readonly equipeList = model<Equipe[]>([])
-    public readonly nombreEquipe = model<number>(0)
-    public readonly service = inject(CommandeService)
+  public readonly livreursListe = signal<livreurs[]>([])
+  public readonly camionList = signal<Camion[]>([])
+  //declaration des variables
+  public readonly camionChoisit = model<string>("")
+  public readonly livreursChoisit = model<string>("")
+  public readonly equipe = model<Equipe>({ livreurs: "Euler", camion: "415655" })
+  public readonly equipeList = model<Equipe[]>([])
+  public readonly nombreEquipe = model<number>(0)
+  public readonly service = inject(CommandeService)
 
-  public markers=signal<LatLng[]>([]);
-  public clts=signal<Client[]>([]);
-  public cltsPerTournee=signal<Client[][]>([]);
+  public markers = signal<LatLng[]>([]);
+  public clts = signal<Client[]>([]);
+  public cltsPerTournee = signal<Client[][]>([]);
   public readonly tournee = model<livraison[]>()
 
   //public planifier = inject(PlanifierComponent);
   //readonly service = inject(CommandeService)
 
-  public currentValue = latLng(45.1485200,5.7369725);
+  public currentValue = latLng(45.1485200, 5.7369725);
   constructor(private commandeService: CommandeService) {
     /*const cmd = this.commandeService.getCommandes().then(result=>{
       this.comandes.set(result);
       console.log("commande",this.comandes.le);
   })*/
- const tr = this.service.getTournee()
-   this.tournee.set(tr)
-   this.tournee()?.forEach(element => {  console.log("clients selected", element.equipe.livreurs);
+    const tr = this.service.getTournee()
+    this.tournee.set(tr)
+    this.tournee()?.forEach(element => {
+      console.log("clients selected", element.equipe.livreurs);
 
-   });
+    });
 
-   this.clts.set(this.service.getClientALivree());
-   console.log("clients selectionne pour la livraison: ", this.clts());
+    this.clts.set(this.service.getClientALivree());
+    console.log("clients selectionne pour la livraison: ", this.clts());
 
-   this.cltsPerTournee.set(this.service.getClientPerTournee());
-   console.log("clients par tournee ", this.cltsPerTournee());
+    this.cltsPerTournee.set(this.service.getClientPerTournee());
+    console.log("clients par tournee ", this.cltsPerTournee());
 
-      this.commandeService.getDataCommandes().then(result => {
-        this.comandes.set(result);
-      });
-
-
-      //let ClientsSelected=this.planifier.clientALivrer();
-
-      this.commandeService.getDataClients().then(result=>{
-        this.clients.set(result);
-        this.commandeService.getClientsLatLng(this.clts()).subscribe(
-          (coordinates: LatLng[]) => {
+    this.commandeService.getDataCommandes().then(result => {
+      this.comandes.set(result);
+    });
 
 
-            this.markers.set([this.currentValue, ...coordinates]); // Ajouter les coordonnées aux marqueurs
-            console.log('Coordonnées des clients avec commandes :', this.markers());
-          },
-          (error) => {
-            console.error('Erreur lors de la récupération des coordonnées :', error);
-          }
-        );
-      });
+    //let ClientsSelected=this.planifier.clientALivrer();
+
+    this.commandeService.getDataClients().then(result => {
+      this.clients.set(result);
+      this.commandeService.getClientsLatLng(this.clts()).subscribe(
+        (coordinates: LatLng[]) => {
+
+
+          this.markers.set([this.currentValue, ...coordinates]); // Ajouter les coordonnées aux marqueurs
+          console.log('Coordonnées des clients avec commandes :', this.markers());
+        },
+        (error) => {
+          console.error('Erreur lors de la récupération des coordonnées :', error);
+        }
+      );
+    });
 
     //livreurs
     /*const employerList = this.commandeService.getLivreurs().then(result=>
@@ -166,7 +167,7 @@ export class SuivicarteComponent {
       this.equipeList.set(JSON.parse(savedData))
     }*/
 
-      console.log(this.clients);
+    console.log(this.clients);
 
 
   }

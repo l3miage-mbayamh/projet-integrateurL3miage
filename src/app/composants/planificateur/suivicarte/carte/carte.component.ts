@@ -139,8 +139,8 @@ export class CarteComponent {
   // Affichage des informations du client au survol
   showClientInfo(event: LeafletMouseEvent, client: Client) {
     this.hoveredClient = client;
-    this.tooltipX = event.originalEvent.pageX + 10;
-    this.tooltipY = event.originalEvent.pageY + 10;
+    this.tooltipX = event.originalEvent.pageX;
+    this.tooltipY = event.originalEvent.pageY;
     this.cdr.detectChanges(); // Force l'UI à se mettre à jour
   }
 

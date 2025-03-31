@@ -1,4 +1,3 @@
-
 <div style="padding: 10px;">
 
 </div>
@@ -6,12 +5,12 @@
     <mat-card-header>
         <mat-card-title>Visualiser Journée</mat-card-title>
         <mat-divider></mat-divider>
-   
+
         <mat-card-subtitle></mat-card-subtitle>
     </mat-card-header>
-   
+
     <mat-card-content>
-      
+
     </mat-card-content>
 
 </mat-card>
@@ -22,13 +21,15 @@
               <mat-card-title>Livraison {{$index}}: {{l.reference}}</mat-card-title>
               <mat-card-subtitle>{{l.equipe.livreurs}}</mat-card-subtitle>
               @for (a of l.adresse; track $index) {
-                <mat-card-subtitle>{{a.adresse}} {{a.codePostal}}</mat-card-subtitle>
+                <mat-card-subtitle>{{a.adresse}} {{a.codePostal}}
+                    <button mat-button >{{etat().toLowerCase()}}</button>
+                </mat-card-subtitle>
               }
-              <button mat-button>{{etat().toLowerCase()}}</button>
+
             </mat-card-header>
-            
+
           </mat-card>
-          
-         
+
+
     }
 </div>
