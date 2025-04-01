@@ -19,7 +19,9 @@ import { latLng, LatLng } from 'leaflet';
 })
 export class CommandeService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+    
+  }
 
   private readonly tournne = signal<livraison[]>([])
   private readonly clientALivree = signal<Client[]>([])
@@ -186,6 +188,7 @@ export class CommandeService {
 
   updateCoordonneeEntrepot(coordonne: EntrepotData) {
     this.coordEntrepot = coordonne;
+    localStorage.setItem('coordonneEntrepot', JSON.stringify(this.coordEntrepot))
   }
 
   //recupeartion de client

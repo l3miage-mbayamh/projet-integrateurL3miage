@@ -10,6 +10,7 @@ import { Equipe } from '../../../interfaces/Equipes';
 import { Commande } from '../../../interfaces/Commande';
 import { CommandeService } from '../../../services/commande.service';
 import { EntrepotData } from '../../../interfaces/entrepotData';
+import { LatLng } from 'leaflet';
 
 
 @Component({
@@ -45,13 +46,15 @@ export class PlanningdayComponent {
     const savedData = localStorage.getItem('journeeList');
     if (savedData) {
       this.journeeList.set(JSON.parse(savedData));
+     // this.service.updateCoordonneeEntrepot(this.getEntrepot(this.journeeList()))
     }
+
+
 
     this.service.getEntrepotData().subscribe(result=>
       this.entrepotData.set(result)
     )
 
-    this.service.updateCoordonneeEntrepot(this.getEntrepot(this.journeeList()))
   }
 
   //lancement du dialog qui ouvre le composant journee pour la definir
@@ -71,6 +74,8 @@ export class PlanningdayComponent {
         this.journeeList().forEach(value => console.log(value.nomEntrepot))
         this.service.updateCoordonneeEntrepot(this.getEntrepot(this.journeeList()))
         console.log("client coordonnee: ",this.service.getCoordonneEntrepot());
+
+
 
       }
     });

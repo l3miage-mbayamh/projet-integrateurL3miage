@@ -163,7 +163,7 @@ export class PlanifierComponent {
   secondFormGroup = this._formBuilder.group({
     secondCtrl: ['', Validators.required],
   });
-//test start
+//test start, fonction bien
 //selection de toutes les commandes via client
 displayedColumns: string[] = ['select', 'nom', 'adresse', 'codePostal','ville', 'commandes','etat'];
   dataSource = new MatTableDataSource<Client>(this.clients());
@@ -171,17 +171,17 @@ displayedColumns: string[] = ['select', 'nom', 'adresse', 'codePostal','ville', 
 
 
 
-  /* quant toutes les lignes sont selectionnees. */
+  //quant toutes les lignes sont selectionnees.
   isAllSelected() {
     const numSelected = this.selection.selected.length;
-    const numVisible = this.dataSource.filteredData.length;  // Nombre d'éléments visibles après filtrage
-    return numSelected === numVisible;  // Retourne vrai si tous les éléments visibles sont sélectionnés
+    const numVisible = this.dataSource.filteredData.length;
+    return numSelected === numVisible;
   }
 
 
 
 
-  /* selection de l'ensemble des elements. */
+  //selection de l'ensemble des elements.
   toggleAllRows() {
      // Récuperation les clients filtrés (visibles)
     const visibleClients = this.dataSource.filteredData;
@@ -194,7 +194,7 @@ displayedColumns: string[] = ['select', 'nom', 'adresse', 'codePostal','ville', 
     }
   }
 
-  /* la selection ligne du check */
+  //la selection ligne du check
   checkboxLabel(row?: Client): string {
     if (!row) {
       return `${this.isAllSelected() ? 'deselect' : 'select'} all`;
@@ -236,7 +236,7 @@ ngOnInit() {
   this.commandeSelectDefault()
 }
 
-//selection par default de 5 clients ne fonctionne pas d'abord
+//selection par default de nb clients ne fonctionne pas d'abord
 commandeSelectDefault(){
 
   const dataSelect = this.dataSource.data.slice(0,5)
@@ -415,7 +415,7 @@ clientsASelect.forEach((client, index) => {
 
   }
 
-  // Passer à l'équipe suivante (répartition circulaire)
+  // équipe suivante (répartition circulaire)
   i = (i + 1) % equipesDisponibles.length;
 
 });
