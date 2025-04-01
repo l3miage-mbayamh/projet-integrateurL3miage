@@ -73,14 +73,14 @@
           <mat-label>Filter</mat-label>
           <input matInput (keyup)="applyFilter($event)" placeholder="Saisir" #input>
         </mat-form-field>
-        <mat-form-field>
+        <!--<mat-form-field>
           <mat-label>Choisir une équipe</mat-label>
           <mat-select [formControl]="equipeForm" [(ngModel)]="equipeChoisie" required>
             <mat-option *ngFor="let eq of equipeList()" [value]="eq" [disabled]="equipeDejaAffecter(eq)">
               Equipe : {{ eq.livreurs }} | Camion: {{ eq.camion }}
             </mat-option>
           </mat-select>
-        </mat-form-field>
+        </mat-form-field>-->
         <button mat-button (click)="affectationDeCommandeAEquipeAuto()">ok</button>
       </div>
 
