@@ -108,6 +108,8 @@ export class SuivicarteComponent {
   public cltsPerTournee = signal<Client[][]>([]);
   public readonly tournee = model<livraison[]>()
 
+  public clientLatlng=signal<LatLng[][]>([])
+
   //public planifier = inject(PlanifierComponent);
   //readonly service = inject(CommandeService)
 
@@ -124,6 +126,7 @@ export class SuivicarteComponent {
     //this.service.getCoordonneEntrepot().subscribe()
 
 
+
     const tr = this.service.getTournee()
     this.tournee.set(tr)
     this.tournee()?.forEach(element => {
@@ -136,6 +139,15 @@ export class SuivicarteComponent {
 
     this.cltsPerTournee.set(this.service.getClientPerTournee());
     console.log("clients par tournee ", this.cltsPerTournee());
+
+
+    /*this.service.getClientsClientLatLng(this.cltsPerTournee()).subscribe(
+      (coordonnee:LatLng[][])=>(
+        this.clientLatlng.set(coordonnee),console.log("clients[][] latlng: ",this.clientLatlng())
+      )
+    )*/
+
+
 
     this.commandeService.getDataCommandes().then(result => {
       this.comandes.set(result);

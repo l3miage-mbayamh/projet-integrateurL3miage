@@ -4,9 +4,8 @@ export interface EntrepotData{
     lettre: string,
     photo: string,
     adresse: string,
-    codePostale: number,
+    codePostal: number,
     ville: string,
     latitude: number,
     longitude: number
   }
-  

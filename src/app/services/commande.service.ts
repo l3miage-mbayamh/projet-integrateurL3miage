@@ -29,8 +29,8 @@ export class CommandeService {
   private readonly jsonServerURL = 'http://localhost:3000';
 
   private readonly openRouteServiceURL = 'https://api.openrouteservice.org/geocode/search'; // URL d'OpenRouteService
-  //private readonly apiKey = '5b3ce3597851110001cf62481e732f07a07a4748af741d9c667ec9e6'; // Remplace par ta clé API Google Maps
-  private readonly apiKey = '5b3ce3597851110001cf62484349c98918ee486fb2be1990c40753a3'
+  private readonly apiKey = '5b3ce3597851110001cf62481e732f07a07a4748af741d9c667ec9e6'; // Remplace par ta clé API Google Maps
+  //private readonly apiKey = '5b3ce3597851110001cf62484349c98918ee486fb2be1990c40753a3'
   private readonly apiUrl = 'https://api.openrouteservice.org/v2/directions/driving-car';
   public ClientsPerTournee = signal<Client[][]>([])
   private coordEntrepotLatLng: LatLng | null = null;
@@ -263,6 +263,12 @@ export class CommandeService {
     );
   }
 
+  getClientsClientLatLng(clients: Client[][]): Observable<LatLng[][]> {
+    const observables = clients.map(group => this.getClientsLatLng(group));
+
+    return forkJoin(observables);
+  }
+
 
   getItinerary(coords: [number, number][]): Observable<any[]> {
     if (coords.length < 2) {
@@ -298,26 +304,19 @@ export class CommandeService {
   }
 
 
-  getCoordonneEntrepot():LatLng{
-    let coordone!:LatLng
-    this.getCoordinates(this.coordEntrepot.adresse,this.coordEntrepot.codePostale,this.coordEntrepot.ville).subscribe(
-      result=>(coordone=result,console.log("client",coordone)
+  getCoordonneEntrepot(): LatLng {
+    let coordone!: LatLng
+    this.getCoordinates(this.coordEntrepot.adresse, this.coordEntrepot.codePostal, this.coordEntrepot.ville).subscribe(
+      result => (coordone = result, console.log("client", coordone)
       )
     )
     return coordone
   }
 
 
-  /*getCoordonneEntrepot(): LatLng {
-    if (!this.coordEntrepotLatLng) {
-      throw new Error("Les coordonnées de l'entrepôt ne sont pas encore chargées !");
-    }
-    return this.coordEntrepotLatLng;
-  }*/
-
   async initialiserCoordonneesEntrepot() {
     const result = await firstValueFrom(
-      this.getCoordinates(this.coordEntrepot.adresse, this.coordEntrepot.codePostale, this.coordEntrepot.ville)
+      this.getCoordinates(this.coordEntrepot.adresse, this.coordEntrepot.codePostal, this.coordEntrepot.ville)
     );
     this.coordEntrepotLatLng = new LatLng(result.lat, result.lng);
   }
@@ -382,16 +381,5 @@ export class CommandeService {
   }
 
 
-  // Obtenir les coordonnées d'une commande spécifique
-  /*getLatLngCommande(idCommande: string): Observable<[number, number]> {
-    return this.http.get<Feature<Point>>(`${this.jsonServerURL}/commandes/${idCommande}`)
-      .pipe(
-        map(f => {
-          if (f.geometry && f.geometry.coordinates) {
-            return [f.geometry.coordinates[1], f.geometry.coordinates[0]];
-          }
-          throw new Error("Coordonnées non trouvées");
-        })
-      );
-  }*/
+
 }

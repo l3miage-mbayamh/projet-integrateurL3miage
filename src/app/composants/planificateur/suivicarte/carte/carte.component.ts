@@ -1,9 +1,11 @@
 import { map } from 'rxjs/operators';
 import { CommandeService } from './../../../../services/commande.service';
 import { ChangeDetectorRef, Component, computed, inject, input, model, output, signal } from '@angular/core';
-import { Icon, icon, LatLng, latLng, Layer, marker, Marker, tileLayer, geoJSON, GeoJSON, LeafletMouseEvent } from 'leaflet';
+import L, { Icon, icon, LatLng, latLng, Layer, marker, Marker, tileLayer, geoJSON, GeoJSON, LeafletMouseEvent } from 'leaflet';
 import { Client } from '../../../../interfaces/Client';
 import { Etat } from '../../../../interfaces/enums/Etat';
+import { forkJoin, Observable } from 'rxjs';
+import { GeoJsonObject } from 'geojson';
 
 @Component({
   selector: 'app-carte',
@@ -16,7 +18,9 @@ export class CarteComponent {
   public readonly longitude = model<number>(5.71667);
   public readonly zoom = model<number>(10);
   public readonly clickOnMap = output<LatLng>();
-  public service =inject(CommandeService);
+  public service = inject(CommandeService);
+
+  public clientLatlng = signal<LatLng[][]>([])
 
   // Gestion de la carte avec le centre et la couche de la carte
   public readonly center = computed<LatLng>(() => latLng(this.latitude(), this.longitude()));
@@ -31,6 +35,7 @@ export class CarteComponent {
   // Calcul des marqueurs à partir des LatLng
   public readonly markers = computed(() => this.marquer().map((latLng, index) => latLngToMarker(latLng, index)));
 
+  //public readonly markers = computed(() => this.clientLatlng().map((latLng, index) =>latLng.map(((lat,indice)=>latLngToMarker(lat, indice))) ));
   // Définir les couches de la carte
   //public readonly layers = computed<Layer[]>(() => [this.layer, ...this.markers()]);
 
@@ -51,14 +56,14 @@ export class CarteComponent {
     layers.push(...clientMarkers);
 
     // Ajouter les itinéraires
-    if (this.routeGeoJson()) {
+    /*if (this.routeGeoJson()) {
       layers.push(geoJSON(this.routeGeoJson() as any, {
         style: (feature) => ({
-          color: feature?.properties?.color || 'blue',
+          color: feature?.properties?.color || 'yellow',
           weight: 4
         })
       }));
-    }
+    }*/
 
     return layers;
   });
@@ -78,23 +83,24 @@ export class CarteComponent {
       .on('click', () => this.selectClient(client)); // Sélectionner un client
   }*/
 
-      private createMarker(client: Client): Marker {
-        return marker([client.latitude, client.longitude], {
-          icon: icon({
-            ...Icon.Default.prototype.options,
-            iconUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png',
-            iconRetinaUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon-2x.png',
-            shadowUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png'
-          })
-        })
-          .on('mouseover', (event: LeafletMouseEvent) => this.showClientInfo(event, client)) // Survol
-          .on('mouseout', () => this.hideClientInfo()); // Cacher les infos
-      }
 
-
-  constructor(public commandeService: CommandeService,private cdr: ChangeDetectorRef) {
-
+  private createMarker(client: Client): Marker {
+    return marker([client.latitude, client.longitude], {
+      icon: icon({
+        ...Icon.Default.prototype.options,
+        iconUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png',
+        iconRetinaUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon-2x.png',
+        shadowUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png'
+      })
+    })
+      .on('mouseover', (event: LeafletMouseEvent) => this.showClientInfo(event, client)) // Survol
+      .on('mouseout', () => this.hideClientInfo()); // Cacher les infos
   }
+
+
+  constructor(public commandeService: CommandeService, private cdr: ChangeDetectorRef) {
+  }
+
 
 
   hoveredClient: Client | null = null;
@@ -119,6 +125,8 @@ export class CarteComponent {
     this.hoveredClient = client;
   }
 
+
+
   // Calcule les couches à afficher sur la carte
   /*public readonly layers = computed<Layer[]>(() => {
     const clientMarkers = this.clients().map(client => this.createMarker(client)); // Crée des marqueurs pour chaque client
@@ -131,59 +139,172 @@ export class CarteComponent {
       return;
     }
 
+    this.service.getClientsClientLatLng(this.clients()).subscribe(
+      (coordonnee) => (
+        coordonnee.map((coord, index)=> {
+          coord.unshift(this.service.getCoordonneEntrepot())
+        }
+        ),
+        this.clientLatlng.set(coordonnee), console.log("clients[][] latlng: ", this.clientLatlng())
+      )
+    )
+    if (this.clientLatlng().length === 0) {
+      console.warn("Aucun itinéraire à tracer.");
+      return;
+    }
+
+    const colors = ['red', 'blue', 'green', 'orange', 'purple', 'brown', 'pink']
+    this.clientLatlng().forEach((element,index) => {
+      // Convertir les marqueurs en tableau [lng, lat]
+    const coords: [number, number][] = element.map(({ lat, lng }) => [lng, lat] as [number, number]);
+
+    // Récupérer l'itinéraire depuis OpenRouteService
+    this.commandeService.getItinerary(coords).subscribe(data => {
+      this.routeGeoJson.set(data);
+      if (this.routeGeoJson()) {
+        this.layers().push(geoJSON(this.routeGeoJson() as any, {
+          style: (feature) => ({
+            color: colors[index],
+            weight: 4
+          })
+        }));
+      }
+    }, error => {
+      console.error('Erreur lors de la récupération de l’itinéraire :', error);
+    });
+
+    });
+
+
+    /*
     // Convertir les marqueurs en tableau [lng, lat]
     const coords: [number, number][] = this.marquer().map(({ lat, lng }) => [lng, lat] as [number, number]);
 
     // Récupérer l'itinéraire depuis OpenRouteService
     this.commandeService.getItinerary(coords).subscribe(data => {
       this.routeGeoJson.set(data);
+      if (this.routeGeoJson()) {
+        this.layers().push(geoJSON(this.routeGeoJson() as any, {
+          style: (feature) => ({
+            color: feature?.properties?.color || 'yellow',
+            weight: 4
+          })
+        }));
+      }
     }, error => {
       console.error('Erreur lors de la récupération de l’itinéraire :', error);
-    });
+    });*/
   }
 
-  /*public traceItinerary(): void {
-    if (this.clients().length === 0) {
-    console.warn('Aucun groupe de clients trouvé.');
-    return;
-  }
+  /*public traceItinerary(markersGroups: LatLng[][]): void {
+    if (!markersGroups.length) {
+      console.warn('Aucun groupe de marqueurs fourni.');
+      return;
+    }
 
-  // Boucler à travers chaque tableau de clients
-  this.clients().forEach((clientGroup, index) => {
-    // Récupérer les LatLng pour ce groupe de clients
-    this.commandeService.getClientsLatLng(clientGroup).subscribe((coordinates) => {
-      // S'assurer qu'il y a au moins deux points pour tracer un itinéraire
-      if (coordinates.length < 2) {
-        console.warn(`Il faut au moins deux points pour le groupe de clients ${index + 1}`);
+    const colors = ['red', 'blue', 'green', 'orange', 'purple', 'brown', 'pink'];
+    let colorIndex = 0;
+
+    markersGroups.forEach((markers, index) => {
+      if (markers.length < 2) {
+        console.warn(`Le groupe ${index + 1} doit contenir au moins deux marqueurs pour tracer un itinéraire.`);
         return;
       }
 
-      // Définir la couleur pour cet itinéraire (ex : couleur différente par groupe)
-      const color = this.getColorForGroup(index);
+      const coords: [number, number][] = markers.map(({ lat, lng }) => [lng, lat]);
+      const color = colors[colorIndex % colors.length];
+      colorIndex++;
 
-      // Convertir les coordonnées en tableau [lng, lat]
-      const coords: [number, number][] = coordinates.map(({ lat, lng }) => [lng, lat] as [number, number]);
-
-      // Appeler la méthode de commande pour obtenir l'itinéraire
       this.commandeService.getItinerary(coords).subscribe(data => {
-        this.routeGeoJson.set({
-          ...data,
-          properties: {
-            color: color,  // Ajouter la couleur au GeoJSON pour appliquer le style
-          }
-        });
+        // Ajouter la couleur à chaque segment de l'itinéraire
+        if (data.features) {
+          data.features.forEach(feature => {
+            feature.properties = feature.properties || {};
+            feature.properties.color = color;
+          });
+        }
+
+        this.routeGeoJson.set(data);
       }, error => {
-        console.error('Erreur lors de la récupération de l’itinéraire pour le groupe ', index + 1, error);
+        console.error(`Erreur lors de la récupération de l’itinéraire du groupe ${index + 1} :`, error);
       });
     });
-  });
+  }*/
+
+
+
+
+
+  /*
+  public traceItinerary(): void {
+    this.service.getClientsClientLatLng(this.clients()).subscribe(
+      (coordonnee: LatLng[][]) => (
+        coordonnee.map((coord)=>{
+          const newCoord=coord;
+          coord=[this.service.getCoordonneEntrepot(),...newCoord]
+        }),
+        this.clientLatlng.set(coordonnee), console.log("clients[][] latlng: ", this.clientLatlng())
+      )
+    )
+    if (this.clientLatlng.length === 0) {
+      console.warn("Aucun itinéraire à tracer.");
+      return;
+    }
+
+    const colors = ["#FF0000", "#0000FF", "#008000", "#FFA500", "#800080"];
+
+    // Convertir chaque itinéraire en requête OpenRouteService et appeler l'API
+    const requests: Observable<GeoJsonObject>[] = this.clientLatlng()
+      .map(route => {
+        if (route.length < 2) {
+          console.warn("Un itinéraire a moins de deux points.");
+          return null;
+        }
+
+        const coords: [number, number][] = route.map(({ lat, lng }) => [lng, lat]);
+
+        return this.service.getItinerary(coords).pipe(
+          map(response => {
+            // Vérifier si la réponse est un tableau et extraire le premier élément
+            if (Array.isArray(response) && response.length > 0) {
+              return response[0] as GeoJsonObject;
+            }
+            return response;
+          })
+        }
+        );
+      })
+      .filter((req): req is Observable<GeoJsonObject> => req !== null); // Filtrer les nulls
+
+    // Exécuter toutes les requêtes en parallèle
+    forkJoin(requests).subscribe(
+      (results: GeoJsonObject[]) => {
+        results.forEach((data, index) => {
+          const color = colors[index % colors.length];
+          const layer = L.geoJSON(data, { style: { color: color, weight: 4 } });
+          this.addLayer(layer);
+        });
+      },
+      error => {
+        console.error("Erreur lors de la récupération des itinéraires :", error);
+      }
+    );
+  }*/
+  private addLayer(layer: L.GeoJSON): void {
+    if (this.routeGeoJson && typeof this.routeGeoJson.set === "function") {
+      this.routeGeoJson.set(layer);
+    } else {
+      console.error("routeGeoJson n'est pas correctement initialisé.");
+    }
   }
 
+
+  /*
   // Fonction pour obtenir une couleur en fonction du groupe (index)
-private getColorForGroup(groupIndex: number): string {
-  const colors = ['blue', 'red', 'green', 'orange', 'purple', 'pink']; // Ajouter plus de couleurs si besoin
-  return colors[groupIndex % colors.length]; // Choisir la couleur en fonction de l'index du groupe
-}*/
+  private getColorForGroup(groupIndex: number): string {
+    const colors = ['blue', 'red', 'green', 'orange', 'purple', 'pink']; // Ajouter plus de couleurs si besoin
+    return colors[groupIndex % colors.length]; // Choisir la couleur en fonction de l'index du groupe
+  }*/
 
 
   // Fonction pour convertir LatLng en marqueur

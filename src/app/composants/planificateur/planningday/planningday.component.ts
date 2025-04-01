@@ -68,9 +68,10 @@ export class PlanningdayComponent {
 
         //savegarde de la liste pour un rechargement apres changement d'onglet
         localStorage.setItem('journeeList', JSON.stringify(this.journeeList()));
-        this.service.updateCoordonneeEntrepot(this.getEntrepot(this.journeeList()))
         this.journeeList().forEach(value => console.log(value.nomEntrepot))
+        this.service.updateCoordonneeEntrepot(this.getEntrepot(this.journeeList()))
         console.log("client coordonnee: ",this.service.getCoordonneEntrepot());
+
       }
     });
 
